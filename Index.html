@@ -796,27 +796,48 @@ section{
 footer{
   background:#F1F5F9;
   border-top:1px solid #E2E8F0;
-  padding:64px 0 28px;
+  padding:70px 0 28px;
+}
+
+.footer-brand{
+  text-align:center;
+  margin:0 auto 55px;
+  max-width:600px;
+}
+
+.footer-logo{
+  display:inline-block;
+  font-family:'Manrope',sans-serif;
+  font-size:36px;
+  font-weight:800;
+  letter-spacing:-0.04em;
+  margin-bottom:12px;
+  background:linear-gradient(135deg,#0F172A 20%,#0F766E 50%,#14B8A6 70%,#0F172A 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.footer-brand p{
+  font-size:14.5px;
+  line-height:1.7;
+  color:#475569;
+  margin:0 auto;
+  max-width:520px;
 }
 
 .footer-grid{
   display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1.2fr;
-  gap:40px;
-  margin-bottom:48px;
-}
-
-.footer-desc{
-  font-size:14.5px;
-  color:#334155;
-  margin:14px 0 18px;
-  max-width:280px;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:60px;
+  max-width:850px;
+  margin:0 auto 42px;
 }
 
 .footer-col h4{
   font-family:'Manrope',sans-serif;
   font-weight:700;
-  font-size:14.5px;
+  font-size:15px;
   color:#0F766E;
   margin-bottom:16px;
 }
@@ -829,10 +850,10 @@ footer{
   gap:11px;
 }
 
+.footer-col li,
 .footer-col a{
   font-size:14px;
   color:#334155;
-  transition:color .15s ease;
 }
 
 .footer-col a:hover{
@@ -841,42 +862,42 @@ footer{
 
 .social-row{
   display:flex;
-  gap:12px;
-  margin-top:6px;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  margin:0 auto 40px;
 }
 
 .social-row a{
-  width:36px;
-  height:36px;
-  border-radius:8px;
+  width:42px;
+  height:42px;
+  border-radius:10px;
+  background:#FFFFFF;
   border:1px solid #CBD5E1;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#0F766E;
-  background:#FFFFFF;
-  transition:
-    color .15s ease,
-    border-color .15s ease,
-    background .15s ease;
+  font-size:18px;
+  transition:all .18s ease;
 }
 
 .social-row a:hover{
-  color:#FF6B35;
+  color:#FFFFFF;
+  background:#FF6B35;
   border-color:#FF6B35;
-  background:#FFFFFF;
+  transform:translateY(-2px);
 }
 
 .footer-bottom{
   border-top:1px solid #E2E8F0;
   padding-top:24px;
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
   font-size:13px;
   color:#64748B;
-  flex-wrap:wrap;
-  gap:12px;
+  text-align:center;
 }
 
 
