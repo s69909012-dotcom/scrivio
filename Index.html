@@ -834,11 +834,17 @@ footer{
 
 .footer-grid{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr  1fr;
   gap:60px;
   max-width:850px;
   margin:0 auto 42px;
 }
+
+  .footer-pair{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+  }
 
 .footer-col h4{
   font-family:'Manrope',sans-serif;
@@ -2078,7 +2084,7 @@ footer{
 
 
     <div class="footer-grid">
-
+<div class="footer-pair">
 
       <!-- Quick Links -->
       <div class="footer-col">
@@ -2096,8 +2102,8 @@ footer{
         </ul>
 
       </div>
-
-
+</div>
+<div class="footer-pair">
       <!-- Important Links -->
       <div class="footer-col">
 
@@ -2126,6 +2132,13 @@ footer{
 
 
     </div>
+      <!-- Connect with Us -->
+<div class="footer-connect">
+  <h4>Connect with Us</h4>
+  <a href="tel:+91XXXXXXXXXX" class="footer-phone">
+    📞 <span>[add real number]</span>
+  </a>
+</div>
 
 
     <!-- Social Media -->
@@ -2148,7 +2161,10 @@ footer{
       </a>
 
     </div>
-
+<div class="footer-legal">
+  <a href="/privacy-policy">Privacy Policy</a>
+  <a href="/terms-conditions">Terms of Service</a>
+</div>
 
     <div class="footer-bottom">
 
