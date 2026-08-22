@@ -794,8 +794,8 @@ section{
 ========================= */
 
 footer{
-  background:#0F172A;
-  border-top:1px solid var(--border);
+  background:#F1F5F9;
+  border-top:1px solid #E2E8F0;
   padding:64px 0 28px;
 }
 
@@ -808,7 +808,7 @@ footer{
 
 .footer-desc{
   font-size:14.5px;
-  color:var(--body);
+  color:#334155;
   margin:14px 0 18px;
   max-width:280px;
 }
@@ -817,7 +817,7 @@ footer{
   font-family:'Manrope',sans-serif;
   font-weight:700;
   font-size:14.5px;
-  color:#FFFFFF;
+  color:#0F766E;
   margin-bottom:16px;
 }
 
@@ -831,11 +831,12 @@ footer{
 
 .footer-col a{
   font-size:14px;
-  color:var(--body);
+  color:#334155;
+  transition:color .15s ease;
 }
 
 .footer-col a:hover{
-  color:#CBD5E1;
+  color:#FF6B35;
 }
 
 .social-row{
@@ -848,15 +849,26 @@ footer{
   width:36px;
   height:36px;
   border-radius:8px;
-  border:1px solid var(--border);
+  border:1px solid #CBD5E1;
   display:flex;
   align-items:center;
   justify-content:center;
-  color:var(--brand);
+  color:#0F766E;
+  background:#FFFFFF;
+  transition:
+    color .15s ease,
+    border-color .15s ease,
+    background .15s ease;
+}
+
+.social-row a:hover{
+  color:#FF6B35;
+  border-color:#FF6B35;
+  background:#FFFFFF;
 }
 
 .footer-bottom{
-  border-top:1px solid #1E293B;
+  border-top:1px solid #E2E8F0;
   padding-top:24px;
   display:flex;
   justify-content:space-between;
@@ -866,6 +878,7 @@ footer{
   flex-wrap:wrap;
   gap:12px;
 }
+
 
 
 /* =========================
