@@ -1,50 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-  <!-- Primary SEO -->
+  <!-- Mobile Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
   <title>Dental Implants in Berhampur | FindToCare</title>
-  <meta name="description"
-        content="Explore dental implant treatment options in Berhampur. Learn about dental implants, treatment options and the treatment process, then send an enquiry to FindToCare.">
-  <meta name="keywords"
-        content="dental implants in Berhampur, dental implants near me, dental implant clinic near me, dental implant treatment Berhampur, dental implant options Berhampur">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="FindToCare">
+  <meta
+    name="description"
+    content="Explore dental implant treatment options in Berhampur, including implant types, treatment process, cost-related information and how to send an enquiry."
+  />
 
-  <!-- Local SEO -->
-  <meta name="geo.region" content="IN-OR">
-  <meta name="geo.placename" content="Berhampur, Odisha, India">
+  <meta
+    name="keywords"
+    content="dental implants Berhampur, dental implants near me, dental implant cost Berhampur, dental implant clinic Berhampur, teeth implants Berhampur"
+  />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.yourdomain.com/dental-implants-berhampur/">
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="FindToCare" />
+
+  <!-- GEO -->
+  <meta name="geo.region" content="IN-OR" />
+  <meta name="geo.placename" content="Berhampur, Odisha, India" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Dental Implants in Berhampur | FindToCare">
-  <meta property="og:description"
-        content="Explore dental implant treatment options in Berhampur and send your treatment enquiry through FindToCare.">
-  <meta property="og:url" content="https://www.yourdomain.com/dental-implants-berhampur/">
-  <meta property="og:site_name" content="FindToCare">
-
-  <!-- Mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Dental Implants in Berhampur | FindToCare" />
+  <meta
+    property="og:description"
+    content="Explore dental implant treatment options and send an enquiry through FindToCare."
+  />
+  <meta property="og:type" content="website" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@700&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- Icons -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- FAQ + Organization + Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "FindToCare",
+        "url": "https://example.com"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://example.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Dental Implants",
+            "item": "https://example.com/dental-implants"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are dental implants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dental implants are tooth replacement solutions designed to replace missing teeth using an implant fixture, abutment and dental crown."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do dental implants cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dental implant cost can vary depending on the number of implants, implant system, restoration and individual treatment requirements. The actual treatment cost should be confirmed by a dental clinic after evaluation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get dental implants for multiple missing teeth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dental implants may be used for single-tooth replacement as well as multiple missing teeth and full-arch treatment, depending on individual dental requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I enquire about dental implants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can send your details through the enquiry form on this page. FindToCare can use your enquiry to help connect you with relevant dental treatment options."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
-
     /* =========================================================
-       ROOT
+       FINDTOCARE DESIGN SYSTEM
+       NO EXTRA COLORS
     ========================================================= */
 
     :root {
@@ -57,15 +126,7 @@
       --accent: #14B8A6;
       --white: #ffffff;
       --border: #E2E8F0;
-
-      --container: 1160px;
-      --radius: 14px;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
     }
-
-    /* =========================================================
-       RESET
-    ========================================================= */
 
     * {
       margin: 0;
@@ -79,9 +140,24 @@
 
     body {
       font-family: "Inter", sans-serif;
-      background: var(--white);
+      background: var(--bg);
       color: var(--body);
-      line-height: 1.65;
+      line-height: 1.7;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .logo,
+    .btn {
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     img {
@@ -89,74 +165,165 @@
       display: block;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
     button,
     input,
-    select,
-    textarea {
-      font-family: inherit;
-    }
-
-    ul {
-      list-style: none;
+    textarea,
+    select {
+      font: inherit;
     }
 
     .container {
-      width: min(92%, var(--container));
+      width: min(1120px, calc(100% - 40px));
       margin: auto;
     }
 
     /* =========================================================
-       TYPOGRAPHY
+       HEADER
     ========================================================= */
 
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-family: "Manrope", sans-serif;
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 24px;
+      letter-spacing: -0.7px;
+      color: var(--brand);
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
       color: var(--navy);
-      line-height: 1.2;
+      font-size: 14px;
+      font-weight: 500;
     }
 
-    h1 {
-      font-size: clamp(2.25rem, 5vw, 4rem);
-      letter-spacing: -1.5px;
+    .nav-links a:hover {
+      color: var(--brand);
     }
 
-    h2 {
-      font-size: clamp(1.9rem, 3.5vw, 2.7rem);
-      letter-spacing: -0.8px;
+    .nav-cta {
+      background: var(--cta);
+      color: var(--white) !important;
+      padding: 11px 18px;
+      border-radius: 8px;
     }
 
-    h3 {
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 1rem;
+    .nav-cta:hover {
+      background: var(--cta-dark) !important;
     }
 
     /* =========================================================
-       BUTTONS
+       BREADCRUMB
     ========================================================= */
+
+    .breadcrumb-wrap {
+      padding: 18px 0 0;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--body);
+    }
+
+    .breadcrumb a {
+      color: var(--brand);
+      font-weight: 500;
+    }
+
+    .breadcrumb span {
+      padding: 0 7px;
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      padding: 75px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: var(--brand);
+      padding: 7px 13px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--brand);
+    }
+
+    .hero-text {
+      font-size: 17px;
+      max-width: 610px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
     .btn {
       display: inline-flex;
-      align-items: center;
       justify-content: center;
-      gap: 9px;
-      min-height: 48px;
-      padding: 0 22px;
-      border-radius: 9px;
-      font-weight: 600;
-      border: 2px solid transparent;
+      align-items: center;
+      min-height: 50px;
+      padding: 0 23px;
+      border-radius: 8px;
+      border: 0;
       cursor: pointer;
-      transition: 0.25s ease;
+      transition: 0.2s ease;
     }
 
     .btn-primary {
@@ -169,312 +336,164 @@
       transform: translateY(-1px);
     }
 
-    .btn-outline {
+    .btn-secondary {
       background: var(--white);
+      color: var(--brand);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
       border-color: var(--brand);
-      color: var(--brand);
     }
 
-    .btn-outline:hover {
-      background: var(--brand);
-      color: var(--white);
-    }
+    /* Hero visual */
 
-    .btn-whatsapp {
-      background: #25D366;
-      color: var(--white);
-    }
-
-    .btn-whatsapp:hover {
-      opacity: 0.9;
-    }
-
-    /* =========================================================
-       HEADER
-    ========================================================= */
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
-
-    .nav {
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-    .logo {
-      font-family: "Manrope", sans-serif;
-      font-size: 1.55rem;
-      font-weight: 800;
-      color: var(--brand);
-      letter-spacing: -0.6px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      font-size: 0.93rem;
-      font-weight: 500;
-      color: var(--navy);
-    }
-
-    .nav-links a:hover {
-      color: var(--brand);
-    }
-
-    .mobile-toggle {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.4rem;
-      color: var(--navy);
-      cursor: pointer;
-    }
-
-    /* =========================================================
-       BREADCRUMB
-    ========================================================= */
-
-    .breadcrumb-wrap {
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .breadcrumb {
-      min-height: 45px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.82rem;
-      color: #64748B;
-    }
-
-    .breadcrumb a {
-      color: var(--brand);
-      font-weight: 500;
-    }
-
-    /* =========================================================
-       HERO
-    ========================================================= */
-
-    .hero {
-      background: var(--bg);
-      padding: 75px 0 80px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      color: var(--brand);
-      font-size: 0.86rem;
-      font-weight: 600;
-      margin-bottom: 17px;
-    }
-
-    .eyebrow-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-    }
-
-    .hero h1 {
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      color: var(--brand);
-    }
-
-    .hero-text {
-      max-width: 620px;
-      font-size: 1.08rem;
-      color: var(--body);
-      margin-bottom: 27px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 25px;
-    }
-
-    .hero-note {
-      font-size: 0.84rem;
-      color: #64748B;
-    }
-
-    /* Implant image */
-    .hero-visual {
+    .implant-visual {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-visual img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: contain;
-      border-radius: 12px;
-    }
-
-    /* =========================================================
-       ENQUIRY BOX
-    ========================================================= */
-
-    .enquiry-section {
-      padding: 70px 0;
-      background: var(--white);
-    }
-
-    .enquiry-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 45px;
-      align-items: start;
-    }
-
-    .section-label {
-      color: var(--brand);
-      font-size: 0.84rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.7px;
-      margin-bottom: 10px;
-    }
-
-    .enquiry-copy h2 {
-      margin-bottom: 17px;
-    }
-
-    .enquiry-copy p {
-      margin-bottom: 20px;
-    }
-
-    .contact-mini {
-      display: grid;
-      gap: 10px;
-      margin-top: 25px;
-    }
-
-    .contact-mini a {
-      color: var(--brand);
-      font-weight: 500;
-    }
-
-    .form-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 22px;
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 30px;
+      position: relative;
+      overflow: hidden;
     }
 
-    .form-card h3 {
-      margin-bottom: 20px;
+    .implant-illustration {
+      width: 190px;
+      height: 340px;
+      position: relative;
     }
 
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
-
-    label {
-      font-size: 0.87rem;
-      font-weight: 500;
-      color: var(--navy);
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      border: 1px solid var(--border);
+    .crown {
+      width: 105px;
+      height: 75px;
+      border: 7px solid var(--brand);
+      border-radius: 45% 45% 30% 30%;
+      position: absolute;
+      top: 5px;
+      left: 42px;
       background: var(--white);
-      border-radius: 9px;
-      padding: 13px 14px;
-      color: var(--navy);
-      outline: none;
-      font-size: 0.94rem;
     }
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-      border-color: var(--brand);
-      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+    .abutment {
+      width: 48px;
+      height: 45px;
+      background: var(--accent);
+      position: absolute;
+      top: 72px;
+      left: 70px;
+      border-radius: 7px;
     }
 
-    textarea {
-      min-height: 105px;
-      resize: vertical;
+    .implant {
+      width: 58px;
+      height: 185px;
+      position: absolute;
+      top: 108px;
+      left: 65px;
+      background: var(--brand);
+      border-radius: 10px 10px 25px 25px;
+      clip-path: polygon(
+        15% 0,
+        85% 0,
+        100% 10%,
+        92% 18%,
+        100% 26%,
+        92% 34%,
+        100% 42%,
+        92% 50%,
+        100% 58%,
+        92% 66%,
+        100% 74%,
+        90% 100%,
+        10% 100%,
+        0 74%,
+        8% 66%,
+        0 58%,
+        8% 50%,
+        0 42%,
+        8% 34%,
+        0 26%,
+        8% 18%,
+        0 10%
+      );
     }
 
-    .form-consent {
-      margin: 15px 0 18px;
-      font-size: 0.78rem;
-      color: #64748B;
-    }
-
-    .form-consent a {
-      color: var(--brand);
-      text-decoration: underline;
-    }
-
-    .form-card .btn {
-      width: 100%;
+    .bone {
+      position: absolute;
+      width: 190px;
+      height: 100px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      bottom: 0;
+      left: 0;
+      border-radius: 50% 50% 15px 15px;
     }
 
     /* =========================================================
-       GENERAL SECTIONS
+       TRUST STRIP
     ========================================================= */
 
-    .section {
-      padding: 85px 0;
+    .info-strip {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
-    .section-alt {
-      background: var(--bg);
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info-item {
+      padding: 24px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .info-item:last-child {
+      border-right: 0;
+    }
+
+    .info-item strong {
+      display: block;
+      color: var(--navy);
+      font-family: "Manrope", sans-serif;
+      margin-bottom: 3px;
+    }
+
+    .info-item span {
+      font-size: 13px;
+    }
+
+    /* =========================================================
+       SECTIONS
+    ========================================================= */
+
+    section {
+      padding: 90px 0;
     }
 
     .section-heading {
-      max-width: 720px;
+      max-width: 700px;
       margin-bottom: 45px;
     }
 
+    .section-heading.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .section-heading h2 {
-      margin-bottom: 15px;
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 13px;
     }
 
     .section-heading p {
@@ -482,230 +501,313 @@
     }
 
     /* =========================================================
-       CARDS
+       ABOUT IMPLANTS
+    ========================================================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 14px;
+    }
+
+    .about-card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .about-card p {
+      font-size: 15px;
+    }
+
+    /* =========================================================
+       TYPES
     ========================================================= */
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 18px;
     }
 
     .card {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 27px;
-      transition: 0.25s ease;
+      border-radius: 14px;
+      padding: 26px;
     }
 
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow);
-    }
-
-    .card-icon {
-      width: 44px;
-      height: 44px;
-      display: grid;
-      place-items: center;
-      border-radius: 10px;
-      background: rgba(20, 184, 166, 0.1);
+    .card-number {
       color: var(--brand);
-      margin-bottom: 20px;
-      font-size: 1.1rem;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      margin-bottom: 18px;
     }
 
     .card h3 {
+      color: var(--navy);
       margin-bottom: 10px;
+      font-size: 20px;
     }
 
     .card p {
-      font-size: 0.93rem;
-    }
-
-    /* =========================================================
-       OPTIONS
-    ========================================================= */
-
-    .options-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .option-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 27px;
-    }
-
-    .option-card h3 {
-      margin-bottom: 9px;
-    }
-
-    .option-card p {
-      font-size: 0.94rem;
-    }
-
-    .section-cta {
-      margin-top: 35px;
+      font-size: 14px;
     }
 
     /* =========================================================
        PROCESS
     ========================================================= */
 
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .process-card {
-      position: relative;
-      padding: 25px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
+    .process {
       background: var(--white);
     }
 
-    .step-number {
-      color: var(--brand);
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 14px;
+      background: var(--bg);
+    }
+
+    .step span {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      background: var(--brand);
+      color: var(--white);
+      border-radius: 50%;
       font-family: "Manrope", sans-serif;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-
-    .process-card h3 {
-      margin-bottom: 9px;
-    }
-
-    .process-card p {
-      font-size: 0.91rem;
-    }
-
-    /* =========================================================
-       FINDTOCARE
-    ========================================================= */
-
-    .platform-box {
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 18px;
-      padding: 55px;
-    }
-
-    .platform-box h2 {
-      color: var(--white);
       margin-bottom: 17px;
     }
 
-    .platform-box > p {
-      color: #CBD5E1;
-      max-width: 720px;
-      margin-bottom: 35px;
-    }
-
-    .platform-points {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .platform-point {
-      border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 20px;
-    }
-
-    .platform-point h3 {
-      color: var(--white);
+    .step h3 {
+      color: var(--navy);
       margin-bottom: 8px;
+      font-size: 18px;
     }
 
-    .platform-point p {
-      color: #CBD5E1;
-      font-size: 0.9rem;
+    .step p {
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       COST
+    ========================================================= */
+
+    .cost-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .cost-box h2 {
+      color: var(--navy);
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .cost-note {
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+    }
+
+    /* =========================================================
+       LEAD FORM
+    ========================================================= */
+
+    .lead-section {
+      background: var(--brand);
+    }
+
+    .lead-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .lead-content h2 {
+      color: var(--white);
+      font-size: clamp(31px, 4vw, 45px);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .lead-content p {
+      color: var(--white);
+      opacity: 0.95;
+    }
+
+    .lead-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .lead-list li {
+      color: var(--white);
+      margin-bottom: 9px;
+    }
+
+    .lead-list li::before {
+      content: "✓";
+      margin-right: 10px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .form-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .form-card h3 {
+      color: var(--navy);
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .form-card > p {
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--body);
+      border-radius: 8px;
+      padding: 12px 13px;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--brand);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-submit {
+      width: 100%;
+      border: 0;
+      cursor: pointer;
+      background: var(--cta);
+      color: var(--white);
+      min-height: 50px;
+      border-radius: 8px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+    }
+
+    .form-submit:hover {
+      background: var(--cta-dark);
+    }
+
+    .form-small {
+      font-size: 11px;
+      margin-top: 12px;
+      text-align: center;
     }
 
     /* =========================================================
        FAQ
     ========================================================= */
 
-    .faq-wrap {
+    .faq {
       max-width: 850px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-    }
-
-    .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 21px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      cursor: pointer;
-      text-align: left;
-      color: var(--navy);
-      font-family: "Manrope", sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
-    .faq-question i {
-      color: var(--brand);
-      transition: 0.25s ease;
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0 0 20px;
-      color: var(--body);
-      font-size: 0.94rem;
-    }
-
-    .faq-item.active .faq-answer {
-      display: block;
-    }
-
-    .faq-item.active .faq-question i {
-      transform: rotate(180deg);
-    }
-
-    /* =========================================================
-       FINAL CTA
-    ========================================================= */
-
-    .final-cta {
-      padding: 80px 0;
-      background: var(--bg);
-      text-align: center;
-    }
-
-    .final-cta-inner {
-      max-width: 750px;
       margin: auto;
     }
 
-    .final-cta h2 {
-      margin-bottom: 15px;
+    details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      padding: 0 20px;
     }
 
-    .final-cta p {
-      margin-bottom: 28px;
+    summary {
+      cursor: pointer;
+      padding: 19px 0;
+      color: var(--navy);
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
     }
 
-    .final-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
+    details p {
+      padding: 0 0 20px;
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .contact-card a {
+      color: var(--brand);
+      font-weight: 500;
+      word-break: break-word;
     }
 
     /* =========================================================
@@ -714,89 +816,92 @@
 
     footer {
       background: var(--navy);
-      color: #CBD5E1;
+      color: var(--white);
       padding: 60px 0 25px;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 1.3fr 1fr 1fr;
-      gap: 55px;
-      padding-bottom: 45px;
-    }
-
-    .footer-brand {
-      text-align: left;
+      gap: 50px;
+      padding-bottom: 40px;
     }
 
     .footer-logo {
-      display: inline-block;
       font-family: "Manrope", sans-serif;
-      font-size: 1.7rem;
-      font-weight: 800;
-      color: var(--accent);
-      margin-bottom: 15px;
+      font-size: 25px;
+      color: var(--brand);
+      margin-bottom: 12px;
     }
 
-    .footer-brand p {
-      max-width: 360px;
-      font-size: 0.9rem;
-      color: #94A3B8;
+    .footer-logo span {
+      color: var(--accent);
+    }
+
+    .footer-about {
+      font-size: 14px;
+      max-width: 350px;
+      color: var(--white);
+      opacity: 0.85;
     }
 
     footer h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
       color: var(--white);
-      font-size: 1rem;
-      margin-bottom: 16px;
     }
 
     .footer-links {
-      display: grid;
-      gap: 10px;
-      font-size: 0.9rem;
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+      font-size: 14px;
     }
 
     .footer-links a:hover {
       color: var(--accent);
     }
 
-    .social-links {
+    .socials {
       display: flex;
-      gap: 10px;
-      margin-top: 18px;
+      gap: 9px;
+      flex-wrap: wrap;
     }
 
-    .social-links a {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      border: 1px solid #334155;
+    .social {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
       border-radius: 8px;
-      color: #CBD5E1;
-      transition: 0.25s ease;
+      color: var(--white);
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
     }
 
-    .social-links a:hover {
-      color: var(--white);
+    .social:hover {
       border-color: var(--accent);
+      color: var(--accent);
     }
 
     .footer-bottom {
-      border-top: 1px solid #1E293B;
+      border-top: 1px solid var(--border);
       padding-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-      font-size: 0.78rem;
-      color: #64748B;
+      font-size: 12px;
+      color: var(--white);
+      opacity: 0.75;
+      text-align: center;
     }
 
     /* =========================================================
-       MOBILE STICKY CTA
+       MOBILE CTA
     ========================================================= */
 
-    .mobile-sticky-cta {
+    .mobile-cta {
       display: none;
     }
 
@@ -804,356 +909,248 @@
        RESPONSIVE
     ========================================================= */
 
-    @media (max-width: 950px) {
+    @media (max-width: 900px) {
 
       .nav-links {
         display: none;
       }
 
-      .nav > .btn {
-        display: none;
-      }
-
-      .mobile-toggle {
-        display: block;
-      }
-
       .hero-grid,
-      .enquiry-grid {
+      .about-grid,
+      .lead-grid,
+      .cost-box {
         grid-template-columns: 1fr;
       }
 
-      .hero-visual {
-        max-width: 600px;
-        margin: auto;
+      .hero {
+        padding-top: 50px;
+      }
+
+      .hero-grid {
+        gap: 40px;
       }
 
       .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
       }
 
       .process-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
       }
 
-      .platform-points {
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
-
-      .footer-brand {
-        grid-column: 1 / -1;
-      }
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 600px) {
 
       body {
-        padding-bottom: 68px;
+        padding-bottom: 70px;
       }
 
       .container {
-        width: min(91%, var(--container));
+        width: min(100% - 28px, 1120px);
       }
 
       .nav {
-        min-height: 66px;
+        min-height: 64px;
       }
 
       .logo {
-        font-size: 1.4rem;
+        font-size: 21px;
+      }
+
+      .nav-cta {
+        padding: 9px 13px;
+        font-size: 12px;
+      }
+
+      .breadcrumb-wrap {
+        padding-top: 13px;
       }
 
       .breadcrumb {
-        font-size: 0.75rem;
-        white-space: nowrap;
-        overflow: hidden;
+        font-size: 11px;
       }
 
       .hero {
-        padding: 50px 0 55px;
+        padding: 45px 0 55px;
       }
 
       .hero h1 {
-        font-size: 2.25rem;
+        font-size: 38px;
+        letter-spacing: -1.5px;
       }
 
       .hero-text {
-        font-size: 0.98rem;
+        font-size: 15px;
       }
 
-      .hero-actions {
+      .hero-buttons {
         display: grid;
         grid-template-columns: 1fr;
       }
 
-      .hero-actions .btn {
+      .btn {
         width: 100%;
       }
 
-      .hero-visual {
-        padding: 15px;
+      .implant-visual {
+        min-height: 330px;
       }
 
-      .section,
-      .enquiry-section {
-        padding: 60px 0;
-      }
-
-      .form-card {
-        padding: 21px;
-      }
-
-      .form-grid {
+      .info-grid {
         grid-template-columns: 1fr;
       }
 
-      .form-group.full {
-        grid-column: auto;
+      .info-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .info-item:last-child {
+        border-bottom: 0;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-heading {
+        margin-bottom: 30px;
+      }
+
+      .section-heading h2 {
+        font-size: 30px;
       }
 
       .cards,
-      .options-grid,
       .process-grid {
         grid-template-columns: 1fr;
       }
 
-      .platform-box {
-        padding: 32px 22px;
+      .cost-box {
+        padding: 25px;
+      }
+
+      .lead-grid {
+        gap: 35px;
+      }
+
+      .form-card {
+        padding: 22px;
       }
 
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: 35px;
         text-align: center;
+        gap: 30px;
       }
 
-      .footer-brand {
-        grid-column: auto;
-      }
-
-      .footer-brand p {
+      .footer-about {
         margin: auto;
       }
 
-      .social-links {
+      .socials {
         justify-content: center;
       }
 
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .mobile-sticky-cta {
+      .mobile-cta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 2000;
-        display: flex;
-        padding: 9px 12px;
         background: var(--white);
         border-top: 1px solid var(--border);
-        box-shadow: 0 -5px 20px rgba(15, 23, 42, 0.08);
+        z-index: 2000;
+        padding: 8px;
+        gap: 8px;
       }
 
-      .mobile-sticky-cta .btn {
-        width: 100%;
+      .mobile-cta a {
+        min-height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        font-family: "Manrope", sans-serif;
+        font-size: 13px;
+      }
+
+      .mobile-call {
+        background: var(--brand);
+        color: var(--white);
+      }
+
+      .mobile-enquiry {
+        background: var(--cta);
+        color: var(--white);
       }
     }
-
   </style>
-
-  <!-- =========================================================
-       STRUCTURED DATA
-  ========================================================= -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Dental Implants in Berhampur",
-    "description": "Dental implant treatment information and enquiry page for Berhampur.",
-    "url": "https://www.yourdomain.com/dental-implants-berhampur/",
-    "inLanguage": "en-IN",
-    "publisher": {
-      "@type": "Organization",
-      "name": "FindToCare"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "FindToCare",
-    "url": "https://www.yourdomain.com/"
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.yourdomain.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Dental Implants",
-        "item": "https://www.yourdomain.com/dental-implants-berhampur/"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are dental implants?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dental implants are used to provide an implant-supported foundation for replacing missing teeth. The appropriate treatment depends on an individual's dental condition and treatment requirements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are dental implants suitable for everyone?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dental implant suitability depends on individual oral health, dental condition and other clinical factors. A qualified dental professional should assess your situation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the difference between single and full-mouth dental implants?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Single dental implants are generally considered when an individual missing tooth needs replacement, while full-mouth or full-arch approaches may be considered for extensive tooth loss."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are All-on-4 dental implants?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "All-on-4 is an implant-supported full-arch treatment approach. Suitability depends on an individual's clinical condition and treatment plan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I enquire about dental implants in Berhampur?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can submit your requirements through the FindToCare enquiry form or contact FindToCare through the available contact options."
-        }
-      }
-    ]
-  }
-  </script>
-
 </head>
-
 
 <body>
 
-  <!-- =========================================================
+  <!-- ========================================================
        HEADER
   ========================================================= -->
 
-  <header class="site-header">
-
+  <header>
     <div class="container nav">
 
-      <a href="/" class="logo">
-        FindToCare
+      <a href="#" class="logo" aria-label="FindToCare Home">
+        Find<span>To</span>Care
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">Dental Implants</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
 
-        <a href="#dental-implants">
-          Dental Implants
+        <a href="#enquiry" class="nav-cta">
+          Send Enquiry
         </a>
-
-        <a href="#options">
-          Treatment Options
-        </a>
-
-        <a href="#process">
-          Process
-        </a>
-
-        <a href="#faq">
-          FAQs
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
       </nav>
 
-      <a href="#enquiry" class="btn btn-primary">
-        Check Treatment Options
+      <a href="#enquiry" class="nav-cta">
+        Enquire Now
       </a>
 
-      <button
-        class="mobile-toggle"
-        aria-label="Open menu"
-        type="button">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
     </div>
-
   </header>
 
 
-  <!-- =========================================================
+  <!-- ========================================================
        BREADCRUMB
   ========================================================= -->
 
   <div class="breadcrumb-wrap">
-
     <div class="container breadcrumb">
 
       <a href="/">Home</a>
-
       <span>›</span>
-
       <span>Dental Implants</span>
 
-      <span>›</span>
-
-      <span>Berhampur</span>
-
     </div>
-
   </div>
 
 
+  <!-- ========================================================
+       HERO
+  ========================================================= -->
+
   <main>
 
-
-    <!-- =======================================================
-         HERO
-    ======================================================= -->
-
-    <section class="hero" id="dental-implants">
+    <section class="hero">
 
       <div class="container hero-grid">
 
@@ -1161,55 +1158,49 @@
 
           <div class="eyebrow">
             <span class="eyebrow-dot"></span>
-            Dental Implant Information • Berhampur
+            Dental Implant Treatment Information
           </div>
 
           <h1>
-            Dental Implants
-            <span>in Berhampur</span>
+            Explore <span>Dental Implant</span> Options in Berhampur
           </h1>
 
           <p class="hero-text">
-            Explore dental implant treatment options, understand the
-            treatment process and send an enquiry about dental implant
-            treatment available in Berhampur.
+            Learn about dental implants, treatment options, the general
+            treatment process and cost-related factors. Send an enquiry
+            to explore suitable treatment options.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-buttons">
 
             <a href="#enquiry" class="btn btn-primary">
-              Check Dental Implant Options
-              <i class="fa-solid fa-arrow-right"></i>
+              Check Treatment Options
             </a>
 
-            <!-- Replace number -->
-            <a href="https://wa.me/91XXXXXXXXXX"
-               class="btn btn-whatsapp"
-               target="_blank"
-               rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              WhatsApp Enquiry
+            <a href="#about" class="btn btn-secondary">
+              Learn About Implants
             </a>
 
           </div>
-
-          <p class="hero-note">
-            FindToCare helps people explore dental treatment options
-            and submit enquiries to relevant partner clinics.
-          </p>
 
         </div>
 
 
-        <div class="hero-visual">
+        <!-- CSS Medical Illustration -->
 
-          <!-- Replace this with your actual implant image -->
-          <img
-            src="images/dental-implant.webp"
-            alt="Dental implant illustration showing an implant-supported replacement tooth"
-            width="600"
-            height="600"
-            loading="eager">
+        <div class="implant-visual" aria-label="Dental implant illustration">
+
+          <div class="implant-illustration">
+
+            <div class="crown"></div>
+
+            <div class="abutment"></div>
+
+            <div class="implant"></div>
+
+            <div class="bone"></div>
+
+          </div>
 
         </div>
 
@@ -1218,52 +1209,323 @@
     </section>
 
 
-    <!-- =======================================================
-         ENQUIRY
-    ======================================================= -->
+    <!-- ======================================================
+         INFORMATION STRIP
+    ====================================================== -->
 
-    <section class="enquiry-section" id="enquiry">
+    <div class="info-strip">
 
-      <div class="container enquiry-grid">
+      <div class="container info-grid">
 
-        <div class="enquiry-copy">
+        <div class="info-item">
+          <strong>Single Tooth</strong>
+          <span>Replacement options</span>
+        </div>
 
-          <div class="section-label">
-            Send an enquiry
-          </div>
+        <div class="info-item">
+          <strong>Multiple Teeth</strong>
+          <span>Implant-based options</span>
+        </div>
+
+        <div class="info-item">
+          <strong>Full Arch</strong>
+          <span>Full-mouth treatment options</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ======================================================
+         ABOUT
+    ====================================================== -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
 
           <h2>
-            Looking for Dental Implants in Berhampur?
+            What are dental implants?
           </h2>
 
           <p>
-            Share what you are looking for and send your enquiry
-            through FindToCare to explore relevant dental implant
-            treatment options.
+            Dental implants are tooth replacement solutions that can be
+            used to replace missing teeth. Treatment planning depends on
+            the individual's dental condition and treatment requirements.
           </p>
 
-          <div class="contact-mini">
+        </div>
 
-            <!-- Replace actual contact details -->
 
-            <a href="tel:+91XXXXXXXXXX">
-              <i class="fa-solid fa-phone"></i>
-              +91 XXXXX XXXXX
-            </a>
+        <div class="about-grid">
 
-            <a href="https://wa.me/91XXXXXXXXXX"
-               target="_blank"
-               rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              WhatsApp Enquiry
-            </a>
+          <div class="about-card">
 
-            <a href="mailto:hello@findtocare.com">
-              <i class="fa-solid fa-envelope"></i>
-              hello@findtocare.com
-            </a>
+            <h3>How a dental implant works</h3>
+
+            <p>
+              A typical implant restoration may include an implant fixture,
+              an abutment and a dental crown. The implant fixture is placed
+              in the jawbone and the restoration is attached after the
+              required treatment stages.
+            </p>
 
           </div>
+
+
+          <div class="about-card">
+
+            <h3>Who may consider implants?</h3>
+
+            <p>
+              People with missing teeth may consider implant treatment.
+              Suitability depends on factors such as oral health, available
+              bone, overall dental condition and the treatment plan
+              recommended by a dental professional.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         TYPES
+    ====================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <h2>
+            Dental implant treatment options
+          </h2>
+
+          <p>
+            Different implant solutions may be considered depending on
+            the number of missing teeth and individual treatment needs.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+          <article class="card">
+
+            <div class="card-number">01</div>
+
+            <h3>Single Tooth Implant</h3>
+
+            <p>
+              An implant-based option for replacing an individual missing
+              tooth with a dental restoration.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-number">02</div>
+
+            <h3>Multiple Teeth</h3>
+
+            <p>
+              Implant treatment may also be planned for people with
+              multiple missing teeth.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-number">03</div>
+
+            <h3>Full Arch Implants</h3>
+
+            <p>
+              Full-arch implant treatment may be considered when many or
+              all teeth are missing, depending on clinical suitability.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         PROCESS
+    ====================================================== -->
+
+    <section class="process" id="process">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <h2>
+            Dental implant treatment process
+          </h2>
+
+          <p>
+            The exact process varies by patient and treatment plan.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="step">
+
+            <span>1</span>
+
+            <h3>Assessment</h3>
+
+            <p>
+              The dental team evaluates the teeth, gums, jawbone and
+              overall oral condition.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <span>2</span>
+
+            <h3>Planning</h3>
+
+            <p>
+              A treatment plan is prepared based on the patient's
+              individual requirements.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <span>3</span>
+
+            <h3>Implant Placement</h3>
+
+            <p>
+              The implant fixture may be placed as part of the planned
+              treatment.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <span>4</span>
+
+            <h3>Restoration</h3>
+
+            <p>
+              The final restoration is fitted after the required stages
+              of treatment.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         COST
+    ====================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="cost-box">
+
+          <div>
+
+            <h2>
+              How much do dental implants cost?
+            </h2>
+
+            <p>
+              Dental implant cost can vary significantly depending on the
+              number of implants, implant system, restoration, additional
+              procedures and individual treatment requirements.
+            </p>
+
+          </div>
+
+          <div class="cost-note">
+
+            <p>
+              Online search volumes and general price information cannot
+              determine the exact treatment cost for an individual.
+              A dental clinic should confirm the final treatment plan
+              and cost after evaluation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         LEAD GENERATION
+    ====================================================== -->
+
+    <section class="lead-section" id="enquiry">
+
+      <div class="container lead-grid">
+
+        <div class="lead-content">
+
+          <h2>
+            Looking for dental implant treatment options?
+          </h2>
+
+          <p>
+            Send your enquiry with your basic details and treatment
+            requirement. FindToCare can use your enquiry to help connect
+            you with relevant dental treatment options.
+          </p>
+
+          <ul class="lead-list">
+
+            <li>Share your treatment requirement</li>
+
+            <li>Tell us about your missing teeth concern</li>
+
+            <li>Provide your preferred contact details</li>
+
+            <li>Explore relevant treatment options</li>
+
+          </ul>
 
         </div>
 
@@ -1271,147 +1533,139 @@
         <div class="form-card">
 
           <h3>
-            Get Dental Implant Information
+            Dental Implant Enquiry
           </h3>
 
-          <!-- Replace action with your actual form endpoint -->
+          <p>
+            Please enter your details below.
+          </p>
+
+
+          <!-- Replace action with your actual form/CRM endpoint -->
 
           <form
             id="leadForm"
             action="#"
-            method="POST">
+            method="POST"
+          >
 
-            <div class="form-grid">
+            <div class="form-group">
 
-              <div class="form-group">
+              <label for="name">
+                Full Name
+              </label>
 
-                <label for="name">
-                  Full Name
-                </label>
-
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  autocomplete="name"
-                  required>
-
-              </div>
-
-
-              <div class="form-group">
-
-                <label for="mobile">
-                  Mobile Number
-                </label>
-
-                <input
-                  type="tel"
-                  id="mobile"
-                  name="mobile"
-                  placeholder="Enter mobile number"
-                  autocomplete="tel"
-                  inputmode="tel"
-                  required>
-
-              </div>
-
-
-              <div class="form-group">
-
-                <label for="whatsapp">
-                  WhatsApp Number
-                </label>
-
-                <input
-                  type="tel"
-                  id="whatsapp"
-                  name="whatsapp"
-                  placeholder="WhatsApp number"
-                  inputmode="tel">
-
-              </div>
-
-
-              <div class="form-group">
-
-                <label for="requirement">
-                  Treatment Requirement
-                </label>
-
-                <select
-                  id="requirement"
-                  name="requirement"
-                  required>
-
-                  <option value="">
-                    Select an option
-                  </option>
-
-                  <option value="single-tooth">
-                    Single Tooth Implant
-                  </option>
-
-                  <option value="multiple-teeth">
-                    Multiple Tooth Implants
-                  </option>
-
-                  <option value="full-mouth">
-                    Full Mouth Implants
-                  </option>
-
-                  <option value="all-on-4">
-                    All-on-4
-                  </option>
-
-                  <option value="not-sure">
-                    Not Sure
-                  </option>
-
-                </select>
-
-              </div>
-
-
-              <div class="form-group full">
-
-                <label for="message">
-                  Your Requirement
-                </label>
-
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell us what you would like to know"></textarea>
-
-              </div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              />
 
             </div>
 
 
-            <p class="form-consent">
+            <div class="form-group">
 
-              By submitting this form, you agree to our
-              <a href="/privacy-policy/">
-                Privacy Policy
-              </a>
-              and
-              <a href="/terms-conditions/">
-                Terms & Conditions
-              </a>.
+              <label for="phone">
+                Mobile Number
+              </label>
 
-            </p>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter mobile number"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+                autocomplete="email"
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="requirement">
+                Treatment Requirement
+              </label>
+
+              <select id="requirement" name="requirement">
+
+                <option value="">
+                  Select an option
+                </option>
+
+                <option value="single-tooth">
+                  Single tooth replacement
+                </option>
+
+                <option value="multiple-teeth">
+                  Multiple missing teeth
+                </option>
+
+                <option value="full-mouth">
+                  Full-mouth / full-arch implants
+                </option>
+
+                <option value="cost">
+                  Dental implant cost information
+                </option>
+
+                <option value="other">
+                  Other dental implant enquiry
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us briefly about your requirement"
+              ></textarea>
+
+            </div>
 
 
             <button
               type="submit"
-              class="btn btn-primary">
-
-              Send Dental Implant Enquiry
-              <i class="fa-solid fa-paper-plane"></i>
-
+              class="form-submit"
+            >
+              Send Enquiry
             </button>
+
+            <p class="form-small">
+              Your information is submitted for the purpose of handling
+              your treatment enquiry.
+            </p>
 
           </form>
 
@@ -1422,609 +1676,104 @@
     </section>
 
 
-    <!-- =======================================================
-         INTRO
-    ======================================================= -->
-
-    <section class="section section-alt">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            Dental implant information
-          </div>
-
-          <h2>
-            What Are Dental Implants?
-          </h2>
-
-          <p>
-            Dental implants are used to provide an implant-supported
-            foundation for replacing missing teeth. Depending on an
-            individual's dental condition and treatment requirements,
-            different implant-supported solutions may be considered.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         WHEN CONSIDER
-    ======================================================= -->
-
-    <section class="section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            Treatment considerations
-          </div>
-
-          <h2>
-            When You May Consider Dental Implants
-          </h2>
-
-          <p>
-            Dental implant treatment may be considered for different
-            types of missing-tooth situations. The appropriate option
-            depends on individual clinical assessment.
-          </p>
-
-        </div>
-
-
-        <div class="cards">
-
-          <article class="card">
-
-            <div class="card-icon">
-              <i class="fa-solid fa-tooth"></i>
-            </div>
-
-            <h3>
-              Missing One Tooth
-            </h3>
-
-            <p>
-              Explore a dental implant-supported replacement option
-              for an individual missing tooth.
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              <i class="fa-solid fa-teeth"></i>
-            </div>
-
-            <h3>
-              Multiple Missing Teeth
-            </h3>
-
-            <p>
-              Learn about implant-supported options when several
-              teeth are missing.
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              <i class="fa-solid fa-circle-nodes"></i>
-            </div>
-
-            <h3>
-              Extensive Tooth Loss
-            </h3>
-
-            <p>
-              Explore full-arch or full-mouth implant-supported
-              treatment approaches where clinically appropriate.
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <div class="card-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <h3>
-              Exploring Your Options
-            </h3>
-
-            <p>
-              If you are unsure which dental implant option may be
-              relevant, you can send an enquiry.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         OPTIONS
-    ======================================================= -->
-
-    <section class="section section-alt" id="options">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            Dental implant options
-          </div>
-
-          <h2>
-            Explore Dental Implant Treatment Options
-          </h2>
-
-          <p>
-            Different implant-supported approaches may be considered
-            depending on the number of missing teeth and individual
-            clinical requirements.
-          </p>
-
-        </div>
-
-
-        <div class="options-grid">
-
-          <article class="option-card">
-
-            <h3>
-              Single Dental Implant
-            </h3>
-
-            <p>
-              An implant-supported option that may be considered
-              when replacing an individual missing tooth.
-            </p>
-
-          </article>
-
-
-          <article class="option-card">
-
-            <h3>
-              Multiple Dental Implants
-            </h3>
-
-            <p>
-              Implant-supported treatment options for situations
-              involving multiple missing teeth.
-            </p>
-
-          </article>
-
-
-          <article class="option-card">
-
-            <h3>
-              Full Mouth Dental Implants
-            </h3>
-
-            <p>
-              Explore implant-supported approaches for extensive
-              tooth loss, subject to clinical suitability.
-            </p>
-
-          </article>
-
-
-          <article class="option-card">
-
-            <h3>
-              All-on-4 Dental Implants
-            </h3>
-
-            <p>
-              An implant-supported full-arch treatment approach
-              that may be considered for suitable cases.
-            </p>
-
-          </article>
-
-
-          <article class="option-card">
-
-            <h3>
-              All-on-6 Dental Implants
-            </h3>
-
-            <p>
-              Another implant-supported full-arch approach that
-              may be considered depending on clinical requirements.
-            </p>
-
-          </article>
-
-
-          <article class="option-card">
-
-            <h3>
-              Front Tooth Implant
-            </h3>
-
-            <p>
-              Explore an implant-supported replacement option for
-              a missing front tooth where clinically appropriate.
-            </p>
-
-          </article>
-
-        </div>
-
-
-        <div class="section-cta">
-
-          <a href="#enquiry" class="btn btn-primary">
-            Check Treatment Options
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         PROCESS
-    ======================================================= -->
-
-    <section class="section" id="process">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            How it works
-          </div>
-
-          <h2>
-            Exploring Dental Implant Treatment
-          </h2>
-
-          <p>
-            FindToCare provides an enquiry-based way to explore
-            relevant dental implant treatment options in Berhampur.
-          </p>
-
-        </div>
-
-
-        <div class="process-grid">
-
-          <article class="process-card">
-
-            <div class="step-number">
-              01
-            </div>
-
-            <h3>
-              Send an Enquiry
-            </h3>
-
-            <p>
-              Share your basic requirements through the enquiry form.
-            </p>
-
-          </article>
-
-
-          <article class="process-card">
-
-            <div class="step-number">
-              02
-            </div>
-
-            <h3>
-              Share Your Requirement
-            </h3>
-
-            <p>
-              Tell us whether you are looking for a single, multiple
-              or full-mouth implant option.
-            </p>
-
-          </article>
-
-
-          <article class="process-card">
-
-            <div class="step-number">
-              03
-            </div>
-
-            <h3>
-              Clinical Assessment
-            </h3>
-
-            <p>
-              A dental professional can assess your individual
-              requirements before recommending treatment.
-            </p>
-
-          </article>
-
-
-          <article class="process-card">
-
-            <div class="step-number">
-              04
-            </div>
-
-            <h3>
-              Treatment Planning
-            </h3>
-
-            <p>
-              Suitable treatment options can be discussed based
-              on your individual clinical situation.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         FINDTOCARE ROLE
-    ======================================================= -->
-
-    <section class="section section-alt">
-
-      <div class="container">
-
-        <div class="platform-box">
-
-          <h2>
-            Why Use FindToCare?
-          </h2>
-
-          <p>
-            FindToCare helps people looking for dental implant
-            information explore treatment options and submit
-            enquiries to relevant partner clinics in Berhampur.
-          </p>
-
-
-          <div class="platform-points">
-
-            <div class="platform-point">
-
-              <h3>
-                Local Focus
-              </h3>
-
-              <p>
-                Focused on dental implant enquiries in Berhampur.
-              </p>
-
-            </div>
-
-
-            <div class="platform-point">
-
-              <h3>
-                Treatment Information
-              </h3>
-
-              <p>
-                Understand dental implant options and the treatment
-                process before sending an enquiry.
-              </p>
-
-            </div>
-
-
-            <div class="platform-point">
-
-              <h3>
-                Enquiry Assistance
-              </h3>
-
-              <p>
-                Submit your requirements so relevant treatment
-                options can be explored with a partner clinic.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
+    <!-- ======================================================
          FAQ
-    ======================================================= -->
+    ====================================================== -->
 
-    <section class="section" id="faq">
+    <section id="faq">
 
       <div class="container">
 
-        <div class="section-heading">
-
-          <div class="section-label">
-            Frequently asked questions
-          </div>
+        <div class="section-heading center">
 
           <h2>
-            Dental Implant FAQs
+            Frequently asked questions
           </h2>
 
           <p>
-            Answers to common questions about dental implant
-            treatment and enquiries.
+            Common questions about dental implant treatment.
           </p>
 
         </div>
 
 
-        <div class="faq-wrap">
+        <div class="faq">
+
+          <details>
+
+            <summary>
+              What are dental implants?
+            </summary>
+
+            <p>
+              Dental implants are tooth replacement solutions designed
+              to replace missing teeth using an implant fixture, abutment
+              and dental crown.
+            </p>
+
+          </details>
 
 
-          <div class="faq-item">
+          <details>
 
-            <button class="faq-question" type="button">
+            <summary>
+              How much do dental implants cost?
+            </summary>
 
-              <span>
-                What are dental implants?
-              </span>
+            <p>
+              The cost can vary depending on the number of implants,
+              implant system, restoration and individual treatment
+              requirements. The actual cost should be confirmed by a
+              dental clinic after evaluation.
+            </p>
 
-              <i class="fa-solid fa-chevron-down"></i>
-
-            </button>
-
-            <div class="faq-answer">
-
-              <p>
-                Dental implants are used to provide an
-                implant-supported foundation for replacing
-                missing teeth. Treatment suitability depends
-                on individual clinical factors.
-              </p>
-
-            </div>
-
-          </div>
+          </details>
 
 
-          <div class="faq-item">
+          <details>
 
-            <button class="faq-question" type="button">
+            <summary>
+              Can implants replace multiple missing teeth?
+            </summary>
 
-              <span>
-                Are dental implants suitable for everyone?
-              </span>
+            <p>
+              Implant treatment may be used for single-tooth replacement,
+              multiple missing teeth and full-arch treatment depending
+              on individual dental requirements.
+            </p>
 
-              <i class="fa-solid fa-chevron-down"></i>
-
-            </button>
-
-            <div class="faq-answer">
-
-              <p>
-                Dental implant suitability depends on individual
-                oral health, dental condition and other clinical
-                factors. A qualified dental professional should
-                assess your situation.
-              </p>
-
-            </div>
-
-          </div>
+          </details>
 
 
-          <div class="faq-item">
+          <details>
 
-            <button class="faq-question" type="button">
+            <summary>
+              How can I enquire about dental implants?
+            </summary>
 
-              <span>
-                What is the difference between single and
-                full-mouth dental implants?
-              </span>
+            <p>
+              You can submit your details through the enquiry form on
+              this page. FindToCare can use your enquiry to help connect
+              you with relevant dental treatment options.
+            </p>
 
-              <i class="fa-solid fa-chevron-down"></i>
-
-            </button>
-
-            <div class="faq-answer">
-
-              <p>
-                Single dental implants may be considered for an
-                individual missing tooth, while full-mouth or
-                full-arch approaches may be considered for
-                extensive tooth loss.
-              </p>
-
-            </div>
-
-          </div>
+          </details>
 
 
-          <div class="faq-item">
+          <details>
 
-            <button class="faq-question" type="button">
+            <summary>
+              Is every person suitable for dental implants?
+            </summary>
 
-              <span>
-                What are All-on-4 dental implants?
-              </span>
+            <p>
+              Implant suitability depends on individual factors such as
+              oral health, bone condition and overall treatment
+              requirements. A qualified dental professional needs to
+              assess each case.
+            </p>
 
-              <i class="fa-solid fa-chevron-down"></i>
-
-            </button>
-
-            <div class="faq-answer">
-
-              <p>
-                All-on-4 is an implant-supported full-arch
-                treatment approach. Suitability depends on an
-                individual's clinical condition and treatment plan.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="faq-item">
-
-            <button class="faq-question" type="button">
-
-              <span>
-                How can I enquire about dental implants
-                in Berhampur?
-              </span>
-
-              <i class="fa-solid fa-chevron-down"></i>
-
-            </button>
-
-            <div class="faq-answer">
-
-              <p>
-                You can submit your requirements through the
-                FindToCare enquiry form or contact FindToCare
-                through the available contact options.
-              </p>
-
-            </div>
-
-          </div>
-
+          </details>
 
         </div>
 
@@ -2033,48 +1782,74 @@
     </section>
 
 
-    <!-- =======================================================
-         FINAL CTA
-    ======================================================= -->
+    <!-- ======================================================
+         CONTACT
+    ====================================================== -->
 
-    <section class="final-cta" id="contact">
+    <section id="contact">
 
       <div class="container">
 
-        <div class="final-cta-inner">
-
-          <div class="section-label">
-            Berhampur dental implant enquiries
-          </div>
+        <div class="section-heading center">
 
           <h2>
-            Looking for Dental Implant Treatment in Berhampur?
+            Contact FindToCare
           </h2>
 
           <p>
-            Share your requirements and explore relevant dental
-            implant treatment options through FindToCare.
+            Have a dental implant enquiry? Use the details below or send
+            an enquiry through the form.
           </p>
 
+        </div>
 
-          <div class="final-actions">
 
-            <a href="#enquiry" class="btn btn-primary">
-              Check Dental Implant Options
-              <i class="fa-solid fa-arrow-right"></i>
+        <div class="contact-grid">
+
+          <div class="contact-card">
+
+            <h3>
+              Mobile
+            </h3>
+
+            <!-- REPLACE NUMBER -->
+
+            <a href="tel:+919999999999">
+              +91 99999 99999
             </a>
 
+          </div>
 
-            <!-- Replace number -->
 
-            <a href="https://wa.me/91XXXXXXXXXX"
-               class="btn btn-whatsapp"
-               target="_blank"
-               rel="noopener">
+          <div class="contact-card">
 
-              <i class="fa-brands fa-whatsapp"></i>
-              WhatsApp Enquiry
+            <h3>
+              WhatsApp
+            </h3>
 
+            <!-- REPLACE NUMBER -->
+
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              rel="noopener"
+            >
+              +91 99999 99999
+            </a>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <h3>
+              Email
+            </h3>
+
+            <!-- REPLACE EMAIL -->
+
+            <a href="mailto:hello@example.com">
+              hello@example.com
             </a>
 
           </div>
@@ -2088,7 +1863,7 @@
   </main>
 
 
-  <!-- =========================================================
+  <!-- ========================================================
        FOOTER
   ========================================================= -->
 
@@ -2098,60 +1873,23 @@
 
       <div class="footer-grid">
 
-
         <!-- Brand -->
 
-        <div class="footer-brand">
+        <div>
 
-          <a href="/" class="footer-logo">
-            FindToCare
-          </a>
-
-          <p>
-            Helping people explore dental implant treatment
-            options in Berhampur through enquiry-based connections
-            with relevant partner clinics.
-          </p>
-
-
-          <div class="social-links">
-
-            <!-- Replace social URLs -->
-
-            <a href="https://www.instagram.com/"
-               target="_blank"
-               rel="noopener"
-               aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://www.facebook.com/"
-               target="_blank"
-               rel="noopener"
-               aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-            <a href="https://www.youtube.com/"
-               target="_blank"
-               rel="noopener"
-               aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-
-            <a href="https://wa.me/91XXXXXXXXXX"
-               target="_blank"
-               rel="noopener"
-               aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-
+          <div class="footer-logo">
+            Find<span>To</span>Care
           </div>
+
+          <p class="footer-about">
+            FindToCare helps people explore dental treatment options and
+            submit treatment enquiries for relevant dental care.
+          </p>
 
         </div>
 
 
-        <!-- Quick links -->
+        <!-- Quick Links -->
 
         <div>
 
@@ -2159,87 +1897,111 @@
             Quick Links
           </h3>
 
-          <div class="footer-links">
+          <ul class="footer-links">
 
-            <a href="#dental-implants">
-              Dental Implants
-            </a>
+            <li>
+              <a href="/">
+                Home
+              </a>
+            </li>
 
-            <a href="#options">
-              Treatment Options
-            </a>
+            <li>
+              <a href="#about">
+                Dental Implants
+              </a>
+            </li>
 
-            <a href="#process">
-              Treatment Process
-            </a>
+            <li>
+              <a href="#process">
+                Treatment Process
+              </a>
+            </li>
 
-            <a href="#faq">
-              FAQs
-            </a>
+            <li>
+              <a href="#faq">
+                FAQs
+              </a>
+            </li>
 
-            <a href="#contact">
-              Contact
-            </a>
+            <li>
+              <a href="#enquiry">
+                Send Enquiry
+              </a>
+            </li>
 
-          </div>
+            <li>
+              <a href="/privacy-policy">
+                Privacy Policy
+              </a>
+            </li>
+
+          </ul>
 
         </div>
 
 
-        <!-- Contact -->
+        <!-- Social -->
 
         <div>
 
           <h3>
-            Contact
+            Connect
           </h3>
 
-          <div class="footer-links">
+          <div class="socials">
 
-            <!-- Replace actual details -->
+            <!-- Replace # with actual social URLs -->
 
-            <a href="tel:+91XXXXXXXXXX">
-              <i class="fa-solid fa-phone"></i>
-              +91 XXXXX XXXXX
+            <a
+              class="social"
+              href="#"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener"
+            >
+              YT
             </a>
 
-            <a href="https://wa.me/91XXXXXXXXXX"
-               target="_blank"
-               rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              WhatsApp
+            <a
+              class="social"
+              href="#"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              IG
             </a>
 
-            <a href="mailto:hello@findtocare.com">
-              <i class="fa-solid fa-envelope"></i>
-              hello@findtocare.com
+            <a
+              class="social"
+              href="#"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener"
+            >
+              WA
             </a>
 
-            <a href="/privacy-policy/">
-              Privacy Policy
-            </a>
-
-            <a href="/terms-conditions/">
-              Terms & Conditions
+            <a
+              class="social"
+              href="#"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              FB
             </a>
 
           </div>
 
         </div>
-
 
       </div>
 
 
       <div class="footer-bottom">
 
-        <span>
-          © 2026 FindToCare. All rights reserved.
-        </span>
-
-        <span>
-          Dental implant enquiries in Berhampur, Odisha.
-        </span>
+        © 2026 FindToCare. All rights reserved.
 
       </div>
 
@@ -2248,133 +2010,64 @@
   </footer>
 
 
-  <!-- =========================================================
+  <!-- ========================================================
        MOBILE STICKY CTA
   ========================================================= -->
 
-  <div class="mobile-sticky-cta">
+  <div class="mobile-cta">
 
-    <a href="#enquiry" class="btn btn-primary">
-      Check Dental Implant Options
-      <i class="fa-solid fa-arrow-right"></i>
+    <!-- REPLACE NUMBER -->
+
+    <a
+      href="tel:+919999999999"
+      class="mobile-call"
+    >
+      Call
+    </a>
+
+    <a
+      href="#enquiry"
+      class="mobile-enquiry"
+    >
+      Send Enquiry
     </a>
 
   </div>
 
 
-  <!-- =========================================================
-       JAVASCRIPT
+  <!-- ========================================================
+       BASIC FORM TRACKING HOOK
+       Connect this later with GTM / CRM / backend.
   ========================================================= -->
 
   <script>
 
-    /* =========================================================
-       FAQ ACCORDION
-    ========================================================= */
+    const leadForm = document.getElementById("leadForm");
 
-    const faqQuestions =
-      document.querySelectorAll(".faq-question");
-
-    faqQuestions.forEach(function(question) {
-
-      question.addEventListener("click", function() {
-
-        const currentItem =
-          question.closest(".faq-item");
-
-        document
-          .querySelectorAll(".faq-item")
-          .forEach(function(item) {
-
-            if (item !== currentItem) {
-              item.classList.remove("active");
-            }
-
-          });
-
-        currentItem.classList.toggle("active");
-
-      });
-
-    });
-
-
-    /* =========================================================
-       BASIC FORM HANDLING
-       Replace this with your real lead system / endpoint.
-    ========================================================= */
-
-    const leadForm =
-      document.getElementById("leadForm");
-
-    leadForm.addEventListener("submit", function(event) {
-
-      event.preventDefault();
+    leadForm.addEventListener("submit", function (event) {
 
       /*
         IMPORTANT:
-        Connect this form to your actual lead-management system,
-        CRM, Formspree, backend, Google Apps Script, etc.
+        Replace this with your actual backend / CRM / form endpoint.
 
-        Do NOT leave this as the final production setup.
+        Example tracking event for Google Tag Manager:
       */
 
-      alert(
-        "Thank you. Your dental implant enquiry has been received."
-      );
+      window.dataLayer = window.dataLayer || [];
 
-    });
-
-
-    /* =========================================================
-       MOBILE MENU
-    ========================================================= */
-
-    const mobileToggle =
-      document.querySelector(".mobile-toggle");
-
-    const navLinks =
-      document.querySelector(".nav-links");
-
-    mobileToggle.addEventListener("click", function() {
-
-      if (navLinks.style.display === "flex") {
-
-        navLinks.style.display = "none";
-
-      } else {
-
-        navLinks.style.display = "flex";
-
-        navLinks.style.position = "absolute";
-        navLinks.style.top = "66px";
-        navLinks.style.left = "0";
-        navLinks.style.right = "0";
-        navLinks.style.padding = "20px";
-        navLinks.style.background = "#FFFFFF";
-        navLinks.style.borderBottom =
-          "1px solid #E2E8F0";
-        navLinks.style.flexDirection = "column";
-        navLinks.style.alignItems = "flex-start";
-
-      }
-
-    });
-
-
-    /* =========================================================
-       CLOSE MOBILE MENU AFTER CLICK
-    ========================================================= */
-
-    navLinks.querySelectorAll("a").forEach(function(link) {
-
-      link.addEventListener("click", function() {
-
-        if (window.innerWidth <= 950) {
-          navLinks.style.display = "none";
-        }
-
+      window.dataLayer.push({
+        event: "dental_implant_lead_submit",
+        treatment: "dental_implants",
+        location: "Berhampur"
       });
+
+      /*
+        Remove preventDefault() once the actual form endpoint is connected.
+      */
+
+      event.preventDefault();
+
+      alert("Thank you. Your enquiry has been received.");
 
     });
 
