@@ -1108,7 +1108,7 @@ button {
   color: var(--cta);
 }
 .radio-option span {
-  color: var(--navy);
+  color: var(--navy); !important;
 }
 
 .form-group input,
