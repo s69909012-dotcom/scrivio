@@ -361,10 +361,9 @@
           clinic or hospital for further treatment-related communication.
         </p>
 
-        <a href="#contact" class="btn btn-primary">
-          Send Dental Implant Enquiry →
-        </a>
-
+<a href="#enquiry-form" class="btn btn-primary">
+  Send Dental Implant Enquiry →
+</a>
         <small>
           Submitting an enquiry does not guarantee an appointment, treatment,
           price or treatment outcome.
@@ -375,6 +374,230 @@
 
   </main>
 
+  <!-- LEAD ENQUIRY FORM -->
+<section id="enquiry-form" class="enquiry-section">
+  <div class="container enquiry-grid">
+
+    <div class="enquiry-intro">
+      <span class="eyebrow">DENTAL IMPLANT ENQUIRY</span>
+
+      <h2>Tell Us What You’re Looking For</h2>
+
+      <p>
+        Share a few details about your dental implant requirement.
+        FindToCare will review your enquiry and, where applicable,
+        connect you with a relevant partner clinic or hospital.
+      </p>
+
+      <div class="enquiry-points">
+        <div>
+          <span>✓</span>
+          <p>Simple enquiry process</p>
+        </div>
+
+        <div>
+          <span>✓</span>
+          <p>Clear communication</p>
+        </div>
+
+        <div>
+          <span>✓</span>
+          <p>No guaranteed treatment or price claims</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="lead-form-card">
+
+      <form id="leadForm">
+
+        <div class="form-group">
+          <label for="name">
+            Full Name <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="phone">
+              Phone Number <span>*</span>
+            </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter phone number"
+              inputmode="tel"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="whatsapp">
+              WhatsApp Number
+            </label>
+
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="WhatsApp number"
+              inputmode="tel"
+            />
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="location">
+            Location / Area <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="e.g. Berhampur"
+            required
+          />
+        </div>
+
+
+        <div class="form-group">
+          <label for="requirement">
+            What are you looking for? <span>*</span>
+          </label>
+
+          <select id="requirement" name="requirement" required>
+            <option value="">Select an option</option>
+            <option value="single-missing-tooth">
+              Single missing tooth
+            </option>
+            <option value="multiple-missing-teeth">
+              Multiple missing teeth
+            </option>
+            <option value="full-mouth">
+              Full mouth tooth replacement
+            </option>
+            <option value="implant-information">
+              Dental implant information
+            </option>
+            <option value="not-sure">
+              Not sure
+            </option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label>
+            Preferred Contact Method <span>*</span>
+          </label>
+
+          <div class="radio-group">
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="contact_method"
+                value="phone"
+                required
+              />
+              <span>Phone Call</span>
+            </label>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="contact_method"
+                value="whatsapp"
+              />
+              <span>WhatsApp</span>
+            </label>
+
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="timeline">
+            When are you looking for treatment?
+          </label>
+
+          <select id="timeline" name="timeline">
+            <option value="">Select an option</option>
+            <option value="as-soon-as-possible">
+              As soon as possible
+            </option>
+            <option value="within-1-3-months">
+              Within 1–3 months
+            </option>
+            <option value="researching">
+              Just researching
+            </option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">
+            Additional Information
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell us anything else about your enquiry..."
+          ></textarea>
+        </div>
+
+
+        <label class="consent-option">
+          <input
+            type="checkbox"
+            name="consent"
+            required
+          />
+
+          <span>
+            I agree to FindToCare using the information provided to respond
+            to my enquiry and, where applicable, share it with a relevant
+            partner clinic or hospital.
+          </span>
+        </label>
+
+
+        <button type="submit" class="form-submit">
+          Send Dental Implant Enquiry →
+        </button>
+
+
+        <p class="form-note">
+          Your enquiry does not guarantee an appointment, treatment,
+          price or treatment outcome.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer id="contact" class="site-footer">
