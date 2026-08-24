@@ -718,5 +718,27 @@
     });
   </script>
 
+  <script>
+  const phoneInput = document.getElementById("phone");
+  const whatsappInput = document.getElementById("whatsapp");
+  const sameAsPhone = document.getElementById("sameAsPhone");
+
+  sameAsPhone.addEventListener("change", function () {
+    if (this.checked) {
+      whatsappInput.value = phoneInput.value;
+      whatsappInput.readOnly = true;
+    } else {
+      whatsappInput.value = "";
+      whatsappInput.readOnly = false;
+    }
+  });
+
+  phoneInput.addEventListener("input", function () {
+    if (sameAsPhone.checked) {
+      whatsappInput.value = phoneInput.value;
+    }
+  });
+</script>
+
 </body>
 </html>
