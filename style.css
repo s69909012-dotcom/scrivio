@@ -1399,3 +1399,373 @@ button {
   accent-color: var(--brand);
   cursor: pointer;
 }
+
+/* =========================================
+   DENTAL IMPLANTS PAGE
+========================================= */
+
+.breadcrumb-wrapper {
+  padding-top: 18px;
+  padding-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #64748B;
+  font-size: 0.78rem;
+}
+
+.breadcrumbs a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.breadcrumbs span[aria-hidden="true"] {
+  color: #94A3B8;
+}
+
+
+/* HERO */
+
+.treatment-hero {
+  padding: 54px 0 90px;
+  background: var(--bg);
+}
+
+.treatment-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 1fr);
+  gap: 60px;
+  align-items: center;
+}
+
+.treatment-hero-content h1 {
+  max-width: 650px;
+  margin: 12px 0 20px;
+
+  color: var(--navy);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.hero-description {
+  max-width: 620px;
+
+  color: var(--body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  margin-top: 28px;
+}
+
+.hero-note {
+  margin-top: 14px;
+
+  color: #64748B;
+  font-size: 0.82rem;
+}
+
+.treatment-hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 16px;
+}
+
+
+/* GENERAL SECTIONS */
+
+.content-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.section-light {
+  background: var(--bg);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.section-heading h2,
+.narrow-container h2 {
+  margin: 10px 0 18px;
+
+  color: var(--navy);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.section-heading p,
+.narrow-container > p {
+  color: var(--body);
+  line-height: 1.75;
+}
+
+
+/* CARDS */
+
+.implant-parts-grid,
+.options-grid,
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.benefits-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.info-card,
+.benefit-card,
+.process-card {
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.section-light .info-card,
+.section-light .process-card {
+  background: #ffffff;
+}
+
+.info-card h3,
+.benefit-card h3,
+.process-card h3 {
+  margin: 14px 0 10px;
+
+  color: var(--navy);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.info-card p,
+.benefit-card p,
+.process-card p {
+  margin: 0;
+
+  color: var(--body);
+  line-height: 1.65;
+  font-size: 0.92rem;
+}
+
+.card-number,
+.process-number {
+  color: var(--brand);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+
+/* PROCESS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* LIST */
+
+.check-list {
+  display: grid;
+  gap: 14px;
+
+  margin: 28px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+
+  padding-left: 28px;
+
+  color: var(--body);
+  line-height: 1.6;
+}
+
+.check-list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: var(--brand);
+  font-weight: 700;
+}
+
+
+/* IMPORTANT NOTE */
+
+.important-note {
+  display: flex;
+  gap: 8px;
+
+  margin-top: 30px;
+  padding: 20px;
+
+  background: #ECFDF5;
+  border-left: 3px solid var(--brand);
+
+  color: var(--body);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+
+/* CONSIDER */
+
+.consider-section {
+  padding: 82px 0;
+
+  background: #F0FDFA;
+}
+
+
+/* FAQ */
+
+.faq-section {
+  background: var(--bg);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item summary {
+  padding: 20px 0;
+
+  color: var(--navy);
+
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  max-width: 720px;
+  padding: 0 0 20px;
+
+  color: var(--body);
+  line-height: 1.7;
+}
+
+
+/* FINAL CTA */
+
+.final-cta {
+  padding: 90px 20px;
+
+  background: var(--navy);
+
+  text-align: center;
+}
+
+.final-cta h2 {
+  max-width: 720px;
+  margin: 12px auto 16px;
+
+  color: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.final-cta p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 0 auto 28px;
+
+  color: #CBD5E1;
+  line-height: 1.7;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .treatment-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .implant-parts-grid,
+  .options-grid,
+  .benefits-grid,
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .breadcrumb-wrapper {
+    padding-top: 14px;
+  }
+
+  .treatment-hero {
+    padding: 36px 0 70px;
+  }
+
+  .content-section {
+    padding: 70px 0;
+  }
+
+  .implant-parts-grid,
+  .options-grid,
+  .benefits-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-hero-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-description {
+    font-size: 0.96rem;
+  }
+
+  .important-note {
+    flex-direction: column;
+  }
+
+  .final-cta {
+    padding: 70px 20px;
+  }
+
+}
