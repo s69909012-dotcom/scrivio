@@ -571,238 +571,25 @@
           <input
             type="checkbox"
             name="consent"
-<!-- LEAD ENQUIRY FORM -->
-<section id="enquiry-form" class="enquiry-section">
-  <div class="container enquiry-grid">
-
-    <div class="enquiry-intro">
-      <span class="eyebrow">DENTAL IMPLANT ENQUIRY</span>
-
-      <h2>Tell Us What You’re Looking For</h2>
-
-      <p>
-        Share a few details about your dental implant requirement.
-        FindToCare will review your enquiry and, where applicable,
-        connect you with a relevant partner clinic or hospital.
-      </p>
-
-      <div class="enquiry-points">
-
-        <div>
-          <span>✓</span>
-          <p>Simple enquiry process</p>
-        </div>
-
-        <div>
-          <span>✓</span>
-          <p>Clear communication</p>
-        </div>
-
-        <div>
-          <span>✓</span>
-          <p>No guaranteed treatment or price claims</p>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="lead-form-card">
-
-      <form id="leadForm">
-
-        <!-- FULL NAME -->
-        <div class="form-group">
-          <label for="name">
-            Full Name <span>*</span>
-          </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your full name"
-            autocomplete="name"
-            required
-          />
-        </div>
-
-
-        <!-- PHONE -->
-        <div class="form-group">
-          <label for="phone">
-            Phone Number <span>*</span>
-          </label>
-
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Enter phone number"
-            inputmode="tel"
-            autocomplete="tel"
-            required
-          />
-        </div>
-
-
-        <!-- WHATSAPP -->
-        <div class="form-group">
-          <label for="whatsapp">
-            WhatsApp Number <span>*</span>
-          </label>
-
-          <input
-            type="tel"
-            id="whatsapp"
-            name="whatsapp"
-            placeholder="Enter WhatsApp number"
-            inputmode="tel"
-            autocomplete="tel"
-            required
-          />
-
-          <label class="same-number-option">
-            <input
-              type="checkbox"
-              id="sameAsPhone"
-            />
-
-            <span>Same as phone number</span>
-          </label>
-        </div>
-
-
-        <!-- LOCATION -->
-        <div class="form-group">
-          <label for="location">
-            Location / Area <span>*</span>
-          </label>
-
-          <input
-            type="text"
-            id="location"
-            name="location"
-            placeholder="Enter your location or area"
-            autocomplete="address-level2"
-            required
-          />
-        </div>
-
-
-        <!-- REQUIREMENT -->
-        <div class="form-group">
-          <label for="requirement">
-            What are you looking for? <span>*</span>
-          </label>
-
-          <select
-            id="requirement"
-            name="requirement"
-            required
-          >
-            <option value="">Select an option</option>
-
-            <option value="single-missing-tooth">
-              Single missing tooth
-            </option>
-
-            <option value="multiple-missing-teeth">
-              Multiple missing teeth
-            </option>
-
-            <option value="full-mouth">
-              Full mouth tooth replacement
-            </option>
-
-            <option value="dental-implant-information">
-              Dental implant information
-            </option>
-
-            <option value="not-sure">
-              Not sure
-            </option>
-          </select>
-        </div>
-
-
-        <!-- CONTACT METHOD -->
-        <div class="form-group">
-
-          <label>
-            How would you like us to contact you? <span>*</span>
-          </label>
-
-          <div class="radio-group">
-
-            <label class="radio-option">
-              <input
-                type="radio"
-                name="contact_method"
-                value="phone"
-                required
-              />
-
-              <span>Phone</span>
-            </label>
-
-
-            <label class="radio-option">
-              <input
-                type="radio"
-                name="contact_method"
-                value="whatsapp"
-              />
-
-              <span>WhatsApp</span>
-            </label>
-
-
-            <label class="radio-option">
-              <input
-                type="radio"
-                name="contact_method"
-                value="both"
-              />
-
-              <span>Both</span>
-            </label>
-
-          </div>
-
-        </div>
-
-
-        <!-- CONSENT -->
-        <label class="consent-option">
-
-          <input
-            type="checkbox"
-            name="consent"
             required
           />
 
           <span>
-            I agree to FindToCare using the information provided
-            to respond to my enquiry and, where applicable,
-            share it with a relevant partner clinic or hospital.
+            I agree to FindToCare using the information provided to respond
+            to my enquiry and, where applicable, share it with a relevant
+            partner clinic or hospital.
           </span>
-
         </label>
 
 
-        <!-- SUBMIT -->
-        <button
-          type="submit"
-          class="form-submit"
-        >
+        <button type="submit" class="form-submit">
           Send Dental Implant Enquiry →
         </button>
 
 
         <p class="form-note">
-          Your enquiry does not guarantee an appointment,
-          treatment, price or treatment outcome.
+          Your enquiry does not guarantee an appointment, treatment,
+          price or treatment outcome.
         </p>
 
       </form>
@@ -812,34 +599,6 @@
   </div>
 </section>
 
-
-<!-- SAME PHONE → WHATSAPP -->
-<script>
-  const phoneInput = document.getElementById("phone");
-  const whatsappInput = document.getElementById("whatsapp");
-  const sameAsPhone = document.getElementById("sameAsPhone");
-
-  sameAsPhone.addEventListener("change", function () {
-
-    if (this.checked) {
-      whatsappInput.value = phoneInput.value;
-      whatsappInput.readOnly = true;
-    } else {
-      whatsappInput.value = "";
-      whatsappInput.readOnly = false;
-    }
-
-  });
-
-  phoneInput.addEventListener("input", function () {
-
-    if (sameAsPhone.checked) {
-      whatsappInput.value = phoneInput.value;
-    }
-
-  });
-</script>
-          
   <!-- FOOTER -->
   <footer id="contact" class="site-footer">
 
