@@ -1009,7 +1009,9 @@ button {
   }
 }
 
-/* LEAD ENQUIRY FORM */
+/* =========================
+   LEAD ENQUIRY SECTION
+========================= */
 
 .enquiry-section {
   padding: 96px 0;
@@ -1023,13 +1025,23 @@ button {
   align-items: start;
 }
 
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
 .enquiry-intro {
   padding-top: 24px;
 }
 
 .enquiry-intro h2 {
   max-width: 520px;
+  margin-top: 12px;
+  color: var(--navy);
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
   letter-spacing: -0.04em;
 }
 
@@ -1037,6 +1049,7 @@ button {
   max-width: 520px;
   margin-top: 20px;
   color: var(--body);
+  line-height: 1.7;
 }
 
 .enquiry-points {
@@ -1055,12 +1068,16 @@ button {
 .enquiry-points span {
   width: 28px;
   height: 28px;
+
   display: grid;
   place-items: center;
+
   flex: 0 0 auto;
+
   border-radius: 50%;
   background: #CCFBF1;
   color: var(--brand);
+
   font-weight: 700;
 }
 
@@ -1071,21 +1088,32 @@ button {
 }
 
 
-/* FORM CARD */
+/* =========================
+   FORM CARD
+========================= */
 
 .lead-form-card {
   padding: 34px;
+
   background: var(--white);
+
   border: 1px solid var(--border);
   border-radius: 16px;
-  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.06);
+
+  box-shadow:
+    0 10px 35px rgba(15, 23, 42, 0.06);
 }
 
 #leadForm {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
+
+
+/* =========================
+   FORM GROUP
+========================= */
 
 .form-group {
   display: flex;
@@ -1093,14 +1121,9 @@ button {
   gap: 7px;
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
 .form-group label {
   color: var(--navy);
+  font-family: "Inter", sans-serif;
   font-size: 0.86rem;
   font-weight: 500;
 }
@@ -1109,105 +1132,179 @@ button {
   color: var(--cta);
 }
 
+
+/* =========================
+   INPUTS
+========================= */
+
 .form-group input,
-.form-group select,
-.form-group textarea {
+.form-group select {
   width: 100%;
-  padding: 13px 14px;
+  height: 48px;
+
+  padding: 0 14px;
+
   border: 1px solid var(--border);
   border-radius: 8px;
+
   outline: none;
+
   background: var(--white);
   color: var(--navy);
+
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
+
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-.form-group input,
-.form-group select {
-  height: 48px;
-}
-
-.form-group textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+.form-group input::placeholder {
   color: #94A3B8;
 }
 
 .form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group select:focus {
   border-color: var(--brand);
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+
+  box-shadow:
+    0 0 0 3px rgba(15, 118, 110, 0.1);
 }
 
 
-/* RADIO */
+/* =========================
+   SAME AS PHONE
+========================= */
+
+.same-number-option {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 2px;
+
+  color: var(--body) !important;
+
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+
+  cursor: pointer;
+}
+
+.same-number-option input {
+  width: 16px;
+  height: 16px;
+
+  margin: 0;
+
+  accent-color: var(--brand);
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   RADIO OPTIONS
+========================= */
 
 .radio-group {
-  display: flex;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .radio-option {
-  flex: 1;
+  min-height: 48px;
+
   display: flex;
   align-items: center;
-  gap: 9px;
-  min-height: 48px;
-  padding: 0 14px;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 12px;
+
   border: 1px solid var(--border);
   border-radius: 8px;
-  cursor: pointer;
+
   color: var(--body);
-  font-size: 0.88rem;
+
+  font-size: 0.86rem;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.radio-option:hover {
+  border-color: var(--brand);
 }
 
 .radio-option input {
+  width: 16px;
+  height: 16px;
+
+  margin: 0;
+
   accent-color: var(--brand);
 }
 
 
-/* CONSENT */
+/* =========================
+   CONSENT
+========================= */
 
 .consent-option {
   display: flex;
   align-items: flex-start;
+
   gap: 10px;
+
   color: #64748B;
+
   font-size: 0.76rem;
   line-height: 1.5;
+
   cursor: pointer;
 }
 
 .consent-option input {
   width: 17px;
   height: 17px;
+
   margin-top: 2px;
+
   flex: 0 0 auto;
+
   accent-color: var(--brand);
 }
 
 
-/* SUBMIT */
+/* =========================
+   SUBMIT BUTTON
+========================= */
 
 .form-submit {
   width: 100%;
   min-height: 50px;
+
   padding: 0 20px;
+
+  border: 0;
   border-radius: 8px;
+
   background: var(--cta);
   color: var(--white);
+
   font-family: "Inter", sans-serif;
   font-size: 0.94rem;
   font-weight: 500;
+
+  cursor: pointer;
+
   transition:
     background 0.2s ease,
     transform 0.2s ease;
@@ -1218,22 +1315,32 @@ button {
   transform: translateY(-1px);
 }
 
+
+/* =========================
+   FORM NOTE
+========================= */
+
 .form-note {
   margin: 0;
+
   color: #94A3B8;
+
   font-size: 0.72rem;
   line-height: 1.5;
+
   text-align: center;
 }
 
 
-/* FORM RESPONSIVE */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
 
   .enquiry-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 42px;
   }
 
   .enquiry-intro {
@@ -1249,13 +1356,19 @@ button {
 
   .enquiry-points {
     max-width: 360px;
+
     margin-left: auto;
     margin-right: auto;
+
     text-align: left;
   }
 
 }
 
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 640px) {
 
@@ -1265,20 +1378,17 @@ button {
 
   .lead-form-card {
     padding: 22px 18px;
+
     border-radius: 12px;
   }
 
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
   .radio-group {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .radio-option {
-    flex: auto;
+    justify-content: flex-start;
+    padding-left: 14px;
   }
 
 }
