@@ -1363,3 +1363,36 @@ button {
   }
 
 }
+
+.same-number-option {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 6px !important;
+
+  width: fit-content !important;
+
+  color: var(--body) !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+
+  cursor: pointer;
+}
+
+.same-number-option input[type="checkbox"] {
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  min-width: 16px !important;
+  min-height: 16px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  accent-color: var(--brand);
+  cursor: pointer;
+}
