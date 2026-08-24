@@ -1108,7 +1108,7 @@ button {
   color: var(--cta);
 }
 .radio-option span {
-  color: var(--navy); !important;
+  color: var(--navy) !important;
 }
 
 .form-group input,
@@ -1401,8 +1401,4 @@ button {
 }
 
 
-  line-height: 1.7;
-}
-
-
-/* 
+  
