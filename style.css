@@ -1107,6 +1107,9 @@ button {
 .form-group label span {
   color: var(--cta);
 }
+.radio-option span {
+  color: var(--navy);
+}
 
 .form-group input,
 .form-group select,
