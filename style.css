@@ -662,6 +662,60 @@ button {
   border-bottom: 1px solid var(--border);
 }
 
+.social-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--navy);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: var(--white);
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-icon:hover {
+  color: var(--brand);
+  border-color: var(--brand);
+  transform: translateY(-2px);
+}
+
+.social-icon:nth-child(2) svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-icon:nth-child(3) svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-icon:nth-child(3) .social-play {
+  fill: var(--white);
+}
+
+.social-icon:nth-child(4) svg {
+  stroke-width: 1.7;
+}
+
 .footer-socials a {
   color: var(--navy);
   font-size: 0.85rem;
