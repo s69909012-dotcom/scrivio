@@ -1281,3 +1281,85 @@ button {
   }
 
 }
+
+/* Same as phone number */
+.same-number-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+
+  color: var(--body);
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.same-number-option input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+
+  accent-color: var(--brand);
+  cursor: pointer;
+}
+
+
+/* Contact preference - Phone / WhatsApp / Both */
+.radio-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.radio-option {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 0 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  color: var(--body);
+  font-family: "Inter", sans-serif;
+  font-size: 0.86rem;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.radio-option:hover {
+  border-color: var(--brand);
+}
+
+.radio-option input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+
+  accent-color: var(--brand);
+}
+
+
+/* Mobile */
+@media (max-width: 640px) {
+
+  .radio-group {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-option {
+    justify-content: flex-start;
+  }
+
+}
