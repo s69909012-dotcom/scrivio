@@ -153,48 +153,62 @@
   }
   .mobile-menu.open { display: flex; }
 
-  /* ===== HERO ===== */
-  .hero {
-    padding: 72px 0 64px;
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 48px;
-    align-items: center;
-  }
-  .hero h1 {
-    font-size: 44px;
-    line-height: 1.12;
-    letter-spacing: -0.015em;
-    margin: 16px 0 20px;
-  }
-  .hero p {
-    font-size: 17px;
-    color: var(--body);
-    max-width: 460px;
-    margin-bottom: 32px;
-  }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  /* ===== EDGE-TO-EDGE HERO ===== */
 
-  .hero-art {
-    aspect-ratio: 1/1;
-    border-radius: 24px;
-    background: linear-gradient(155deg, #ECFDFB 0%, #F8FAFC 60%);
-    border: 1px dashed var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .placeholder-label {
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 500;
-    color: #94A3B8;
-    letter-spacing: 0.02em;
-  }
+.hero {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  width: 50%;
+  max-width: 600px;
+  margin-left: max(24px, calc((100vw - 1160px) / 2));
+  padding: 40px 20px 40px 0;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 16px 0 20px;
+}
+
+.hero p {
+  font-size: 17px;
+  color: var(--body);
+  max-width: 460px;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
 
   /* ===== SECTION SHARED ===== */
   section { padding: 72px 0; }
@@ -570,23 +584,31 @@
 </header>
 
 <main>
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Dental Implants · Berhampur</span>
-        <h1>Considering Dental Implants in Berhampur?</h1>
-        <p>From a single tooth to full mouth restoration — get connected with the right implant treatment path, tailored to your need.</p>
-        <div class="hero-actions">
-          <a href="#form" class="btn btn-cta">Check Treatment Options</a>
-        </div>
-      </div>
-      <!-- IMAGE PLACEHOLDER: Hero image goes here (Kuhu to upload). Suggested: implant/dental illustration or clinic-neutral photo, square-ish crop. -->
-      <div class="hero-art">
-        <span class="placeholder-label">Hero image goes here</span>
+<section class="hero" id="home">
+  <div class="hero-image">
+    <img
+      src="dental-implants-berhampur-hero.webp"
+      alt="Dentist discussing dental implant treatment with a patient in Berhampur"
+    >
+  </div>
+
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <span class="eyebrow">Dental Implants · Berhampur</span>
+
+      <h1>Considering Dental Implants in Berhampur?</h1>
+
+      <p>
+        From a single tooth to full mouth restoration — get connected with
+        the right implant treatment path, tailored to your need.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#form" class="btn btn-cta">Check Treatment Options</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- HOW IT WORKS -->
   <section>
