@@ -525,9 +525,40 @@
   @media (max-width: 860px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .hero-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 32px; }
-    .hero-art { order: -1; aspect-ratio: 16/10; }
+    .hero {
+  min-height: 680px;
+}
+
+.hero-overlay {
+  min-height: 680px;
+  align-items: flex-end;
+}
+
+.hero-image img {
+  object-position: 62% center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 40px 24px 48px;
+  background: linear-gradient(
+    to top,
+    rgba(248,250,252,0.98) 0%,
+    rgba(248,250,252,0.92) 65%,
+    rgba(248,250,252,0) 100%
+  );
+}
+
+.hero h1 {
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.hero p {
+  font-size: 16px;
+}
     .steps, .cards, .why-grid, .trust-grid { grid-template-columns: 1fr; }
     .keep-box { grid-template-columns: 1fr; padding: 28px; }
     form { grid-template-columns: 1fr; }
