@@ -259,7 +259,17 @@
     flex-direction: column;
     gap: 18px;
   }
-  .keep-item { display: flex; gap: 14px; align-items: center; }
+  .keep-item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .keep-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
   .keep-check {
     flex-shrink: 0;
     width: 22px; height: 22px;
@@ -278,7 +288,13 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
   }
-  .why-item { text-align: center; }
+  .why-item {
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 20px;
+  }
   .why-icon {
     width: 52px; height: 52px;
     border-radius: 14px;
@@ -295,6 +311,7 @@
     background: var(--white);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
+    margin-top: 24px;
   }
   .form-wrap {
     max-width: 560px;
@@ -465,7 +482,11 @@
   @media (max-width: 860px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .steps, .cards, .why-grid, .trust-grid { grid-template-columns: 1fr; }
+    .steps, .cards, .trust-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .why-item { padding: 20px 14px; }
+    .why-icon { width: 44px; height: 44px; }
+    .why-item h3 { font-size: 14px; }
     .keep-box { grid-template-columns: 1fr; padding: 28px; }
     form { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -552,7 +573,7 @@
     </div>
   </section>
 
-<!-- TREATMENT CARDS -->
+  <!-- TREATMENT CARDS -->
   <section id="implants">
     <div class="container">
       <div class="section-head">
@@ -588,6 +609,7 @@
     </div>
   </section>
 
+  
   <!-- KEEP IN MIND -->
   <section>
     <div class="container">
@@ -623,24 +645,24 @@
         <div class="why-item">
           <div class="why-icon">
             <img src="natural-look-feel.png" alt="Natural Look & Feel" width="26" height="26">
-          </div>
+              </div>
           <h3>Natural Look & Feel</h3>
         </div>
         <div class="why-item">
           <div class="why-icon">
             <img src="restores-chewing-ability.png" alt="Restores Chewing Ability" width="26" height="26">
-          </div>
+         </div>
           <h3>Restores Chewing Ability</h3>
         </div>
         <div class="why-item">
           <div class="why-icon">
             <img src="built-to-last.png" alt="Built to Last With Proper Care" width="26" height="26">
           </div>
-          <h3>Built to Last With Proper Care</h3>
+           <h3>Built to Last With Proper Care</h3>
         </div>
         <div class="why-item">
           <div class="why-icon">
-            <img src="improves-confidence.png" alt="Improves Confidence" width="26" height="26">
+           <img src="improves-confidence.png" alt="Improves Confidence" width="26" height="26">
           </div>
           <h3>Improves Confidence</h3>
         </div>
