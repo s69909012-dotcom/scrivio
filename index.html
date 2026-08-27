@@ -1,12 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FindToCare — Dental Implants in Berhampur</title>
+
+<title>Dental Implants in Berhampur | FindToCare</title>
+<meta name="description" content="Learn about dental implants in Berhampur, including how implants work, treatment stages, suitability, benefits, and what to consider before treatment.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --brand: #0F766E;
@@ -23,9 +28,15 @@
     --font-body: 'Inter', sans-serif;
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     font-family: var(--font-body);
@@ -34,9 +45,15 @@
     line-height: 1.6;
   }
 
-  a { text-decoration: none; color: inherit; }
-  ul { list-style: none; }
-  img, svg { display: block; max-width: 100%; }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
 
   .container {
     max-width: 1160px;
@@ -59,9 +76,14 @@
     color: var(--brand);
   }
 
+  /* =========================
+     BUTTON
+  ========================= */
+
   .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     font-family: var(--font-body);
     font-weight: 500;
@@ -70,7 +92,10 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      background 0.15s ease;
   }
 
   .btn-cta {
@@ -78,27 +103,28 @@
     color: var(--white);
     box-shadow: 0 8px 20px -8px rgba(255,107,53,0.5);
   }
-  .btn-cta:hover { background: var(--cta-dark); transform: translateY(-1px); }
 
-  .btn-ghost {
-    background: transparent;
-    color: var(--brand);
-    border: 1.5px solid var(--brand);
-    padding: 12px 22px;
+  .btn-cta:hover {
+    background: var(--cta-dark);
+    transform: translateY(-1px);
   }
-  .btn-ghost:hover { background: #ECFDFB; }
 
-  /* ===== HEADER ===== */
+  /* =========================
+     HEADER
+  ========================= */
+
   header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(248,250,252,0.9);
+    background: rgba(248,250,252,0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
   }
 
   .nav-wrap {
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,21 +136,53 @@
     font-weight: 800;
     font-size: 22px;
     letter-spacing: -0.01em;
+    white-space: nowrap;
   }
-  .logo .find, .logo .care { color: var(--navy); }
-  .logo .to { color: var(--brand); }
+
+  .logo .find,
+  .logo .care {
+    color: var(--navy);
+  }
+
+  .logo .to {
+    color: var(--brand);
+  }
 
   .nav-links {
     display: flex;
+    align-items: center;
     gap: 32px;
     font-weight: 500;
     font-size: 15px;
     color: var(--navy);
   }
-  .nav-links a { opacity: 0.85; transition: opacity 0.15s; }
-  .nav-links a:hover { opacity: 1; color: var(--brand); }
 
-  .nav-cta { display: flex; align-items: center; gap: 20px; }
+  .nav-links a {
+    opacity: 0.85;
+    transition: opacity 0.15s ease, color 0.15s ease;
+  }
+
+  .nav-links a:hover {
+    opacity: 1;
+    color: var(--brand);
+  }
+
+  /* Active page */
+
+  .nav-links a.active {
+    color: var(--brand);
+    opacity: 1;
+  }
+
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* =========================
+     HAMBURGER
+  ========================= */
 
   .hamburger {
     display: none;
@@ -135,6 +193,7 @@
     cursor: pointer;
     padding: 8px;
   }
+
   .hamburger span {
     width: 22px;
     height: 2px;
@@ -151,690 +210,349 @@
     font-weight: 500;
     font-size: 15px;
   }
-  .mobile-menu.open { display: flex; }
 
-  /* ===== HERO (text-only, no image) ===== */
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .mobile-menu a.active {
+    color: var(--brand);
+  }
+
+  /* =========================
+     HERO
+  ========================= */
+
   .hero {
-    padding: 88px 0 76px;
-    text-align: center;
-  }
-  .hero-content {
-    max-width: 640px;
-    margin: 0 auto;
-  }
-  .hero-content h1 {
-    font-size: 44px;
-    line-height: 1.12;
-    letter-spacing: -0.015em;
-    margin: 16px 0 20px;
-  }
-  .hero-content p {
-    font-size: 17px;
-    color: var(--body);
-    max-width: 520px;
-    margin: 0 auto 32px;
-  }
-  .hero-actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
-
-  /* ===== SECTION SHARED ===== */
-  section { padding: 72px 0; }
-  .section-head {
-    text-align: center;
-    max-width: 560px;
-    margin: 0 auto 44px;
-  }
-  .section-head h2 { font-size: 30px; margin-top: 10px; letter-spacing: -0.01em; }
-  .section-head p { margin-top: 12px; font-size: 16px; }
-
-  /* ===== HOW IT WORKS ===== */
-  .steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-  }
-  .step-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px 24px;
-  }
-  .step-num {
-    font-family: var(--font-display);
-    font-weight: 800;
-    font-size: 15px;
-    color: var(--accent);
-    background: #ECFDFB;
-    width: 36px; height: 36px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 16px;
-  }
-  .step-card h3 { font-size: 17px; margin-bottom: 6px; }
-  .step-card p { font-size: 14.5px; }
-
-  /* ===== TREATMENT CARDS ===== */
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 30px 26px;
-    transition: border-color 0.15s, transform 0.15s;
-  }
-  .card:hover { border-color: var(--brand); transform: translateY(-2px); }
-  .card-icon {
-    width: 44px; height: 44px;
-    border-radius: 12px;
-    background: #ECFDFB;
-    color: var(--brand);
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    margin-bottom: 18px;
-  }
-  .card-icon svg { display: block; }
-  .card h3 { font-size: 18px; margin-bottom: 8px; }
-  .card p { font-size: 14.5px; margin-bottom: 18px; }
-  .card a {
-    color: var(--brand);
-    font-weight: 500;
-    font-size: 14.5px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    padding: 76px 0 84px;
   }
 
-  /* ===== KEEP IN MIND ===== */
-  .keep-box {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 32px 36px;
-    max-width: 560px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  .keep-item {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-    padding-bottom: 18px;
-    border-bottom: 1px solid var(--border);
-  }
-  .keep-item:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-  .keep-check {
-    flex-shrink: 0;
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    background: var(--brand);
-    color: var(--white);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px;
-    margin-top: 2px;
-  }
-  .keep-item p { font-size: 15px; color: var(--navy); font-weight: 500; }
-
-  /* ===== WHY GRID ===== */
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-  }
-  .why-item {
-    text-align: center;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px 20px;
-  }
-  .why-icon {
-    width: 52px; height: 52px;
-    border-radius: 14px;
-    background: #ECFDFB;
-    color: var(--brand);
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 16px;
-  }
-  .why-icon svg { display: block; }
-  .why-item h3 { font-size: 15.5px; }
-
-  /* ===== FORM ===== */
-  .form-section {
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin-top: 24px;
-  }
-  .form-wrap {
-    max-width: 560px;
-    margin: 0 auto;
-  }
-  .form-note {
-    text-align: center;
-    font-size: 14.5px;
-    color: var(--brand);
-    font-weight: 500;
-    margin-bottom: 28px;
-  }
-  .disclaimer-top {
-    font-size: 12.5px;
-    color: #64748B;
-    text-align: center;
-    margin-bottom: 24px;
-    padding: 10px 16px;
-    background: var(--bg);
-    border-radius: 8px;
-  }
-  form {
+  .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  .field { display: flex; flex-direction: column; gap: 6px; }
-  .field.full { grid-column: 1 / -1; }
-  label {
-    font-size: 13.5px;
-    font-weight: 500;
-    color: var(--navy);
-  }
-  input, select {
-    font-family: var(--font-body);
-    font-size: 15px;
-    padding: 12px 14px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: var(--bg);
-    color: var(--navy);
-    outline: none;
-    transition: border-color 0.15s;
-  }
-  input:focus, select:focus { border-color: var(--brand); }
-
-  .radio-group {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-  }
-  .radio-option {
-    display: flex;
     align-items: center;
-    gap: 7px;
-    font-size: 14.5px;
-    font-weight: 500;
-    color: var(--navy);
+    gap: 64px;
   }
-  .radio-option input { width: auto; padding: 0; accent-color: var(--brand); }
 
-  .consent-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 13.5px;
+  .hero-content {
+    max-width: 560px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 16px 0 20px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    line-height: 1.7;
     color: var(--body);
-  }
-  .consent-row input { width: auto; margin-top: 3px; accent-color: var(--brand); }
-
-  .disclaimer-bottom {
-    font-size: 12px;
-    color: #94A3B8;
-    text-align: center;
-    margin-top: 14px;
+    max-width: 520px;
+    margin-bottom: 30px;
   }
 
-  .submit-btn { width: 100%; justify-content: center; margin-top: 6px; }
-
-  /* ===== TRUST ===== */
-  .trust {
-    background: #ECFDFB;
-  }
-  .trust-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 36px;
-  }
-  .trust-item {
-    background: var(--white);
-    border-radius: 14px;
-    padding: 24px;
+  .hero-actions {
     display: flex;
-    gap: 12px;
-    align-items: flex-start;
-  }
-  .trust-item p { font-size: 14.5px; font-weight: 500; color: var(--navy); margin-bottom: 4px; }
-  .trust-desc { font-size: 13px; color: var(--body); font-weight: 400; line-height: 1.5; }
-
-  /* ===== FINAL CTA ===== */
-  .final-cta {
-    background: var(--navy);
-    text-align: center;
-    padding: 80px 24px;
-    border-radius: 28px;
-    margin: 0 24px;
-    max-width: 1160px;
-    margin: 0 auto;
-  }
-  .final-cta h2 { color: var(--white); font-size: 30px; max-width: 480px; margin: 0 auto 28px; }
-
-  /* ===== FOOTER ===== */
-  footer {
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    padding: 56px 0 28px;
-  }
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
-  }
-  .footer-tagline { font-size: 14px; margin-top: 12px; max-width: 260px; }
-  .footer-col h4 {
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--navy);
-    margin-bottom: 14px;
-  }
-  .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
-  .footer-col a { font-size: 14.5px; color: var(--body); }
-  .footer-col a:hover { color: var(--brand); }
-
-  .socials { display: flex; gap: 10px; margin-top: 16px; }
-  .social-icon {
-    width: 36px; height: 36px;
-    border-radius: 8px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--brand);
-    transition: background 0.15s;
-  }
-  .social-icon:hover { background: #ECFDFB; }
-
-  .footer-bottom {
-    border-top: 1px solid var(--border);
-    padding-top: 24px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 13px;
-    color: #94A3B8;
+    gap: 14px;
     flex-wrap: wrap;
-    gap: 12px;
   }
-  .footer-bottom-links { display: flex; gap: 20px; }
-  .footer-bottom-links a { color: #64748B; }
-  .footer-bottom-links a:hover { color: var(--brand); }
 
-  /* ===== MOBILE ===== */
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* =========================
+     MOBILE
+  ========================= */
 
   @media (max-width: 860px) {
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-    .steps, .cards, .trust-grid { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-    .why-item { padding: 20px 14px; }
-    .why-icon { width: 44px; height: 44px; }
-    .why-item h3 { font-size: 14px; }
-    .keep-box { grid-template-columns: 1fr; padding: 28px; }
-    form { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-    .final-cta { border-radius: 0; margin: 0 -24px; padding: 56px 24px; }
-    section { padding: 52px 0; }
 
-    .hero { padding: 56px 0 48px; }
-    .hero-content h1 { font-size: 32px; }
+    .nav-links {
+      display: none;
+    }
 
-    .nav-cta { gap: 12px; }
-    .nav-cta .btn-cta { padding: 9px 14px; font-size: 13.5px; }
+    .hamburger {
+      display: flex;
+    }
+
+    .nav-cta {
+      gap: 10px;
+    }
+
+    .nav-cta .btn-cta {
+      padding: 9px 14px;
+      font-size: 13.5px;
+    }
+
+    .hero {
+      padding: 52px 0 56px;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 38px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .hero-content h1 {
+      font-size: 34px;
+      line-height: 1.14;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 26px;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+
+    .hero-visual {
+      order: 2;
+    }
+
+    .hero-visual img {
+      max-width: 460px;
+    }
   }
 
-  @media (min-width: 861px) {
-    .nav-cta .hamburger { display: none; }
+  @media (max-width: 480px) {
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .nav-wrap {
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+
+    .nav-cta .btn-cta {
+      padding: 8px 11px;
+      font-size: 12.5px;
+    }
+
+    .hero {
+      padding: 42px 0 48px;
+    }
+
+    .hero-content h1 {
+      font-size: 30px;
+    }
+
+    .hero-content p {
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 13px 20px;
+    }
+
+    .hero-actions {
+      width: 100%;
+    }
+
+    .hero-visual img {
+      max-width: 100%;
+    }
   }
 </style>
 </head>
+
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
   <div class="nav-wrap">
-    <div class="logo"><span class="find">Find</span><span class="to">To</span><span class="care">Care</span></div>
+
+    <!-- Clickable Logo -->
+    <a href="index.html" class="logo" aria-label="FindToCare Home">
+      <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
+    </a>
+
+    <!-- Desktop Navigation -->
     <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="dental-implants.html">Dental Implants</a>
+
+      <a href="index.html">Home</a>
+
+      <a href="dental-implants.html" class="active">
+        Dental Implants
+      </a>
+
       <a href="about.html">About</a>
+
       <a href="doctors.html">Doctors</a>
+
       <a href="contact.html">Contact</a>
+
     </nav>
+
+    <!-- Header CTA + Mobile Button -->
     <div class="nav-cta">
-      <a href="#form" class="btn btn-cta">Get Treatment Help</a>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-        <span></span><span></span><span></span>
+
+      <a href="#form" class="btn btn-cta">
+        Get Treatment Help
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburgerBtn"
+        aria-label="Open menu"
+        aria-expanded="false"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
+
   </div>
+
+  <!-- Mobile Navigation -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#implants">Dental Implants</a>
-    <a href="#about">About</a>
-    <a href="#doctors">Doctors</a>
-    <a href="#contact">Contact</a>
+
+    <a href="index.html">Home</a>
+
+    <a href="dental-implants.html" class="active">
+      Dental Implants
+    </a>
+
+    <a href="about.html">About</a>
+
+    <a href="doctors.html">Doctors</a>
+
+    <a href="contact.html">Contact</a>
+
   </div>
+
 </header>
 
+
 <main>
-  <!-- HERO (no image) -->
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
   <section class="hero" id="home">
-    <div class="container hero-content">
-      <span class="eyebrow">Dental Implants · Berhampur</span>
-      <h1>Considering Dental Implants in Berhampur?</h1>
-      <p>Explore your treatment options and get connected with a relevant dental clinic for your dental implant needs.</p>
-      <div class="hero-actions">
-        <a href="#form" class="btn btn-cta">Check Treatment Options →</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- HOW IT WORKS -->
-  <section id="how-it-works">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Process</span>
-        <h2>How FindToCare Works</h2>
+
+      <div class="hero-grid">
+
+        <!-- Hero Text -->
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            Dental Implants · Berhampur
+          </span>
+
+          <h1>
+            Dental Implants: A Complete Guide to Replacing Missing Teeth
+          </h1>
+
+          <p>
+            Understand how dental implants work, what the treatment involves,
+            who may be suitable, and what to consider before exploring
+            implant treatment.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#form" class="btn btn-cta">
+              Check Treatment Options →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Hero Image -->
+        <div class="hero-visual">
+
+          <img
+            src="dental-implant-hero.png"
+            alt="Dental implant showing the crown, abutment and implant fixture"
+            width="520"
+            height="420"
+          >
+
+        </div>
+
       </div>
-      <div class="steps">
-        <div class="step-card">
-          <div class="step-num">1</div>
-          <h3>Tell Us What You Need</h3>
-          <p>Share a few details about your dental situation through a short form.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">2</div>
-          <h3>We Review Your Enquiry</h3>
-          <p>We go through your case details to understand what kind of care fits best.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">3</div>
-          <h3>Get Connected With a Relevant Clinic</h3>
-          <p>We connect you with a clinic suited to your treatment need.</p>
-        </div>
-      </div>
+
     </div>
+
   </section>
 
-  <!-- TREATMENT CARDS -->
-  <section id="implants">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">What You Can Explore</span>
-        <h2>Dental Implant Options</h2>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon">
-            <img src="single-tooth.png" alt="Single Tooth Implant" width="24" height="24">
-          </div>
-          <h3>Single Tooth Implant</h3>
-          <p>Replace one missing tooth with a natural-looking, long-lasting solution.</p>
-          <a href="dental-implants.html">Explore Treatment →</a>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <img src="multiple-teeth.png" alt="Multiple Teeth Implants" width="24" height="24">
-          </div>
-          <h3>Multiple Teeth Implants</h3>
-          <p>Restore several missing teeth with a stable, long-term treatment option.</p>
-          <a href="dental-implants.html">Explore Treatment →</a>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <img src="full-mouth.png" alt="Full Mouth Implants" width="24" height="24">
-          </div>
-          <h3>Full Mouth Implants</h3>
-          <p>Complete smile restoration for extensive tooth loss, built around your case.</p>
-          <a href="dental-implants.html">Explore Treatment →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <!-- KEEP IN MIND -->
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Before You Begin</span>
-        <h2>What to Keep in Mind</h2>
-      </div>
-      <div class="keep-box">
-        <div class="keep-item">
-          <div class="keep-check">✓</div>
-          <p>Cost varies by case</p>
-        </div>
-        <div class="keep-item">
-          <div class="keep-check">✓</div>
-          <p>A dental check-up is needed</p>
-        </div>
-        <div class="keep-item">
-          <div class="keep-check">✓</div>
-          <p>Treatment time varies by case</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY -->
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Benefits</span>
-        <h2>Why Patients Explore This Option</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-item">
-          <div class="why-icon">
-            <img src="natural-look-feel.png" alt="Natural Look & Feel" width="26" height="26">
-              </div>
-          <h3>Natural Look & Feel</h3>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-            <img src="restores-chewing-ability.png" alt="Restores Chewing Ability" width="26" height="26">
-         </div>
-          <h3>Restores Chewing Ability</h3>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-            <img src="built-to-last.png" alt="Built to Last With Proper Care" width="26" height="26">
-          </div>
-           <h3>Built to Last With Proper Care</h3>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-           <img src="improves-confidence.png" alt="Improves Confidence" width="26" height="26">
-          </div>
-          <h3>Improves Confidence</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FORM -->
-  <section class="form-section" id="form">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Get Started</span>
-        <h2>Check Your Treatment Options</h2>
-      </div>
-      <div class="form-wrap">
-        <p class="form-note">We'll help you explore the right treatment options for your case.</p>
-        <p class="disclaimer-top">Submitting this form does not confirm a specific appointment, treatment plan, price, or outcome — these are determined after a professional evaluation.</p>
-        <form>
-          <div class="field full">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" required>
-          </div>
-          <div class="field">
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" required>
-          </div>
-          <div class="field">
-            <label for="whatsapp">WhatsApp Number</label>
-            <input type="tel" id="whatsapp">
-          </div>
-          <div class="field full">
-            <label for="location">Location / Area *</label>
-            <input type="text" id="location" placeholder="e.g. Berhampur" required>
-          </div>
-          <div class="field full">
-            <label for="need">What are you looking for? *</label>
-            <select id="need" required>
-              <option value="">Select an option</option>
-              <option>Single missing tooth</option>
-              <option>Multiple missing teeth</option>
-              <option>Full mouth tooth replacement</option>
-              <option>Dental implant information</option>
-              <option>Not sure</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label>Preferred Contact Method *</label>
-            <div class="radio-group">
-              <label class="radio-option"><input type="radio" name="contact" required> Phone Call</label>
-              <label class="radio-option"><input type="radio" name="contact"> WhatsApp</label>
-              <label class="radio-option"><input type="radio" name="contact"> Both</label>
-            </div>
-          </div>
-          <div class="field full">
-            <label for="timeline">When are you looking for treatment?</label>
-            <select id="timeline">
-              <option value="">Select an option</option>
-              <option>As soon as possible</option>
-              <option>Within 1-3 months</option>
-              <option>Just researching</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label class="consent-row">
-              <input type="checkbox" required>
-              <span>I agree to be contacted by FindToCare regarding my treatment enquiry.</span>
-            </label>
-          </div>
-          <div class="field full">
-            <button type="submit" class="btn btn-cta submit-btn">Check Treatment Options →</button>
-          </div>
-        </form>
-        <p class="disclaimer-bottom">This does not guarantee an appointment, treatment, price, or treatment outcome.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST -->
-  <section class="trust">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Why FindToCare</span>
-        <h2>Local. Treatment-Focused. Patient-First.</h2>
-      </div>
-      <div class="trust-grid">
-        <div class="trust-item">
-          <div class="keep-check" style="background:var(--navy)">✓</div>
-          <div>
-            <p>Focused on Dental Implant Enquiries</p>
-            <span class="trust-desc">We only handle dental implant enquiries, so your case gets focused attention.</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="keep-check" style="background:var(--navy)">✓</div>
-          <div>
-            <p>Built for Patients in Berhampur</p>
-            <span class="trust-desc">Connecting you with clinics right here in Berhampur — no generic nationwide matching.</span>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="keep-check" style="background:var(--navy)">✓</div>
-          <div>
-            <p>Simple, Straightforward Enquiry Process</p>
-            <span class="trust-desc">One short form, no confusing steps or repeated calls.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section>
-    <div class="final-cta">
-      <h2>Looking for the Right Implant Treatment in Berhampur?</h2>
-      <a href="#form" class="btn btn-cta">Check Your Treatment Options</a>
-    </div>
-  </section>
 </main>
 
-<footer id="contact">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="logo"><span class="find">Find</span><span class="to">To</span><span class="care">Care</span></div>
-        <p class="footer-tagline">Connecting patients in Berhampur with dental implant treatment information and relevant care options.</p>
-        <div class="socials">
-          <a class="social-icon" href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
-          <a class="social-icon" href="#" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"/></svg></a>
-          <a class="social-icon" href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9h3V6h-3a4 4 0 00-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z"/></svg></a>
-          <a class="social-icon" href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="dental-implants.html">Dental Implants</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="doctors.html">Doctors</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
-          <li><a href="https://wa.me/910000000000">WhatsApp Us</a></li>
-          <li><a href="mailto:hello@findtocare.com">hello@findtocare.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 FindToCare. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <script>
+
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const mobileMenu = document.getElementById('mobileMenu');
+
   hamburgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
+
+    const isOpen = mobileMenu.classList.toggle('open');
+
+    hamburgerBtn.setAttribute(
+      'aria-expanded',
+      isOpen ? 'true' : 'false'
+    );
+
   });
-  document.querySelectorAll('.mobile-menu a').forEach(a => {
-    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+
+    link.addEventListener('click', () => {
+
+      mobileMenu.classList.remove('open');
+
+      hamburgerBtn.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+    });
+
   });
+
 </script>
 
 </body>
 </html>
+```
