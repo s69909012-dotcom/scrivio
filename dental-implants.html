@@ -1151,4 +1151,307 @@ document
 
 </body>
 </html>
-```
+
+<!-- =====================================================
+     QUICK FACTS
+===================================================== -->
+
+<section class="quick-facts">
+
+  <div class="container">
+
+    <div class="quick-facts-box">
+
+      <div class="quick-facts-heading">
+        <span class="eyebrow">Quick Facts</span>
+
+        <h2>
+          Dental Implants at a Glance
+        </h2>
+      </div>
+
+
+      <div class="quick-facts-grid">
+
+
+        <!-- FACT 1 -->
+
+        <div class="quick-fact">
+
+          <span class="quick-fact-label">
+            What is it?
+          </span>
+
+          <p>
+            A dental implant is a replacement for the root of a missing tooth,
+            supporting a replacement tooth above it.
+          </p>
+
+        </div>
+
+
+        <!-- FACT 2 -->
+
+        <div class="quick-fact">
+
+          <span class="quick-fact-label">
+            Main parts
+          </span>
+
+          <p>
+            An implant treatment typically involves an implant fixture,
+            an abutment, and a dental crown.
+          </p>
+
+        </div>
+
+
+        <!-- FACT 3 -->
+
+        <div class="quick-fact">
+
+          <span class="quick-fact-label">
+            How it works
+          </span>
+
+          <p>
+            The implant is placed in the jawbone and can integrate with
+            the surrounding bone during healing.
+          </p>
+
+        </div>
+
+
+        <!-- FACT 4 -->
+
+        <div class="quick-fact">
+
+          <span class="quick-fact-label">
+            Treatment time
+          </span>
+
+          <p>
+            The overall treatment timeline varies depending on your
+            oral health, treatment plan, and healing.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+/* =====================================================
+   QUICK FACTS
+===================================================== */
+
+.quick-facts {
+  padding: 0 0 72px;
+}
+
+.quick-facts-box {
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: 20px;
+
+  padding: 34px 36px;
+
+  box-shadow: 0 8px 30px rgba(15,23,42,0.04);
+
+}
+
+.quick-facts-heading {
+
+  margin-bottom: 28px;
+
+}
+
+.quick-facts-heading h2 {
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  margin-top: 8px;
+
+  letter-spacing: -0.015em;
+
+}
+
+.quick-facts-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0;
+
+}
+
+.quick-fact {
+
+  padding: 0 22px;
+
+  border-right: 1px solid var(--border);
+
+}
+
+.quick-fact:first-child {
+  padding-left: 0;
+}
+
+.quick-fact:last-child {
+
+  border-right: none;
+
+  padding-right: 0;
+
+}
+
+.quick-fact-label {
+
+  display: block;
+
+  font-family: var(--font-display);
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: var(--brand);
+
+  margin-bottom: 8px;
+
+}
+
+.quick-fact p {
+
+  font-size: 13.5px;
+
+  line-height: 1.6;
+
+  color: var(--body);
+
+}
+
+
+/* =====================================================
+   QUICK FACTS — TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .quick-facts-grid {
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 26px 0;
+
+  }
+
+  .quick-fact:nth-child(2) {
+
+    border-right: none;
+
+  }
+
+  .quick-fact:nth-child(3) {
+
+    padding-left: 0;
+
+  }
+
+  .quick-fact:nth-child(4) {
+
+    padding-right: 0;
+
+  }
+
+}
+
+
+/* =====================================================
+   QUICK FACTS — MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .quick-facts {
+
+    padding-bottom: 52px;
+
+  }
+
+  .quick-facts-box {
+
+    padding: 26px 22px;
+
+    border-radius: 16px;
+
+  }
+
+  .quick-facts-heading {
+
+    margin-bottom: 22px;
+
+  }
+
+  .quick-facts-heading h2 {
+
+    font-size: 23px;
+
+  }
+
+  .quick-facts-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+  }
+
+  .quick-fact {
+
+    padding: 18px 0;
+
+    border-right: none;
+
+    border-bottom: 1px solid var(--border);
+
+  }
+
+  .quick-fact:first-child {
+
+    padding-top: 0;
+
+  }
+
+  .quick-fact:last-child {
+
+    padding-bottom: 0;
+
+    border-bottom: none;
+
+  }
+
+  .quick-fact:nth-child(3) {
+
+    padding-left: 0;
+
+  }
+
+  .quick-fact:nth-child(4) {
+
+    padding-right: 0;
+
+  }
+
+}
