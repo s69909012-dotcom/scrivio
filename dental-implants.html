@@ -1,378 +1,434 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dental Implants in Berhampur | FindToCare</title>
+<title>Dental Implants in Berhampur | FindToCare</title>
+<meta name="description" content="Learn about dental implants in Berhampur, including how implants work, treatment stages, suitability, benefits, and what to consider before treatment.">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@700&display=swap"
-    rel="stylesheet"
-  />
+<style>
+  :root {
+    --brand: #0F766E;
+    --navy: #0F172A;
+    --bg: #F8FAFC;
+    --body: #334155;
+    --cta: #FF6B35;
+    --cta-dark: #e2551f;
+    --accent: #14B8A6;
+    --white: #ffffff;
+    --border: #E2E8F0;
 
-  <style>
-    :root {
-      --teal: #0F766E;
-      --navy: #0F172A;
-      --background: #F8FAFC;
-      --body: #334155;
-      --cta: #FF6B35;
-      --accent: #14B8A6;
-      --white: #FFFFFF;
-      --border: #E2E8F0;
-    }
+    --font-display: 'Manrope', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    html {
-      scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    body {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      color: var(--body);
-      background: var(--background);
-      line-height: 1.7;
-    }
+  body {
+    font-family: var(--font-body);
+    color: var(--body);
+    background: var(--bg);
+    line-height: 1.6;
+  }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-    button {
-      font-family: "Inter", sans-serif;
-    }
+  img {
+    display: block;
+    max-width: 100%;
+  }
 
-    .container {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-    }
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
 
-    /* ================= HEADER ================= */
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--navy);
+  }
 
-    .header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+  .eyebrow {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--brand);
+  }
 
-    .header-inner {
-      height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  /* =========================
+     BUTTON
+  ========================= */
 
-    /* FindToCare */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      background 0.15s ease;
+  }
 
-    .logo {
-      font-family: "Manrope", sans-serif;
-      font-weight: 700;
-      font-size: 1.45rem;
-      letter-spacing: -0.04em;
-    }
+  .btn-cta {
+    background: var(--cta);
+    color: var(--white);
+    box-shadow: 0 8px 20px -8px rgba(255,107,53,0.5);
+  }
 
-    .logo-find {
-      color: #0F172A;
-    }
+  .btn-cta:hover {
+    background: var(--cta-dark);
+    transform: translateY(-1px);
+  }
 
-    .logo-to {
-      color: #0F766E;
-    }
+  /* =========================
+     HEADER
+  ========================= */
 
-    .logo-care {
-      color: #0F172A;
-    }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(248,250,252,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
 
-    /* Desktop Nav */
+  .nav-wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+  }
 
-    .desktop-nav {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      font-size: 0.92rem;
-      font-weight: 500;
-      color: var(--navy);
-    }
+  .logo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
 
-    .desktop-nav a:hover {
-      color: var(--teal);
-    }
+  .logo .find,
+  .logo .care {
+    color: var(--navy);
+  }
 
-    .help-button {
-      background: var(--cta);
-      color: var(--white) !important;
-      padding: 11px 18px;
-      border-radius: 9px;
-      font-weight: 500;
-    }
+  .logo .to {
+    color: var(--brand);
+  }
 
-    /* Hamburger */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--navy);
+  }
 
-    .menu-button {
+  .nav-links a {
+    opacity: 0.85;
+    transition: opacity 0.15s ease, color 0.15s ease;
+  }
+
+  .nav-links a:hover {
+    opacity: 1;
+    color: var(--brand);
+  }
+
+  /* Active page */
+
+  .nav-links a.active {
+    color: var(--brand);
+    opacity: 1;
+  }
+
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* =========================
+     HAMBURGER
+  ========================= */
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--navy);
+    border-radius: 2px;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 8px 24px 20px;
+    gap: 14px;
+    border-top: 1px solid var(--border);
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .mobile-menu a.active {
+    color: var(--brand);
+  }
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    padding: 76px 0 84px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .hero-content {
+    max-width: 560px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 16px 0 20px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--body);
+    max-width: 520px;
+    margin-bottom: 30px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* =========================
+     MOBILE
+  ========================= */
+
+  @media (max-width: 860px) {
+
+    .nav-links {
       display: none;
-      width: 42px;
-      height: 42px;
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      background: var(--white);
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
     }
 
-    .menu-button span {
-      width: 20px;
-      height: 1.5px;
-      background: var(--navy);
-      border-radius: 2px;
-    }
-
-    /* Mobile Menu */
-
-    .mobile-menu {
-      display: none;
-      background: var(--white);
-      border-top: 1px solid var(--border);
-    }
-
-    .mobile-menu.active {
-      display: block;
-    }
-
-    .mobile-menu-inner {
+    .hamburger {
       display: flex;
-      flex-direction: column;
-      padding: 10px 0 20px;
     }
 
-    .mobile-menu a {
-      padding: 14px 4px;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--navy);
-      border-bottom: 1px solid #F1F5F9;
+    .nav-cta {
+      gap: 10px;
     }
 
-    .mobile-help {
-      margin-top: 14px;
-      text-align: center;
-      background: var(--cta);
-      color: var(--white) !important;
-      border-radius: 9px;
-      border-bottom: none !important;
+    .nav-cta .btn-cta {
+      padding: 9px 14px;
+      font-size: 13.5px;
     }
-
-    /* ================= BREADCRUMB ================= */
-
-    .breadcrumb {
-      padding-top: 22px;
-      font-size: 0.82rem;
-      font-weight: 400;
-      color: #64748B;
-    }
-
-    .breadcrumb a {
-      color: var(--teal);
-      font-weight: 500;
-    }
-
-    .breadcrumb-separator {
-      margin: 0 8px;
-      color: #94A3B8;
-    }
-
-    /* ================= HERO ================= */
 
     .hero {
-      padding: 45px 0 85px;
+      padding: 52px 0 56px;
     }
 
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 0.95fr;
-      align-items: center;
-      gap: 65px;
+      grid-template-columns: 1fr;
+      gap: 38px;
+      text-align: center;
     }
 
     .hero-content {
       max-width: 620px;
+      margin: 0 auto;
     }
 
-    .eyebrow {
-      display: block;
-      margin-bottom: 14px;
-      color: var(--teal);
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .hero-content h1 {
+      font-size: 34px;
+      line-height: 1.14;
     }
 
-    .hero h1 {
-      font-family: "Manrope", sans-serif;
-      font-weight: 700;
-      color: var(--navy);
-      font-size: clamp(2.3rem, 5vw, 4rem);
-      line-height: 1.12;
-      letter-spacing: -0.045em;
+    .hero-content p {
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 26px;
     }
 
-    .hero-text {
-      margin-top: 21px;
-      max-width: 580px;
-      font-size: 1.05rem;
-      font-weight: 400;
-      color: var(--body);
-    }
-
-    .hero-button {
-      display: inline-flex;
-      align-items: center;
+    .hero-actions {
       justify-content: center;
-      margin-top: 28px;
-      padding: 13px 21px;
-      background: var(--cta);
-      color: var(--white);
-      border-radius: 9px;
-      font-size: 0.92rem;
-      font-weight: 500;
     }
 
-    /* Empty Image Placeholder */
+    .hero-visual {
+      order: 2;
+    }
 
-    .hero-image {
+    .hero-visual img {
+      max-width: 460px;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .nav-wrap {
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+
+    .nav-cta .btn-cta {
+      padding: 8px 11px;
+      font-size: 12.5px;
+    }
+
+    .hero {
+      padding: 42px 0 48px;
+    }
+
+    .hero-content h1 {
+      font-size: 30px;
+    }
+
+    .hero-content p {
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .btn {
       width: 100%;
-      min-height: 420px;
-      background: var(--white);
-      border: 1.5px dashed #CBD5E1;
-      border-radius: 20px;
+      padding: 13px 20px;
     }
 
-    /* ================= TABLET ================= */
-
-    @media (max-width: 900px) {
-
-      .desktop-nav {
-        display: none;
-      }
-
-      .menu-button {
-        display: flex;
-      }
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .hero-content {
-        max-width: 700px;
-      }
-
-      .hero-image {
-        min-height: 360px;
-      }
+    .hero-actions {
+      width: 100%;
     }
 
-    /* ================= MOBILE ================= */
-
-    @media (max-width: 600px) {
-
-      .container {
-        width: min(100% - 28px, 1180px);
-      }
-
-      .header-inner {
-        height: 68px;
-      }
-
-      .logo {
-        font-size: 1.28rem;
-      }
-
-      .breadcrumb {
-        padding-top: 16px;
-        font-size: 0.76rem;
-      }
-
-      .hero {
-        padding: 34px 0 60px;
-      }
-
-      .hero h1 {
-        font-size: clamp(2.1rem, 10.5vw, 2.9rem);
-      }
-
-      .hero-text {
-        margin-top: 17px;
-        font-size: 0.96rem;
-      }
-
-      .hero-button {
-        width: 100%;
-        margin-top: 24px;
-      }
-
-      .hero-image {
-        min-height: 260px;
-        border-radius: 16px;
-      }
+    .hero-visual img {
+      max-width: 100%;
     }
-  </style>
+  }
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
-  <header class="header">
+<header>
 
-    <div class="container header-inner">
+  <div class="nav-wrap">
 
-      <!-- Logo -->
-      <a href="/" class="logo" aria-label="FindToCare Home">
-        <span class="logo-find">Find</span><span class="logo-to">To</span><span class="logo-care">Care</span>
+    <!-- Clickable Logo -->
+    <a href="index.html" class="logo" aria-label="FindToCare Home">
+      <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="dental-implants.html" class="active">
+        Dental Implants
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="desktop-nav">
+      <a href="about.html">About</a>
 
-        <a href="/">
-          Home
-        </a>
+      <a href="doctors.html">Doctors</a>
 
-        <a href="/dental-implants">
-          Dental Implants
-        </a>
+      <a href="contact.html">Contact</a>
 
-        <a href="#enquiry" class="help-button">
-          Get Treatment Help
-        </a>
+    </nav>
 
-      </nav>
+    <!-- Header CTA + Mobile Button -->
+    <div class="nav-cta">
 
-      <!-- Mobile Hamburger -->
+      <a href="#form" class="btn btn-cta">
+        Get Treatment Help
+      </a>
+
       <button
-        class="menu-button"
-        id="menuButton"
+        class="hamburger"
+        id="hamburgerBtn"
         aria-label="Open menu"
         aria-expanded="false"
+        type="button"
       >
         <span></span>
         <span></span>
@@ -381,59 +437,41 @@
 
     </div>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
+  </div>
 
-      <div class="container mobile-menu-inner">
+  <!-- Mobile Navigation -->
+  <div class="mobile-menu" id="mobileMenu">
 
-        <a href="/">
-          Home
-        </a>
+    <a href="index.html">Home</a>
 
-        <a href="/dental-implants">
-          Dental Implants
-        </a>
+    <a href="dental-implants.html" class="active">
+      Dental Implants
+    </a>
 
-        <a href="#enquiry" class="mobile-help">
-          Get Treatment Help
-        </a>
+    <a href="about.html">About</a>
 
-      </div>
+    <a href="doctors.html">Doctors</a>
 
-    </div>
+    <a href="contact.html">Contact</a>
 
-  </header>
+  </div>
+
+</header>
 
 
-  <main>
+<main>
 
-    <!-- BREADCRUMB -->
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero" id="home">
 
     <div class="container">
 
-      <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="hero-grid">
 
-        <a href="/">
-          Home
-        </a>
-
-        <span class="breadcrumb-separator">/</span>
-
-        <span>
-          Dental Implants
-        </span>
-
-      </nav>
-
-    </div>
-
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-      <div class="container hero-grid">
-
+        <!-- Hero Text -->
         <div class="hero-content">
 
           <span class="eyebrow">
@@ -441,45 +479,80 @@
           </span>
 
           <h1>
-            Considering Dental Implants in Berhampur?
+            Dental Implants: A Complete Guide to Replacing Missing Teeth
           </h1>
 
-          <p class="hero-text">
-            Understand your dental implant options, what the treatment
-            involves, and what to expect — before you decide on your next step.
+          <p>
+            Understand how dental implants work, what the treatment involves,
+            who may be suitable, and what to consider before exploring
+            implant treatment.
           </p>
 
-          <a href="#enquiry" class="hero-button">
-            Get Treatment Help
-          </a>
+          <div class="hero-actions">
+
+            <a href="#form" class="btn btn-cta">
+              Check Treatment Options →
+            </a>
+
+          </div>
 
         </div>
 
 
-        <!-- IMAGE PLACEHOLDER — IMAGE WILL BE ADDED LATER -->
+        <!-- Hero Image -->
+        <div class="hero-visual">
 
-        <div class="hero-image" aria-label="Dental implant hero image placeholder">
+          <img
+            src="dental-implant-hero.png"
+            alt="Dental implant showing the crown, abutment and implant fixture"
+            width="520"
+            height="420"
+          >
+
         </div>
 
       </div>
 
-    </section>
+    </div>
 
-  </main>
+  </section>
+
+</main>
 
 
-  <script>
-    const menuButton = document.getElementById("menuButton");
-    const mobileMenu = document.getElementById("mobileMenu");
+<script>
 
-    menuButton.addEventListener("click", function () {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-      const isOpen = mobileMenu.classList.toggle("active");
+  hamburgerBtn.addEventListener('click', () => {
 
-      menuButton.setAttribute("aria-expanded", isOpen);
+    const isOpen = mobileMenu.classList.toggle('open');
+
+    hamburgerBtn.setAttribute(
+      'aria-expanded',
+      isOpen ? 'true' : 'false'
+    );
+
+  });
+
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+
+    link.addEventListener('click', () => {
+
+      mobileMenu.classList.remove('open');
+
+      hamburgerBtn.setAttribute(
+        'aria-expanded',
+        'false'
+      );
 
     });
-  </script>
+
+  });
+
+</script>
 
 </body>
 </html>
+```
