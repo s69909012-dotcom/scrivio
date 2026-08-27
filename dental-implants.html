@@ -2,31 +2,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dental Implants in Berhampur | FindToCare</title>
 
+<meta
+  name="description"
+  content="Learn about dental implants in Berhampur, including how dental implants work, treatment stages, suitability, benefits and what to consider before treatment."
+>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+  rel="stylesheet"
+>
+
 
 <style>
 
+/* =====================================================
+   ROOT
+===================================================== */
+
 :root {
+
   --brand: #0F766E;
   --navy: #0F172A;
   --bg: #F8FAFC;
   --body: #334155;
+
   --cta: #FF6B35;
   --cta-dark: #e2551f;
+
   --accent: #14B8A6;
+
   --white: #ffffff;
   --border: #E2E8F0;
 
   --font-display: 'Manrope', sans-serif;
   --font-body: 'Inter', sans-serif;
+
 }
+
+
+/* =====================================================
+   RESET
+===================================================== */
 
 * {
   margin: 0;
@@ -39,15 +64,22 @@ html {
 }
 
 body {
+
   font-family: var(--font-body);
+
   color: var(--body);
+
   background: var(--bg);
+
   line-height: 1.6;
+
+  overflow-x: hidden;
+
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -55,114 +87,181 @@ img {
   max-width: 100%;
 }
 
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
 .container {
+
+  width: 100%;
+
   max-width: 1160px;
+
   margin: 0 auto;
-  padding: 0 24px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
 }
+
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
 
 h1,
 h2,
 h3 {
+
   font-family: var(--font-display);
+
   font-weight: 700;
+
   color: var(--navy);
+
 }
 
 
-/* =========================
-   EYEBROW
-========================= */
-
-.eyebrow {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--brand);
-}
-
-
-/* =========================
+/* =====================================================
    BUTTON
-========================= */
+===================================================== */
 
 .btn {
+
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
+
   gap: 8px;
 
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 15px;
+  min-height: 48px;
 
-  padding: 14px 28px;
+  padding: 13px 26px;
 
   border-radius: 8px;
+
   border: none;
+
+  font-family: var(--font-body);
+
+  font-size: 15px;
+
+  font-weight: 500;
 
   cursor: pointer;
 
   transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    background 0.15s ease;
+    background .15s ease,
+    transform .15s ease,
+    box-shadow .15s ease;
+
 }
 
 .btn-cta {
+
   background: var(--cta);
+
   color: var(--white);
 
   box-shadow:
-    0 8px 20px -8px rgba(255,107,53,0.5);
+    0 8px 20px -8px rgba(255,107,53,.5);
+
 }
 
 .btn-cta:hover {
+
   background: var(--cta-dark);
+
   transform: translateY(-1px);
+
 }
 
 
-/* =========================
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.eyebrow {
+
+  display: inline-block;
+
+  font-family: var(--font-body);
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color: var(--brand);
+
+}
+
+
+/* =====================================================
    HEADER
-========================= */
+===================================================== */
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
 
-  background: rgba(248,250,252,0.92);
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(248,250,252,.94);
 
   backdrop-filter: blur(10px);
 
   border-bottom: 1px solid var(--border);
+
 }
+
 
 .nav-wrap {
+
+  width: 100%;
+
   max-width: 1160px;
+
   margin: 0 auto;
 
+  padding: 17px 24px;
+
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
-  padding: 18px 24px;
+  gap: 24px;
+
 }
 
 
-/* LOGO */
+/* =====================================================
+   LOGO
+===================================================== */
 
 .logo {
+
+  flex-shrink: 0;
+
   font-family: var(--font-display);
-  font-weight: 800;
+
   font-size: 22px;
 
-  letter-spacing: -0.01em;
+  font-weight: 800;
+
+  letter-spacing: -.01em;
 
   white-space: nowrap;
+
 }
 
 .logo .find,
@@ -175,174 +274,299 @@ header {
 }
 
 
-/* DESKTOP NAV */
+/* =====================================================
+   DESKTOP NAV
+===================================================== */
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
 
-  font-weight: 500;
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-left: auto;
+
   font-size: 15px;
 
+  font-weight: 500;
+
   color: var(--navy);
+
 }
 
 .nav-links a {
-  opacity: 0.85;
+
+  opacity: .85;
 
   transition:
-    opacity 0.15s ease,
-    color 0.15s ease;
+    color .15s ease,
+    opacity .15s ease;
+
 }
 
 .nav-links a:hover {
-  opacity: 1;
+
   color: var(--brand);
+
+  opacity: 1;
+
 }
-
-
-/* ACTIVE PAGE */
 
 .nav-links a.active {
+
   color: var(--brand);
+
   opacity: 1;
+
 }
 
 
-/* HEADER CTA */
+/* =====================================================
+   HEADER CTA
+===================================================== */
 
 .nav-cta {
+
   display: flex;
+
   align-items: center;
-  gap: 18px;
+
+  gap: 12px;
+
+  flex-shrink: 0;
+
 }
 
 
-/* =========================
+/* =====================================================
    HAMBURGER
-========================= */
+===================================================== */
 
 .hamburger {
+
   display: none;
 
+  width: 42px;
+  height: 42px;
+
+  padding: 8px;
+
   flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
   gap: 5px;
 
-  background: none;
   border: none;
+
+  background: transparent;
 
   cursor: pointer;
 
-  padding: 8px;
 }
 
 .hamburger span {
+
   width: 22px;
+
   height: 2px;
+
+  border-radius: 2px;
 
   background: var(--navy);
 
-  border-radius: 2px;
 }
 
 
-/* MOBILE MENU */
+/* =====================================================
+   MOBILE MENU
+===================================================== */
 
 .mobile-menu {
+
   display: none;
 
-  flex-direction: column;
-
-  padding: 8px 24px 20px;
-
-  gap: 14px;
+  padding: 10px 24px 22px;
 
   border-top: 1px solid var(--border);
 
-  font-weight: 500;
-  font-size: 15px;
+  background: var(--bg);
+
 }
 
 .mobile-menu.open {
+
   display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+}
+
+.mobile-menu a {
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  color: var(--navy);
+
 }
 
 .mobile-menu a.active {
+
   color: var(--brand);
+
 }
 
 
-/* =========================
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb-section {
+
+  padding-top: 22px;
+
+}
+
+.breadcrumb {
+
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  font-size: 13px;
+
+  color: #64748B;
+
+}
+
+.breadcrumb a {
+
+  color: var(--body);
+
+  transition: color .15s ease;
+
+}
+
+.breadcrumb a:hover {
+
+  color: var(--brand);
+
+}
+
+.breadcrumb-current {
+
+  color: var(--brand);
+
+  font-weight: 500;
+
+}
+
+.breadcrumb-separator {
+
+  color: #94A3B8;
+
+}
+
+
+/* =====================================================
    HERO
-========================= */
+===================================================== */
 
 .hero {
-  padding: 76px 0 84px;
+
+  padding: 58px 0 82px;
+
 }
 
+
 .hero-grid {
+
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:
+    minmax(0, 1.02fr)
+    minmax(0, .98fr);
 
   align-items: center;
 
   gap: 64px;
+
 }
 
 
-/* HERO TEXT */
+/* =====================================================
+   HERO CONTENT
+===================================================== */
 
 .hero-content {
-  max-width: 560px;
+
+  min-width: 0;
+
+  max-width: 570px;
+
 }
 
 .hero-content h1 {
-  font-size: 46px;
+
+  margin-top: 15px;
+
+  margin-bottom: 20px;
+
+  font-size: clamp(38px, 4vw, 48px);
 
   line-height: 1.1;
 
-  letter-spacing: -0.02em;
+  letter-spacing: -.025em;
 
-  margin: 16px 0 20px;
 }
 
 .hero-content p {
+
+  max-width: 530px;
+
+  margin-bottom: 30px;
+
   font-size: 17px;
 
   line-height: 1.7;
 
   color: var(--body);
 
-  max-width: 520px;
-
-  margin-bottom: 30px;
-}
-
-.hero-actions {
-  display: flex;
-
-  align-items: center;
-
-  gap: 14px;
-
-  flex-wrap: wrap;
 }
 
 
-/* =========================
+/* =====================================================
    HERO IMAGE
-========================= */
+===================================================== */
 
 .hero-visual {
+
+  width: 100%;
+
+  min-width: 0;
+
   display: flex;
 
-  justify-content: center;
   align-items: center;
+
+  justify-content: center;
+
 }
 
 .hero-visual img {
+
   width: 100%;
 
   max-width: 520px;
@@ -350,12 +574,38 @@ header {
   height: auto;
 
   object-fit: contain;
+
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-wrap {
+    gap: 18px;
+  }
+
+  .hero-grid {
+    gap: 42px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
 
 @media (max-width: 860px) {
 
@@ -367,113 +617,250 @@ header {
     display: flex;
   }
 
-  .nav-cta {
-    gap: 10px;
+  .nav-wrap {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .nav-cta .btn-cta {
+    min-height: 40px;
+
     padding: 9px 14px;
-    font-size: 13.5px;
+
+    font-size: 13px;
   }
 
 
   /* HERO */
 
+  .breadcrumb-section {
+    padding-top: 18px;
+  }
+
   .hero {
-    padding: 52px 0 56px;
+    padding: 48px 0 64px;
   }
 
   .hero-grid {
+
     grid-template-columns: 1fr;
 
-    gap: 38px;
+    gap: 42px;
 
     text-align: center;
+
   }
 
   .hero-content {
-    max-width: 620px;
+
+    max-width: 680px;
 
     margin: 0 auto;
+
   }
 
   .hero-content h1 {
-    font-size: 34px;
 
-    line-height: 1.14;
+    font-size: 38px;
+
+    max-width: 650px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
   }
 
   .hero-content p {
-    font-size: 16px;
 
     margin-left: auto;
+
     margin-right: auto;
 
-    margin-bottom: 26px;
   }
 
   .hero-actions {
+
+    display: flex;
+
     justify-content: center;
+
   }
 
   .hero-visual {
+
     order: 2;
+
   }
 
   .hero-visual img {
-    max-width: 460px;
+
+    max-width: 500px;
+
   }
+
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* =====================================================
+   MOBILE
+===================================================== */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
   .container {
-    padding: 0 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
   }
 
   .nav-wrap {
-    padding: 15px 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
   }
 
   .logo {
     font-size: 20px;
   }
 
-  .nav-cta .btn-cta {
-    padding: 8px 11px;
-
-    font-size: 12.5px;
+  .nav-cta {
+    gap: 5px;
   }
 
+  .nav-cta .btn-cta {
+
+    min-height: 38px;
+
+    padding: 8px 11px;
+
+    font-size: 12px;
+
+    border-radius: 7px;
+
+  }
+
+  .hamburger {
+
+    width: 38px;
+    height: 38px;
+
+    padding: 6px;
+
+  }
+
+
+  /* BREADCRUMB */
+
+  .breadcrumb-section {
+
+    padding-top: 16px;
+
+  }
+
+  .breadcrumb {
+
+    font-size: 12px;
+
+    gap: 6px;
+
+  }
+
+
+  /* HERO */
+
   .hero {
-    padding: 42px 0 48px;
+
+    padding: 38px 0 50px;
+
+  }
+
+  .hero-grid {
+
+    gap: 32px;
+
   }
 
   .hero-content h1 {
-    font-size: 30px;
+
+    font-size: 31px;
+
+    line-height: 1.14;
+
+    letter-spacing: -.02em;
+
+    margin-top: 12px;
+
+    margin-bottom: 17px;
+
   }
 
   .hero-content p {
+
     font-size: 15px;
 
     line-height: 1.65;
+
+    margin-bottom: 24px;
+
   }
 
   .hero-actions {
+
     width: 100%;
+
   }
 
   .hero-actions .btn {
+
     width: 100%;
+
   }
 
   .hero-visual img {
-    max-width: 100%;
+
+    width: 100%;
+
+    max-width: 430px;
+
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .nav-cta .btn-cta {
+
+    padding-left: 9px;
+    padding-right: 9px;
+
+    font-size: 11.5px;
+
+  }
+
+  .hero-content h1 {
+
+    font-size: 28px;
+
+  }
+
+  .eyebrow {
+
+    font-size: 11.5px;
+
+    letter-spacing: 1.2px;
+
   }
 
 }
@@ -485,16 +872,16 @@ header {
 <body>
 
 
-<!-- ==================================================
+<!-- =====================================================
      HEADER
-================================================== -->
+===================================================== -->
 
 <header>
 
   <div class="nav-wrap">
 
 
-    <!-- FINDTOCARE LOGO -->
+    <!-- LOGO -->
 
     <a
       href="index.html"
@@ -537,7 +924,7 @@ header {
     </nav>
 
 
-    <!-- HEADER CTA + MOBILE MENU BUTTON -->
+    <!-- CTA + HAMBURGER -->
 
     <div class="nav-cta">
 
@@ -548,11 +935,10 @@ header {
         Get Treatment Help
       </a>
 
-
       <button
+        type="button"
         class="hamburger"
         id="hamburgerBtn"
-        type="button"
         aria-label="Open menu"
         aria-expanded="false"
       >
@@ -570,9 +956,10 @@ header {
 
   <!-- MOBILE MENU -->
 
-  <div
+  <nav
     class="mobile-menu"
     id="mobileMenu"
+    aria-label="Mobile navigation"
   >
 
     <a href="index.html">
@@ -598,99 +985,128 @@ header {
       Contact
     </a>
 
-  </div>
+  </nav>
 
 </header>
 
 
 
-<!-- ==================================================
-     MAIN
-================================================== -->
-
 <main>
 
 
-  <!-- ==================================================
-       HERO SECTION
-  ================================================== -->
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
 
-  <section class="hero">
+<section class="breadcrumb-section">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="hero-grid">
+    <nav
+      class="breadcrumb"
+      aria-label="Breadcrumb"
+    >
 
+      <a href="index.html">
+        Home
+      </a>
 
-        <!-- =========================
-             HERO TEXT — LEFT
-        ========================== -->
+      <span class="breadcrumb-separator">
+        /
+      </span>
 
-        <div class="hero-content">
+      <span class="breadcrumb-current">
+        Dental Implants
+      </span>
 
-          <span class="eyebrow">
-            Dental Implants · Berhampur
-          </span>
+    </nav>
 
+  </div>
 
-          <h1>
-            Dental Implants: A Complete Guide to Replacing Missing Teeth
-          </h1>
-
-
-          <p>
-            Understand how dental implants work, what the treatment involves,
-            who may be suitable, and what to consider before exploring
-            implant treatment.
-          </p>
+</section>
 
 
-          <div class="hero-actions">
 
-            <a
-              href="#form"
-              class="btn btn-cta"
-            >
-              Check Treatment Options →
-            </a>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-          </div>
+<section class="hero">
 
-        </div>
+  <div class="container">
+
+    <div class="hero-grid">
 
 
-        <!-- =========================
-             HERO IMAGE — RIGHT
-        ========================== -->
+      <!-- =========================
+           LEFT — HERO TEXT
+      ========================== -->
 
-        <div class="hero-visual">
+      <div class="hero-content">
 
-          <img
-            src="dental-implant.png"
-            alt="Dental implant showing the crown, abutment and implant fixture"
-            width="520"
-            height="420"
+        <span class="eyebrow">
+          Dental Implants · Berhampur
+        </span>
+
+
+        <h1>
+          Dental Implants: A Complete Guide to Replacing Missing Teeth
+        </h1>
+
+
+        <p>
+          Understand how dental implants work, what the treatment involves,
+          who may be suitable, and what to consider before exploring
+          implant treatment.
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a
+            href="#form"
+            class="btn btn-cta"
           >
+            Check Treatment Options →
+          </a>
 
         </div>
-
 
       </div>
 
+
+      <!-- =========================
+           RIGHT — HERO IMAGE
+      ========================== -->
+
+      <div class="hero-visual">
+
+        <img
+          src="dental-implant.png"
+          alt="Dental implant showing the crown, abutment and implant fixture"
+          width="520"
+          height="420"
+        >
+
+      </div>
+
+
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
 </main>
 
 
 
-<!-- ==================================================
-     JAVASCRIPT
-================================================== -->
-
 <script>
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
 
 const hamburgerBtn =
   document.getElementById("hamburgerBtn");
@@ -711,6 +1127,8 @@ hamburgerBtn.addEventListener("click", () => {
 
 });
 
+
+/* CLOSE MENU AFTER CLICK */
 
 document
   .querySelectorAll(".mobile-menu a")
