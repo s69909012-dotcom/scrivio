@@ -54,6 +54,10 @@
 
     html {
       scroll-behavior: smooth;
+      /* fixes horizontal-scroll without breaking position:sticky headers
+         (setting overflow-x:hidden on body/html breaks sticky elements
+         inside them in several mobile browsers) */
+      max-width: 100%;
     }
 
     body {
@@ -61,7 +65,7 @@
       color: var(--body);
       background: var(--bg);
       line-height: 1.6;
-      overflow-x: hidden;
+      max-width: 100%;
     }
 
     a {
@@ -83,6 +87,7 @@
     input,
     select {
       font-family: inherit;
+      max-width: 100%;
     }
 
 
@@ -141,6 +146,7 @@
       border: none;
 
       cursor: pointer;
+      white-space: nowrap;
 
       transition:
         transform 0.15s ease,
@@ -257,6 +263,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      flex-shrink: 0;
     }
 
     .nav-cta .btn-cta {
@@ -276,6 +283,7 @@
 
       width: 42px;
       height: 42px;
+      flex-shrink: 0;
 
       background: transparent;
       border: 1px solid var(--border);
@@ -772,6 +780,8 @@
       flex-direction: column;
 
       gap: 6px;
+
+      min-width: 0;
     }
 
     .field.full {
@@ -938,6 +948,9 @@
 
     /* =========================================================
        FINAL CTA
+       (now sits inside .container like every other section,
+       so it never needs negative margins to reach full width —
+       that trick was the main source of the mobile overflow)
     ========================================================= */
 
     .final-cta {
@@ -949,9 +962,7 @@
 
       border-radius: 28px;
 
-      max-width: 1160px;
-
-      margin: 0 auto;
+      width: 100%;
     }
 
     .final-cta h2 {
@@ -1278,14 +1289,13 @@
       }
 
 
-      /* FINAL CTA */
+      /* FINAL CTA — stays inside .container, just gets smaller
+         padding/radius on mobile, no negative margins */
 
       .final-cta {
-        border-radius: 0;
+        border-radius: 20px;
 
-        padding: 58px 20px;
-
-        margin: 0 -20px;
+        padding: 48px 20px;
       }
 
       .final-cta h2 {
@@ -1389,7 +1399,45 @@
       }
 
       .final-cta {
-        margin: 0 -16px;
+        padding: 40px 16px;
+      }
+
+    }
+
+
+    /* =========================================================
+       EXTRA-SMALL MOBILE
+       (very narrow phones, ~360px and below — this is where the
+       header CTA + hamburger combo was most likely overflowing)
+    ========================================================= */
+
+    @media (max-width: 380px) {
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav-wrap {
+        gap: 6px;
+      }
+
+      .nav-cta {
+        gap: 6px;
+      }
+
+      .nav-cta .btn-cta {
+        padding: 7px 9px;
+
+        font-size: 11px;
+      }
+
+      .hamburger {
+        width: 36px;
+        height: 36px;
+      }
+
+      .hero-content h1 {
+        font-size: 25px;
       }
 
     }
@@ -2343,22 +2391,28 @@
 
     <!-- =====================================================
          FINAL CTA
+         (now wrapped in .container so it never needs negative
+         margins to fill the width — this was the main mobile bug)
     ====================================================== -->
 
     <section>
 
-      <div class="final-cta">
+      <div class="container">
 
-        <h2>
-          Looking for the Right Implant Treatment in Berhampur?
-        </h2>
+        <div class="final-cta">
 
-        <a
-          href="dental-implants.html#form"
-          class="btn btn-cta"
-        >
-          Check Your Treatment Options
-        </a>
+          <h2>
+            Looking for the Right Implant Treatment in Berhampur?
+          </h2>
+
+          <a
+            href="dental-implants.html#form"
+            class="btn btn-cta"
+          >
+            Check Your Treatment Options
+          </a>
+
+        </div>
 
       </div>
 
