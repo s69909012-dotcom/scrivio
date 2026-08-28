@@ -1,0 +1,1044 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacy Policy — FindToCare</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --brand: #0F766E;
+  --navy: #0F172A;
+  --bg: #F8FAFC;
+  --body: #334155;
+  --cta: #FF6B35;
+  --cta-dark: #e2551f;
+  --accent: #14B8A6;
+  --white: #ffffff;
+  --border: #E2E8F0;
+
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--body);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--navy);
+}
+
+/* ================= HEADER ================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248,250,252,0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  max-width: 1208px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.logo .find,
+.logo .care {
+  color: var(--navy);
+}
+
+.logo .to {
+  color: var(--brand);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--navy);
+}
+
+.nav-links a {
+  opacity: 0.85;
+  transition: 0.15s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  color: var(--brand);
+}
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* BUTTON */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.btn-cta {
+  background: var(--cta);
+  color: var(--white);
+  box-shadow: 0 8px 20px -8px rgba(255,107,53,0.5);
+}
+
+.btn-cta:hover {
+  background: var(--cta-dark);
+  transform: translateY(-1px);
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 8px 24px 20px;
+  gap: 14px;
+  border-top: 1px solid var(--border);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+/* ================= BREADCRUMBS ================= */
+
+.breadcrumb-wrap {
+  padding-top: 28px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  font-size: 13px;
+  color: #64748B;
+}
+
+.breadcrumbs a {
+  color: var(--brand);
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #64748B;
+}
+
+/* ================= PAGE HERO ================= */
+
+.page-hero {
+  padding: 54px 0 44px;
+  text-align: center;
+}
+
+.page-hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.page-hero h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 14px 0 16px;
+}
+
+.page-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: var(--body);
+}
+
+/* ================= PRIVACY CONTENT ================= */
+
+.policy-section {
+  padding: 20px 0 72px;
+}
+
+.policy-card {
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 42px 46px;
+}
+
+.policy-card h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin-top: 34px;
+  margin-bottom: 10px;
+}
+
+.policy-card h2:first-child {
+  margin-top: 0;
+}
+
+.policy-card p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.policy-card ul {
+  margin: 8px 0 18px 20px;
+}
+
+.policy-card li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.policy-date {
+  font-size: 13px !important;
+  color: #64748B;
+  margin-bottom: 28px !important;
+}
+
+/* ================= CTA ================= */
+
+.final-cta {
+  background: var(--navy);
+  text-align: center;
+  padding: 68px 24px;
+  margin: 0 auto;
+  max-width: 1160px;
+  border-radius: 28px;
+}
+
+.final-cta h2 {
+  color: var(--white);
+  font-size: 30px;
+  line-height: 1.25;
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 56px 0 28px;
+  margin-top: 72px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  margin-top: 12px;
+  max-width: 280px;
+}
+
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col a {
+  font-size: 14.5px;
+  color: var(--body);
+}
+
+.footer-col a:hover {
+  color: var(--brand);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+  transition: 0.15s ease;
+}
+
+.social-icon:hover {
+  background: #ECFDFB;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #94A3B8;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: #64748B;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--brand);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 860px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-cta {
+    gap: 10px;
+  }
+
+  .nav-cta .btn-cta {
+    padding: 9px 14px;
+    font-size: 13.5px;
+  }
+
+  .breadcrumb-wrap {
+    padding-top: 20px;
+  }
+
+  .page-hero {
+    padding: 42px 0 32px;
+  }
+
+  .page-hero h1 {
+    font-size: 32px;
+  }
+
+  .policy-section {
+    padding-top: 12px;
+  }
+
+  .policy-card {
+    padding: 28px 22px;
+    border-radius: 14px;
+  }
+
+  .policy-card h2 {
+    font-size: 20px;
+    margin-top: 28px;
+  }
+
+  .policy-card p,
+  .policy-card li {
+    font-size: 14.5px;
+  }
+
+  .final-cta {
+    border-radius: 0;
+    margin: 0 -24px;
+    padding: 54px 24px;
+  }
+
+  .final-cta h2 {
+    font-size: 26px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+  <div class="nav-wrap">
+
+    <a href="index.html" class="logo" aria-label="FindToCare Home">
+      <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="dental-implants.html">
+        Dental Implants
+      </a>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="doctors.html">
+        Doctors
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+    </nav>
+
+    <div class="nav-cta">
+
+      <a
+        href="dental-implants.html#form"
+        class="btn btn-cta"
+      >
+        Get Treatment Help
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburgerBtn"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="dental-implants.html">
+      Dental Implants
+    </a>
+
+    <a href="about.html">
+      About
+    </a>
+
+    <a href="doctors.html">
+      Doctors
+    </a>
+
+    <a href="contact.html">
+      Contact
+    </a>
+
+  </div>
+
+</header>
+
+
+<main>
+
+  <!-- ================= BREADCRUMBS ================= -->
+
+  <div class="container breadcrumb-wrap">
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <span>›</span>
+
+      <span class="breadcrumb-current">
+        Privacy Policy
+      </span>
+
+    </nav>
+
+  </div>
+
+
+  <!-- ================= PAGE HERO ================= -->
+
+  <section class="page-hero">
+
+    <div class="container page-hero-content">
+
+      <span class="eyebrow">
+        FindToCare
+      </span>
+
+      <h1>
+        Privacy Policy
+      </h1>
+
+      <p>
+        How FindToCare collects, uses, and protects information
+        submitted through our website.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= POLICY ================= -->
+
+  <section class="policy-section">
+
+    <div class="container">
+
+      <article class="policy-card">
+
+        <p class="policy-date">
+          Last Updated: August 2026
+        </p>
+
+
+        <h2>
+          1. Information We Collect
+        </h2>
+
+        <p>
+          When you submit an enquiry through our website,
+          we may collect information such as:
+        </p>
+
+        <ul>
+          <li>Full name</li>
+          <li>Phone number</li>
+          <li>WhatsApp number</li>
+          <li>Location or area</li>
+          <li>Treatment requirement</li>
+          <li>Preferred contact method</li>
+          <li>Information included in your message</li>
+        </ul>
+
+        <p>
+          We may also collect basic website usage information,
+          such as browser type, device information, and pages visited.
+        </p>
+
+
+        <h2>
+          2. How We Use Your Information
+        </h2>
+
+        <p>
+          We may use the information you provide to:
+        </p>
+
+        <ul>
+          <li>Respond to your enquiry</li>
+          <li>Understand your treatment requirement</li>
+          <li>Help you explore relevant dental treatment options</li>
+          <li>Contact you through your selected contact method</li>
+          <li>Improve our website and enquiry process</li>
+        </ul>
+
+
+        <h2>
+          3. Sharing Your Information
+        </h2>
+
+        <p>
+          If appropriate and with your enquiry in mind,
+          information you provide may be shared with a relevant
+          dental clinic or healthcare provider to help address
+          your treatment enquiry.
+        </p>
+
+        <p>
+          We do not sell your personal information.
+        </p>
+
+
+        <h2>
+          4. Communication
+        </h2>
+
+        <p>
+          By submitting an enquiry, you agree that FindToCare
+          may contact you regarding your enquiry through the
+          contact method you selected.
+        </p>
+
+        <p>
+          You can choose Phone Call, WhatsApp, or Both when
+          submitting the form.
+        </p>
+
+
+        <h2>
+          5. Data Security
+        </h2>
+
+        <p>
+          We take reasonable steps to protect the information
+          submitted through our website. However, no method of
+          transmitting or storing information online can be
+          guaranteed to be completely secure.
+        </p>
+
+
+        <h2>
+          6. Cookies and Website Analytics
+        </h2>
+
+        <p>
+          Our website may use cookies or similar technologies
+          to understand website usage, improve performance,
+          and measure how visitors interact with the website.
+        </p>
+
+
+        <h2>
+          7. Third-Party Services
+        </h2>
+
+        <p>
+          We may use third-party services for website hosting,
+          analytics, communication, forms, or other website
+          functions. These services may process information
+          according to their own privacy policies.
+        </p>
+
+
+        <h2>
+          8. Your Choices
+        </h2>
+
+        <p>
+          You may choose not to provide certain information.
+          However, some information may be necessary for us
+          to respond to or process your enquiry.
+        </p>
+
+        <p>
+          If you want to ask about information you have
+          submitted to us, you can contact FindToCare using
+          the contact details provided on our Contact page.
+        </p>
+
+
+        <h2>
+          9. Children's Privacy
+        </h2>
+
+        <p>
+          Our website is not specifically directed toward
+          children. We do not knowingly request personal
+          information from children for treatment enquiries.
+        </p>
+
+
+        <h2>
+          10. Changes to This Policy
+        </h2>
+
+        <p>
+          We may update this Privacy Policy from time to time.
+          Any changes will be posted on this page with an
+          updated date.
+        </p>
+
+
+        <h2>
+          11. Contact Us
+        </h2>
+
+        <p>
+          If you have questions about this Privacy Policy or
+          how your information is handled, please contact
+          FindToCare using the contact details available on
+          our Contact page.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <section>
+
+    <div class="final-cta">
+
+      <h2>
+        Looking for Dental Implant Treatment Options?
+      </h2>
+
+      <a
+        href="dental-implants.html#form"
+        class="btn btn-cta"
+      >
+        Get Treatment Help →
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <a href="index.html" class="logo">
+          <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
+        </a>
+
+        <p class="footer-tagline">
+          Connecting patients in Berhampur with dental implant
+          treatment information and relevant care options.
+        </p>
+
+
+        <div class="socials">
+
+          <a
+            class="social-icon"
+            href="#"
+            aria-label="Instagram"
+          >
+            Instagram
+          </a>
+
+          <a
+            class="social-icon"
+            href="#"
+            aria-label="WhatsApp"
+          >
+            WhatsApp
+          </a>
+
+          <a
+            class="social-icon"
+            href="#"
+            aria-label="Facebook"
+          >
+            Facebook
+          </a>
+
+          <a
+            class="social-icon"
+            href="#"
+            aria-label="YouTube"
+          >
+            YouTube
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>
+          Quick Links
+        </h4>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="dental-implants.html">
+              Dental Implants
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              How It Works
+            </a>
+          </li>
+
+          <li>
+            <a href="doctors.html">
+              Doctors
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h4>
+          Contact
+        </h4>
+
+        <ul>
+
+          <li>
+            <a href="tel:">
+              Phone Number
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              WhatsApp Us
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:">
+              Email
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 FindToCare. All rights reserved.
+      </span>
+
+      <div class="footer-bottom-links">
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms &amp; Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= MOBILE MENU JS ================= -->
+
+<script>
+
+const hamburgerBtn =
+  document.getElementById("hamburgerBtn");
+
+const mobileMenu =
+  document.getElementById("mobileMenu");
+
+hamburgerBtn.addEventListener("click", () => {
+
+  const isOpen =
+    mobileMenu.classList.toggle("open");
+
+  hamburgerBtn.setAttribute(
+    "aria-expanded",
+    isOpen
+  );
+
+});
+
+document
+  .querySelectorAll(".mobile-menu a")
+  .forEach(link => {
+
+    link.addEventListener("click", () => {
+
+      mobileMenu.classList.remove("open");
+
+      hamburgerBtn.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
+```
