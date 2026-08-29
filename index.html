@@ -1,5 +1,5 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -8,11 +8,10 @@
 
   <title>FindToCare — Dental Implants in Berhampur</title>
 
-<meta
-name="description"
-content="Explore dental implant treatment options in Berhampur and get connected with relevant dental care options."
-
->
+  <meta
+    name="description"
+    content="Explore dental implant treatment options in Berhampur and get connected with relevant dental care options."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +27,6 @@ content="Explore dental implant treatment options in Berhampur and get connected
     ========================================================= */
 
     :root {
-      /* Brand */
       --brand: #0F766E;
       --navy: #0F172A;
       --bg: #F8FAFC;
@@ -39,15 +37,12 @@ content="Explore dental implant treatment options in Berhampur and get connected
       --white: #FFFFFF;
       --border: #E2E8F0;
 
-      /* Typography */
       --font-display: "Manrope", sans-serif;
       --font-body: "Inter", sans-serif;
 
-      /* Layout */
       --container: 1200px;
       --section-space: 88px;
 
-      /* UI */
       --radius-sm: 8px;
       --radius-md: 12px;
       --radius-lg: 16px;
@@ -550,8 +545,7 @@ content="Explore dental implant treatment options in Berhampur and get connected
 
     /* =========================================================
        DENTAL IMPLANT OPTIONS
-       Uploaded images are complete icon assets.
-       No CSS background/container behind them.
+       IMAGE ITSELF CONTAINS ITS OWN BACKGROUND
     ========================================================= */
 
     .cards {
@@ -583,9 +577,10 @@ content="Explore dental implant treatment options in Berhampur and get connected
       transform: translateY(-2px);
     }
 
+    /* No separate icon background */
     .card-icon {
-      width: 60px;
-      height: 60px;
+      width: 64px;
+      height: 64px;
 
       display: flex;
       align-items: center;
@@ -594,11 +589,13 @@ content="Explore dental implant treatment options in Berhampur and get connected
       margin-bottom: 20px;
 
       background: transparent;
+      border: 0;
+      border-radius: 0;
     }
 
     .card-icon img {
-      width: 60px;
-      height: 60px;
+      width: 64px;
+      height: 64px;
 
       object-fit: contain;
     }
@@ -698,6 +695,7 @@ content="Explore dental implant treatment options in Berhampur and get connected
 
     /* =========================================================
        WHY PATIENTS
+       IMAGE ITSELF CONTAINS ITS OWN BACKGROUND
     ========================================================= */
 
     .why-grid {
@@ -719,9 +717,10 @@ content="Explore dental implant treatment options in Berhampur and get connected
       border-radius: var(--radius-lg);
     }
 
+    /* No separate icon background */
     .why-icon {
-      width: 52px;
-      height: 52px;
+      width: 64px;
+      height: 64px;
 
       display: flex;
       align-items: center;
@@ -730,11 +729,13 @@ content="Explore dental implant treatment options in Berhampur and get connected
       margin: 0 auto 16px;
 
       background: transparent;
+      border: 0;
+      border-radius: 0;
     }
 
     .why-icon img {
-      width: 52px;
-      height: 52px;
+      width: 64px;
+      height: 64px;
 
       object-fit: contain;
     }
@@ -1388,14 +1389,14 @@ content="Explore dental implant treatment options in Berhampur and get connected
       }
 
       .why-icon {
-        width: 52px;
-        height: 52px;
+        width: 58px;
+        height: 58px;
         margin-bottom: 13px;
       }
 
       .why-icon img {
-        width: 52px;
-        height: 52px;
+        width: 58px;
+        height: 58px;
       }
 
       .why-item h3 {
@@ -1519,8 +1520,8 @@ content="Explore dental implant treatment options in Berhampur and get connected
       }
     }
   </style>
-
 </head>
+
 
 <body>
 
@@ -1530,905 +1531,7 @@ content="Explore dental implant treatment options in Berhampur and get connected
 
   <header>
 
-```
-<div class="container nav-wrap">
-
-  <a
-    href="index.html"
-    class="logo"
-    aria-label="FindToCare Home"
-  >
-    <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
-  </a>
-
-
-  <nav
-    class="nav-links"
-    aria-label="Main navigation"
-  >
-
-    <a href="index.html">Home</a>
-
-    <a href="dental-implants.html">Dental Implants</a>
-
-    <a href="about.html">About</a>
-
-    <a href="doctors.html">Doctors</a>
-
-    <a href="contact.html">Contact</a>
-
-  </nav>
-
-
-  <div class="nav-cta">
-
-    <a
-      href="#form"
-      class="btn btn-cta"
-    >
-      Get Treatment Help
-    </a>
-
-    <button
-      class="hamburger"
-      id="hamburgerBtn"
-      type="button"
-      aria-label="Open menu"
-      aria-expanded="false"
-      aria-controls="mobileMenu"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </div>
-
-</div>
-
-
-<div
-  class="mobile-menu"
-  id="mobileMenu"
->
-
-  <div class="mobile-menu-inner">
-
-    <a href="index.html">Home</a>
-
-    <a href="dental-implants.html">Dental Implants</a>
-
-    <a href="about.html">About</a>
-
-    <a href="doctors.html">Doctors</a>
-
-    <a href="contact.html">Contact</a>
-
-    <a
-      href="#form"
-      class="mobile-cta"
-    >
-      Get Treatment Help
-    </a>
-
-  </div>
-
-</div>
-```
-
-  </header>
-
-  <!-- =======================================================
-       MAIN
-  ======================================================== -->
-
-  <main>
-
-```
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<section
-  class="hero"
-  id="home"
->
-
-  <div class="container hero-content">
-
-    <span class="eyebrow">
-      Dental Implants · Berhampur
-    </span>
-
-    <h1>
-      Considering Dental Implants in Berhampur?
-    </h1>
-
-    <p>
-      Explore your treatment options and get connected with a relevant dental clinic for your dental implant needs.
-    </p>
-
-    <div class="hero-actions">
-
-      <a
-        href="#form"
-        class="btn btn-cta"
-      >
-        Check Treatment Options →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     HOW IT WORKS
-====================================================== -->
-
-<section id="how-it-works">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="eyebrow">
-        Process
-      </span>
-
-      <h2>
-        How FindToCare Works
-      </h2>
-
-    </div>
-
-
-    <div class="steps">
-
-      <div class="step-card">
-
-        <div class="step-num">1</div>
-
-        <h3>
-          Tell Us What You Need
-        </h3>
-
-        <p>
-          Share a few details about your dental situation through a short form.
-        </p>
-
-      </div>
-
-
-      <div class="step-card">
-
-        <div class="step-num">2</div>
-
-        <h3>
-          We Review Your Enquiry
-        </h3>
-
-        <p>
-          We go through your case details to understand what kind of care fits best.
-        </p>
-
-      </div>
-
-
-      <div class="step-card">
-
-        <div class="step-num">3</div>
-
-        <h3>
-          Get Connected With a Relevant Clinic
-        </h3>
-
-        <p>
-          We connect you with a clinic suited to your treatment need.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     DENTAL IMPLANT OPTIONS
-====================================================== -->
-
-<section id="implants">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="eyebrow">
-        What You Can Explore
-      </span>
-
-      <h2>
-        Dental Implant Options
-      </h2>
-
-    </div>
-
-
-    <div class="cards">
-
-      <div class="card">
-
-        <div class="card-icon">
-
-          <img
-            src="single-tooth.png"
-            alt="Single Tooth Implant"
-            width="60"
-            height="60"
-          >
-
-        </div>
-
-        <h3>
-          Single Tooth Implant
-        </h3>
-
-        <p>
-          Replace one missing tooth with a natural-looking, long-lasting solution.
-        </p>
-
-        <a href="dental-implants.html#single-tooth">
-          Explore Treatment →
-        </a>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="card-icon">
-
-          <img
-            src="multiple-teeth.png"
-            alt="Multiple Teeth Implants"
-            width="60"
-            height="60"
-          >
-
-        </div>
-
-        <h3>
-          Multiple Teeth Implants
-        </h3>
-
-        <p>
-          Restore several missing teeth with a stable, long-term treatment option.
-        </p>
-
-        <a href="dental-implants.html#multiple-teeth">
-          Explore Treatment →
-        </a>
-
-      </div>
-
-
-      <div class="card">
-
-        <div class="card-icon">
-
-          <img
-            src="full-mouth.png"
-            alt="Full Mouth Implants"
-            width="60"
-            height="60"
-          >
-
-        </div>
-
-        <h3>
-          Full Mouth Implants
-        </h3>
-
-        <p>
-          Complete smile restoration for extensive tooth loss, built around your case.
-        </p>
-
-        <a href="dental-implants.html#full-mouth">
-          Explore Treatment →
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     KEEP IN MIND
-====================================================== -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="eyebrow">
-        Before You Begin
-      </span>
-
-      <h2>
-        What to Keep in Mind
-      </h2>
-
-    </div>
-
-
-    <div class="keep-box">
-
-      <div class="keep-item">
-
-        <div class="keep-check">✓</div>
-
-        <p>
-          Cost varies by case
-        </p>
-
-      </div>
-
-
-      <div class="keep-item">
-
-        <div class="keep-check">✓</div>
-
-        <p>
-          A dental check-up is needed
-        </p>
-
-      </div>
-
-
-      <div class="keep-item">
-
-        <div class="keep-check">✓</div>
-
-        <p>
-          Treatment time varies by case
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     WHY PATIENTS
-====================================================== -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="eyebrow">
-        Benefits
-      </span>
-
-      <h2>
-        Why Patients Explore This Option
-      </h2>
-
-    </div>
-
-
-    <div class="why-grid">
-
-      <div class="why-item">
-
-        <div class="why-icon">
-
-          <img
-            src="natural-look-feel.png"
-            alt="Natural Look and Feel"
-            width="52"
-            height="52"
-          >
-
-        </div>
-
-        <h3>
-          Natural Look & Feel
-        </h3>
-
-      </div>
-
-
-      <div class="why-item">
-
-        <div class="why-icon">
-
-          <img
-            src="restores-chewing-ability.png"
-            alt="Restores Chewing Ability"
-            width="52"
-            height="52"
-          >
-
-        </div>
-
-        <h3>
-          Restores Chewing Ability
-        </h3>
-
-      </div>
-
-
-      <div class="why-item">
-
-        <div class="why-icon">
-
-          <img
-            src="built-to-last.png"
-            alt="Built to Last With Proper Care"
-            width="52"
-            height="52"
-          >
-
-        </div>
-
-        <h3>
-          Built to Last With Proper Care
-        </h3>
-
-      </div>
-
-
-      <div class="why-item">
-
-        <div class="why-icon">
-
-          <img
-            src="improves-confidence.png"
-            alt="Improves Confidence"
-            width="52"
-            height="52"
-          >
-
-        </div>
-
-        <h3>
-          Improves Confidence
-        </h3>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FORM
-====================================================== -->
-
-<section
-  class="form-section"
-  id="form"
->
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="eyebrow">
-        Get Started
-      </span>
-
-      <h2>
-        Check Your Treatment Options
-      </h2>
-
-    </div>
-
-
-    <div class="form-wrap">
-
-      <p class="form-note">
-        We'll help you explore the right treatment options for your case.
-      </p>
-
-
-      <p class="disclaimer-top">
-        Submitting this form does not confirm a specific appointment, treatment plan, price, or outcome — these are determined after a professional evaluation.
-      </p>
-
-
-      <form>
-
-        <div class="field full">
-
-          <label for="name">
-            Full Name *
-          </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            autocomplete="name"
-            required
-          >
-
-        </div>
-
-
-        <div class="field">
-
-          <label for="phone">
-            Phone Number *
-          </label>
-
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            autocomplete="tel"
-            required
-          >
-
-        </div>
-
-
-        <div class="field">
-
-          <label for="whatsapp">
-            WhatsApp Number
-          </label>
-
-          <input
-            type="tel"
-            id="whatsapp"
-            name="whatsapp"
-          >
-
-        </div>
-
-
-        <div class="field full">
-
-          <label for="location">
-            Location / Area *
-          </label>
-
-          <input
-            type="text"
-            id="location"
-            name="location"
-            placeholder="e.g. Berhampur"
-            required
-          >
-
-        </div>
-
-
-        <div class="field full">
-
-          <label for="need">
-            What are you looking for? *
-          </label>
-
-          <select
-            id="need"
-            name="need"
-            required
-          >
-
-            <option value="">
-              Select an option
-            </option>
-
-            <option>
-              Single missing tooth
-            </option>
-
-            <option>
-              Multiple missing teeth
-            </option>
-
-            <option>
-              Full mouth tooth replacement
-            </option>
-
-            <option>
-              Dental implant information
-            </option>
-
-            <option>
-              Not sure
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <div class="field full">
-
-          <label>
-            Preferred Contact Method *
-          </label>
-
-          <div class="radio-group">
-
-            <label class="radio-option">
-
-              <input
-                type="radio"
-                name="contact"
-                value="Phone Call"
-                required
-              >
-
-              Phone Call
-
-            </label>
-
-
-            <label class="radio-option">
-
-              <input
-                type="radio"
-                name="contact"
-                value="WhatsApp"
-              >
-
-              WhatsApp
-
-            </label>
-
-
-            <label class="radio-option">
-
-              <input
-                type="radio"
-                name="contact"
-                value="Both"
-              >
-
-              Both
-
-            </label>
-
-          </div>
-
-        </div>
-
-
-        <div class="field full">
-
-          <label for="timeline">
-            When are you looking for treatment?
-          </label>
-
-          <select
-            id="timeline"
-            name="timeline"
-          >
-
-            <option value="">
-              Select an option
-            </option>
-
-            <option>
-              As soon as possible
-            </option>
-
-            <option>
-              Within 1-3 months
-            </option>
-
-            <option>
-              Just researching
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <div class="field full">
-
-          <label class="consent-row">
-
-            <input
-              type="checkbox"
-              name="consent"
-              required
-            >
-
-            <span>
-              I agree to be contacted by FindToCare regarding my treatment enquiry.
-            </span>
-
-          </label>
-
-        </div>
-
-
-        <div class="field full">
-
-          <button
-            type="submit"
-            class="btn btn-cta submit-btn"
-          >
-            Check Treatment Options →
-          </button>
-
-        </div>
-
-      </form>
-
-
-      <p class="disclaimer-bottom">
-        This does not guarantee an appointment, treatment, price, or treatment outcome.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     TRUST
-====================================================== -->
-
-<section class="trust">
-
-  <div class="container">
-
-    <div class="section-head">
-
-      <span class="eyebrow">
-        Why FindToCare
-      </span>
-
-      <h2>
-        Local. Treatment-Focused. Patient-First.
-      </h2>
-
-    </div>
-
-
-    <div class="trust-grid">
-
-      <div class="trust-item">
-
-        <div class="keep-check">
-          ✓
-        </div>
-
-        <div>
-
-          <p>
-            Focused on Dental Implant Enquiries
-          </p>
-
-          <span class="trust-desc">
-            We only handle dental implant enquiries, so your case gets focused attention.
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="trust-item">
-
-        <div class="keep-check">
-          ✓
-        </div>
-
-        <div>
-
-          <p>
-            Built for Patients in Berhampur
-          </p>
-
-          <span class="trust-desc">
-            Connecting you with clinics right here in Berhampur — no generic nationwide matching.
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="trust-item">
-
-        <div class="keep-check">
-          ✓
-        </div>
-
-        <div>
-
-          <p>
-            Simple, Straightforward Enquiry Process
-          </p>
-
-          <span class="trust-desc">
-            One short form, no confusing steps or repeated calls.
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FINAL CTA
-====================================================== -->
-
-<section>
-
-  <div class="container">
-
-    <div class="final-cta">
-
-      <h2>
-        Looking for the Right Implant Treatment in Berhampur?
-      </h2>
-
-      <a
-        href="#form"
-        class="btn btn-cta"
-      >
-        Check Your Treatment Options
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-```
-
-  </main>
-
-  <!-- =======================================================
-       FOOTER
-  ======================================================== -->
-
-  <footer>
-
-```
-<div class="container">
-
-  <div class="footer-grid">
-
-    <div>
+    <div class="container nav-wrap">
 
       <a
         href="index.html"
@@ -2438,242 +1541,1138 @@ content="Explore dental implant treatment options in Berhampur and get connected
         <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
       </a>
 
-      <p class="footer-tagline">
-        Connecting patients in Berhampur with dental implant treatment information and relevant care options.
-      </p>
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">Home</a>
+
+        <a href="dental-implants.html">Dental Implants</a>
+
+        <a href="about.html">About</a>
+
+        <a href="doctors.html">Doctors</a>
+
+        <a href="contact.html">Contact</a>
+
+      </nav>
 
 
-      <div class="socials">
-
-        <!-- Instagram -->
-
-        <a
-          class="social-icon"
-          href="#"
-          aria-label="Instagram"
-        >
-
-          <svg
-            width="17"
-            height="17"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-
-            <rect
-              x="3"
-              y="3"
-              width="18"
-              height="18"
-              rx="5"
-            />
-
-            <circle
-              cx="12"
-              cy="12"
-              r="4"
-            />
-
-            <circle
-              cx="17.5"
-              cy="6.5"
-              r="0.5"
-              fill="currentColor"
-            />
-
-          </svg>
-
-        </a>
-
-
-        <!-- WhatsApp -->
+      <div class="nav-cta">
 
         <a
-          class="social-icon"
-          href="#"
-          aria-label="WhatsApp"
+          href="#form"
+          class="btn btn-cta"
         >
-
-          <svg
-            width="17"
-            height="17"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-
-            <path
-              d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"
-            />
-
-          </svg>
-
+          Get Treatment Help
         </a>
 
-
-        <!-- Facebook -->
-
-        <a
-          class="social-icon"
-          href="#"
-          aria-label="Facebook"
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
         >
-
-          <svg
-            width="17"
-            height="17"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-
-            <path
-              d="M14 9h3V6h-3a4 4 0 00-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z"
-            />
-
-          </svg>
-
-        </a>
-
-
-        <!-- YouTube -->
-
-        <a
-          class="social-icon"
-          href="#"
-          aria-label="YouTube"
-        >
-
-          <svg
-            width="17"
-            height="17"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-
-            <rect
-              x="2"
-              y="6"
-              width="20"
-              height="12"
-              rx="4"
-            />
-
-            <path
-              d="M10 9.5l5 2.5-5 2.5z"
-              fill="currentColor"
-              stroke="none"
-            />
-
-          </svg>
-
-        </a>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
       </div>
 
     </div>
 
 
-    <div class="footer-col">
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+    >
 
-      <h4>
-        Quick Links
-      </h4>
+      <div class="mobile-menu-inner">
 
-      <ul>
+        <a href="index.html">Home</a>
 
-        <li>
-          <a href="index.html">Home</a>
-        </li>
+        <a href="dental-implants.html">Dental Implants</a>
 
-        <li>
-          <a href="dental-implants.html">Dental Implants</a>
-        </li>
+        <a href="about.html">About</a>
 
-        <li>
-          <a href="#how-it-works">How It Works</a>
-        </li>
+        <a href="doctors.html">Doctors</a>
 
-        <li>
-          <a href="doctors.html">Doctors</a>
-        </li>
+        <a href="contact.html">Contact</a>
 
-        <li>
-          <a href="about.html">About</a>
-        </li>
+        <a
+          href="#form"
+          class="mobile-cta"
+        >
+          Get Treatment Help
+        </a>
 
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-
-      </ul>
+      </div>
 
     </div>
 
+  </header>
 
-    <div class="footer-col">
 
-      <h4>
-        Contact
-      </h4>
+  <!-- =======================================================
+       MAIN
+  ======================================================== -->
 
-      <ul>
+  <main>
 
-        <li>
-          <a href="tel:+910000000000">
-            +91 00000 00000
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="container hero-content">
+
+        <span class="eyebrow">
+          Dental Implants · Berhampur
+        </span>
+
+        <h1>
+          Considering Dental Implants in Berhampur?
+        </h1>
+
+        <p>
+          Explore your treatment options and get connected with a relevant dental clinic for your dental implant needs.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            href="#form"
+            class="btn btn-cta"
+          >
+            Check Treatment Options →
           </a>
-        </li>
 
-        <li>
-          <a href="https://wa.me/910000000000">
-            WhatsApp Us
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HOW IT WORKS
+    ====================================================== -->
+
+    <section id="how-it-works">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Process
+          </span>
+
+          <h2>
+            How FindToCare Works
+          </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+          <div class="step-card">
+
+            <div class="step-num">1</div>
+
+            <h3>
+              Tell Us What You Need
+            </h3>
+
+            <p>
+              Share a few details about your dental situation through a short form.
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-num">2</div>
+
+            <h3>
+              We Review Your Enquiry
+            </h3>
+
+            <p>
+              We go through your case details to understand what kind of care fits best.
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-num">3</div>
+
+            <h3>
+              Get Connected With a Relevant Clinic
+            </h3>
+
+            <p>
+              We connect you with a clinic suited to your treatment need.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DENTAL IMPLANT OPTIONS
+    ====================================================== -->
+
+    <section id="implants">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            What You Can Explore
+          </span>
+
+          <h2>
+            Dental Implant Options
+          </h2>
+
+        </div>
+
+
+        <div class="cards">
+
+          <div class="card">
+
+            <div class="card-icon">
+
+              <img
+                src="single-tooth.png"
+                alt="Single Tooth Implant"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Single Tooth Implant
+            </h3>
+
+            <p>
+              Replace one missing tooth with a natural-looking, long-lasting solution.
+            </p>
+
+            <a href="dental-implants.html#single-tooth">
+              Explore Treatment →
+            </a>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">
+
+              <img
+                src="multiple-teeth.png"
+                alt="Multiple Teeth Implants"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Multiple Teeth Implants
+            </h3>
+
+            <p>
+              Restore several missing teeth with a stable, long-term treatment option.
+            </p>
+
+            <a href="dental-implants.html#multiple-teeth">
+              Explore Treatment →
+            </a>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="card-icon">
+
+              <img
+                src="full-mouth.png"
+                alt="Full Mouth Implants"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Full Mouth Implants
+            </h3>
+
+            <p>
+              Complete smile restoration for extensive tooth loss, built around your case.
+            </p>
+
+            <a href="dental-implants.html#full-mouth">
+              Explore Treatment →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         KEEP IN MIND
+    ====================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Before You Begin
+          </span>
+
+          <h2>
+            What to Keep in Mind
+          </h2>
+
+        </div>
+
+
+        <div class="keep-box">
+
+          <div class="keep-item">
+
+            <div class="keep-check">✓</div>
+
+            <p>
+              Cost varies by case
+            </p>
+
+          </div>
+
+
+          <div class="keep-item">
+
+            <div class="keep-check">✓</div>
+
+            <p>
+              A dental check-up is needed
+            </p>
+
+          </div>
+
+
+          <div class="keep-item">
+
+            <div class="keep-check">✓</div>
+
+            <p>
+              Treatment time varies by case
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY PATIENTS
+    ====================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Benefits
+          </span>
+
+          <h2>
+            Why Patients Explore This Option
+          </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <div class="why-item">
+
+            <div class="why-icon">
+
+              <img
+                src="natural-look-feel.png"
+                alt="Natural Look and Feel"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Natural Look & Feel
+            </h3>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-icon">
+
+              <img
+                src="restores-chewing-ability.png"
+                alt="Restores Chewing Ability"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Restores Chewing Ability
+            </h3>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-icon">
+
+              <img
+                src="built-to-last.png"
+                alt="Built to Last With Proper Care"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Built to Last With Proper Care
+            </h3>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-icon">
+
+              <img
+                src="improves-confidence.png"
+                alt="Improves Confidence"
+                width="64"
+                height="64"
+              >
+
+            </div>
+
+            <h3>
+              Improves Confidence
+            </h3>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FORM
+    ====================================================== -->
+
+    <section
+      class="form-section"
+      id="form"
+    >
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Get Started
+          </span>
+
+          <h2>
+            Check Your Treatment Options
+          </h2>
+
+        </div>
+
+
+        <div class="form-wrap">
+
+          <p class="form-note">
+            We'll help you explore the right treatment options for your case.
+          </p>
+
+
+          <p class="disclaimer-top">
+            Submitting this form does not confirm a specific appointment, treatment plan, price, or outcome — these are determined after a professional evaluation.
+          </p>
+
+
+          <form>
+
+            <div class="field full">
+
+              <label for="name">
+                Full Name *
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="phone">
+                Phone Number *
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="whatsapp">
+                WhatsApp Number
+              </label>
+
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+              >
+
+            </div>
+
+
+            <div class="field full">
+
+              <label for="location">
+                Location / Area *
+              </label>
+
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="e.g. Berhampur"
+                required
+              >
+
+            </div>
+
+
+            <div class="field full">
+
+              <label for="need">
+                What are you looking for? *
+              </label>
+
+              <select
+                id="need"
+                name="need"
+                required
+              >
+
+                <option value="">
+                  Select an option
+                </option>
+
+                <option>
+                  Single missing tooth
+                </option>
+
+                <option>
+                  Multiple missing teeth
+                </option>
+
+                <option>
+                  Full mouth tooth replacement
+                </option>
+
+                <option>
+                  Dental implant information
+                </option>
+
+                <option>
+                  Not sure
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field full">
+
+              <label>
+                Preferred Contact Method *
+              </label>
+
+              <div class="radio-group">
+
+                <label class="radio-option">
+
+                  <input
+                    type="radio"
+                    name="contact"
+                    value="Phone Call"
+                    required
+                  >
+
+                  Phone Call
+
+                </label>
+
+
+                <label class="radio-option">
+
+                  <input
+                    type="radio"
+                    name="contact"
+                    value="WhatsApp"
+                  >
+
+                  WhatsApp
+
+                </label>
+
+
+                <label class="radio-option">
+
+                  <input
+                    type="radio"
+                    name="contact"
+                    value="Both"
+                  >
+
+                  Both
+
+                </label>
+
+              </div>
+
+            </div>
+
+
+            <div class="field full">
+
+              <label for="timeline">
+                When are you looking for treatment?
+              </label>
+
+              <select
+                id="timeline"
+                name="timeline"
+              >
+
+                <option value="">
+                  Select an option
+                </option>
+
+                <option>
+                  As soon as possible
+                </option>
+
+                <option>
+                  Within 1-3 months
+                </option>
+
+                <option>
+                  Just researching
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field full">
+
+              <label class="consent-row">
+
+                <input
+                  type="checkbox"
+                  name="consent"
+                  required
+                >
+
+                <span>
+                  I agree to be contacted by FindToCare regarding my treatment enquiry.
+                </span>
+
+              </label>
+
+            </div>
+
+
+            <div class="field full">
+
+              <button
+                type="submit"
+                class="btn btn-cta submit-btn"
+              >
+                Check Treatment Options →
+              </button>
+
+            </div>
+
+          </form>
+
+
+          <p class="disclaimer-bottom">
+            This does not guarantee an appointment, treatment, price, or treatment outcome.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRUST
+    ====================================================== -->
+
+    <section class="trust">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Why FindToCare
+          </span>
+
+          <h2>
+            Local. Treatment-Focused. Patient-First.
+          </h2>
+
+        </div>
+
+
+        <div class="trust-grid">
+
+          <div class="trust-item">
+
+            <div class="keep-check">
+              ✓
+            </div>
+
+            <div>
+
+              <p>
+                Focused on Dental Implant Enquiries
+              </p>
+
+              <span class="trust-desc">
+                We only handle dental implant enquiries, so your case gets focused attention.
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="trust-item">
+
+            <div class="keep-check">
+              ✓
+            </div>
+
+            <div>
+
+              <p>
+                Built for Patients in Berhampur
+              </p>
+
+              <span class="trust-desc">
+                Connecting you with clinics right here in Berhampur — no generic nationwide matching.
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="trust-item">
+
+            <div class="keep-check">
+              ✓
+            </div>
+
+            <div>
+
+              <p>
+                Simple, Straightforward Enquiry Process
+              </p>
+
+              <span class="trust-desc">
+                One short form, no confusing steps or repeated calls.
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL CTA
+    ====================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="final-cta">
+
+          <h2>
+            Looking for the Right Implant Treatment in Berhampur?
+          </h2>
+
+          <a
+            href="#form"
+            class="btn btn-cta"
+          >
+            Check Your Treatment Options
           </a>
-        </li>
 
-        <li>
-          <a href="mailto:hello@findtocare.com">
-            hello@findtocare.com
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <a
+            href="index.html"
+            class="logo"
+            aria-label="FindToCare Home"
+          >
+            <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
           </a>
-        </li>
 
-      </ul>
+          <p class="footer-tagline">
+            Connecting patients in Berhampur with dental implant treatment information and relevant care options.
+          </p>
+
+
+          <div class="socials">
+
+            <!-- Instagram -->
+
+            <a
+              class="social-icon"
+              href="#"
+              aria-label="Instagram"
+            >
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                />
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                />
+
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="0.5"
+                  fill="currentColor"
+                />
+
+              </svg>
+
+            </a>
+
+
+            <!-- WhatsApp -->
+
+            <a
+              class="social-icon"
+              href="#"
+              aria-label="WhatsApp"
+            >
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"
+                />
+
+              </svg>
+
+            </a>
+
+
+            <!-- Facebook -->
+
+            <a
+              class="social-icon"
+              href="#"
+              aria-label="Facebook"
+            >
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M14 9h3V6h-3a4 4 0 00-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z"
+                />
+
+              </svg>
+
+            </a>
+
+
+            <!-- YouTube -->
+
+            <a
+              class="social-icon"
+              href="#"
+              aria-label="YouTube"
+            >
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <rect
+                  x="2"
+                  y="6"
+                  width="20"
+                  height="12"
+                  rx="4"
+                />
+
+                <path
+                  d="M10 9.5l5 2.5-5 2.5z"
+                  fill="currentColor"
+                  stroke="none"
+                />
+
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="footer-col">
+
+          <h4>
+            Quick Links
+          </h4>
+
+          <ul>
+
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="dental-implants.html">Dental Implants</a>
+            </li>
+
+            <li>
+              <a href="#how-it-works">How It Works</a>
+            </li>
+
+            <li>
+              <a href="doctors.html">Doctors</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+          <h4>
+            Contact
+          </h4>
+
+          <ul>
+
+            <li>
+              <a href="tel:+910000000000">
+                +91 00000 00000
+              </a>
+            </li>
+
+            <li>
+              <a href="https://wa.me/910000000000">
+                WhatsApp Us
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:hello@findtocare.com">
+                hello@findtocare.com
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 FindToCare. All rights reserved.
+        </span>
+
+        <div class="footer-bottom-links">
+
+          <a href="privacy-policy.html">
+            Privacy Policy
+          </a>
+
+          <a href="terms.html">
+            Terms of Service
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
-
-  </div>
-
-
-  <div class="footer-bottom">
-
-    <span>
-      © 2026 FindToCare. All rights reserved.
-    </span>
-
-    <div class="footer-bottom-links">
-
-      <a href="privacy-policy.html">
-        Privacy Policy
-      </a>
-
-      <a href="terms.html">
-        Terms of Service
-      </a>
-
-    </div>
-
-  </div>
-
-</div>
-```
 
   </footer>
+
 
   <!-- =======================================================
        JAVASCRIPT
@@ -2755,3 +2754,4 @@ content="Explore dental implant treatment options in Berhampur and get connected
 </body>
 
 </html>
+```
