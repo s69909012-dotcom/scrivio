@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,21 +10,116 @@
 
   <meta
     name="description"
-    content="Learn about dental implants in Berhampur, including treatment options, the procedure, recovery, risks, bone grafting, alternatives, costs and what a dentist may evaluate."
+    content="A simple, patient-friendly guide to dental implants in Berhampur, including how implants work, the treatment process, recovery, risks, costs, bone grafting and alternatives."
   >
+
+  <link rel="canonical" href="dental-implants.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Inter:wght@400;500&display=swap"
     rel="stylesheet"
   >
 
+  <!-- =========================================================
+       STRUCTURED DATA
+  ========================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dental Implants",
+        "item": "dental-implants.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is dental implant surgery painful?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The area is usually numbed with local anaesthesia during implant placement. Some soreness, swelling or bruising can occur after surgery. Your dental professional can advise you about pain relief and what to expect based on the procedure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does dental implant treatment take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The total treatment time varies from person to person. The gum may heal within a few weeks, but the implant usually needs a longer period to bond with the jawbone before the final replacement tooth is fitted. Bone grafting or other additional treatment can make the process longer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can everyone have dental implants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not everyone is immediately suitable for an implant. A dentist will usually assess the amount and condition of the jawbone, gum health, nearby teeth, bite, oral hygiene, smoking and relevant medical factors before deciding whether implant treatment is appropriate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I expect after dental implant surgery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mild to moderate soreness, swelling or bruising can occur after surgery and swelling is often greatest during the first couple of days. The gum commonly heals over the following one to two weeks, while the bone takes longer to heal around the implant. Some people may have a temporary tooth or other temporary replacement while the implant heals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do dental implants last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dental implants can remain functional for many years, but they are not guaranteed to last forever. Their longevity can be affected by oral hygiene, gum health, smoking, bite forces, general health, regular dental care and the condition of the crown or other replacement tooth attached to the implant."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do dental implants cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no single cost that applies to every patient. The total cost can depend on the number of teeth being replaced, the type of implant restoration, imaging and planning, the condition of the teeth and gums, whether bone grafting or other procedures are needed, and the materials used."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are alternatives to dental implants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depending on the situation, alternatives may include a dental bridge or a removable denture. A dentist can compare these options with you based on the missing tooth or teeth, nearby teeth, gum and bone condition, your preferences and the planned treatment."
+        }
+      }
+    ]
+  }
+  </script>
+
+
   <style>
+
     /* =========================================================
-       FINDTOCARE DENTAL IMPLANTS
-       Shared site design system
-       ========================================================= */
+       FINDTOCARE DESIGN SYSTEM
+       Shared homepage token structure
+    ========================================================== */
 
     :root {
       --brand: #0F766E;
@@ -30,132 +127,205 @@
       --bg: #F8FAFC;
       --body: #334155;
       --cta: #FF6B35;
-      --cta-dark: #e2551f;
+      --cta-dark: #E2551F;
       --accent: #14B8A6;
-      --white: #ffffff;
+      --white: #FFFFFF;
       --border: #E2E8F0;
-      --light-teal: #F0FDFA;
 
-      --font-display: 'Manrope', sans-serif;
-      --font-body: 'Inter', sans-serif;
+      --font-heading: "Manrope", sans-serif;
+      --font-body: "Inter", sans-serif;
+
+      --container: 1200px;
+
+      --space-1: 8px;
+      --space-2: 16px;
+      --space-3: 24px;
+      --space-4: 32px;
+      --space-5: 48px;
+      --space-6: 64px;
+      --space-7: 80px;
+
+      --radius: 12px;
+      --control-radius: 8px;
+      --tap: 44px;
     }
 
-    * {
+
+    /* =========================================================
+       RESET
+    ========================================================== */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 90px;
+      scroll-padding-top: 80px;
     }
 
     body {
+      min-width: 320px;
+      overflow-x: hidden;
       font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
       color: var(--body);
       background: var(--bg);
-      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
     a {
-      text-decoration: none;
       color: inherit;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
+      text-decoration: none;
     }
 
     button,
     input,
     select {
-      font-family: inherit;
+      font: inherit;
     }
 
-    .container {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 24px;
+    button {
+      cursor: pointer;
     }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+
+    /* =========================================================
+       CONTAINER
+    ========================================================== */
+
+    .container {
+      width: min(calc(100% - 64px), var(--container));
+      margin-inline: auto;
+    }
+
+
+    /* =========================================================
+       TYPOGRAPHY
+    ========================================================== */
 
     h1,
     h2,
     h3 {
-      font-family: var(--font-display);
+      font-family: var(--font-heading);
       font-weight: 700;
       color: var(--navy);
+      letter-spacing: -0.025em;
+      overflow-wrap: break-word;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    p {
+      overflow-wrap: break-word;
     }
 
     .eyebrow {
-      font-family: var(--font-body);
-      font-weight: 600;
-      font-size: 13px;
-      letter-spacing: 1.5px;
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--brand);
     }
 
+
     /* =========================================================
        BUTTONS
-       ========================================================= */
+    ========================================================== */
 
     .btn {
+      min-height: 48px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      font-family: var(--font-body);
-      font-weight: 500;
-      font-size: 15px;
-      padding: 14px 28px;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      transition:
-        transform .15s ease,
-        box-shadow .15s ease,
-        background .15s ease;
-    }
-
-    .btn-cta {
-      background: var(--cta);
+      gap: var(--space-1);
+      padding: 0 var(--space-3);
+      border: 0;
+      border-radius: var(--control-radius);
       color: var(--white);
-      box-shadow: 0 8px 20px -8px rgba(255,107,53,.5);
+      background: var(--cta);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+      white-space: nowrap;
+      transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
     }
 
-    .btn-cta:hover {
-      background: var(--cta-dark);
+    .btn:hover {
+      filter: brightness(0.96);
       transform: translateY(-1px);
     }
 
+    .btn:active {
+      transform: translateY(0);
+    }
+
+
     /* =========================================================
        HEADER
-       ========================================================= */
+    ========================================================== */
 
     header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      background: rgba(248,250,252,.92);
-      backdrop-filter: blur(10px);
+      z-index: 1000;
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
     }
 
     .nav-wrap {
+      min-height: 72px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 18px 24px;
+      gap: var(--space-4);
     }
 
     .logo {
-      font-family: var(--font-display);
-      font-weight: 800;
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      min-height: var(--tap);
+      font-family: var(--font-heading);
       font-size: 22px;
-      letter-spacing: -.01em;
-      white-space: nowrap;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.035em;
     }
 
     .logo .find,
@@ -169,335 +339,409 @@
 
     .nav-links {
       display: flex;
-      gap: 32px;
-      font-weight: 500;
-      font-size: 15px;
-      color: var(--navy);
+      align-items: center;
+      gap: var(--space-3);
+      margin-left: auto;
     }
 
     .nav-links a {
-      opacity: .85;
-      transition: opacity .15s, color .15s;
+      min-height: var(--tap);
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      padding: 0 var(--space-1);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: var(--space-1);
+      right: var(--space-1);
+      bottom: 5px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--brand);
+      transform: scaleX(0);
+      transition: transform 0.2s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      transform: scaleX(1);
     }
 
     .nav-links a:hover,
     .nav-links a.active {
-      opacity: 1;
       color: var(--brand);
     }
 
     .nav-cta {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: var(--space-1);
+      margin-left: auto;
+      flex: 0 0 auto;
+    }
+
+    .nav-cta .btn {
+      min-height: 44px;
+      padding-inline: var(--space-2);
+      font-size: 14px;
     }
 
     .hamburger {
       display: none;
+      width: var(--tap);
+      height: var(--tap);
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
+      gap: var(--space-1);
+      border: 1px solid var(--border);
+      border-radius: var(--control-radius);
+      background: var(--white);
     }
 
     .hamburger span {
-      width: 22px;
+      width: 20px;
       height: 2px;
       background: var(--navy);
-      border-radius: 2px;
+      border-radius: 999px;
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
     }
 
     .mobile-menu {
       display: none;
-      flex-direction: column;
-      padding: 8px 24px 20px;
-      gap: 14px;
       border-top: 1px solid var(--border);
-      font-weight: 500;
-      font-size: 15px;
+      background: var(--bg);
     }
 
-    .mobile-menu.open {
+    .mobile-menu-inner {
+      width: min(calc(100% - 32px), var(--container));
+      margin-inline: auto;
+      padding: var(--space-1) 0 var(--space-3);
+    }
+
+    .mobile-menu a {
+      min-height: var(--tap);
       display: flex;
+      align-items: center;
+      padding: 0 var(--space-1);
+      color: var(--navy);
+      font-size: 16px;
+      font-weight: 500;
     }
 
+    .mobile-menu a:hover,
     .mobile-menu a.active {
       color: var(--brand);
     }
 
-    .mobile-menu .mobile-cta {
-      margin-top: 4px;
-      width: 100%;
+    .mobile-cta {
+      margin-top: var(--space-1);
+      justify-content: center;
+      min-height: 48px !important;
+      padding: 0 var(--space-2) !important;
+      border-radius: var(--control-radius);
+      color: var(--white) !important;
+      background: var(--cta);
     }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
 
     /* =========================================================
        BREADCRUMBS
-       ========================================================= */
+    ========================================================== */
 
     .breadcrumbs {
-      padding: 18px 0 0;
+      padding-top: var(--space-3);
     }
 
     .breadcrumb-list {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 7px;
-      font-size: 13px;
-      color: #64748B;
+      gap: var(--space-1);
+      font-size: 14px;
     }
 
     .breadcrumb-list a {
       color: var(--brand);
     }
 
-    .breadcrumb-list a:hover {
-      text-decoration: underline;
-    }
-
     .breadcrumb-current {
-      color: #64748B;
+      color: var(--body);
     }
 
     .breadcrumb-separator {
-      color: #94A3B8;
+      color: var(--body);
     }
+
 
     /* =========================================================
        HERO
-       ========================================================= */
+    ========================================================== */
 
     .hero {
-      padding: 58px 0 72px;
+      padding: var(--space-7) 0;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       align-items: center;
-      gap: 56px;
+      gap: var(--space-6);
     }
 
     .hero-content h1 {
-      font-size: 44px;
-      line-height: 1.12;
-      letter-spacing: -.015em;
-      margin: 14px 0 20px;
+      margin: var(--space-2) 0 var(--space-3);
     }
 
     .hero-content p {
+      max-width: 640px;
+      margin-bottom: var(--space-4);
       font-size: 17px;
-      max-width: 560px;
-      margin-bottom: 30px;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 14px;
+      line-height: 1.7;
     }
 
     .hero-image {
-      background: var(--light-teal);
-      border-radius: 22px;
       overflow: hidden;
       border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
     }
 
     .hero-image img {
       width: 100%;
       height: auto;
-      object-fit: cover;
     }
 
+
     /* =========================================================
-       SHARED SECTIONS
-       ========================================================= */
+       SECTIONS
+    ========================================================== */
 
     section {
-      padding: 72px 0;
+      padding: var(--space-6) 0;
     }
 
     .section-head {
-      text-align: center;
       max-width: 680px;
-      margin: 0 auto 44px;
+      margin: 0 auto var(--space-5);
+      text-align: center;
     }
 
     .section-head h2 {
-      font-size: 30px;
-      line-height: 1.2;
-      margin-top: 10px;
-      letter-spacing: -.01em;
+      margin-top: var(--space-1);
     }
 
     .section-head p {
-      margin-top: 12px;
+      margin-top: var(--space-2);
       font-size: 16px;
     }
 
-    .section-intro {
-      max-width: 760px;
-      margin: -18px auto 40px;
-      text-align: center;
+    .soft-section {
+      background: var(--bg);
+    }
+
+    .white-section {
+      background: var(--white);
+    }
+
+
+    /* =========================================================
+       GENERAL CARDS
+    ========================================================== */
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-3);
+    }
+
+    .card {
+      min-width: 0;
+      padding: var(--space-4);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .card h3 {
+      margin-bottom: var(--space-1);
+    }
+
+    .card p {
       font-size: 15px;
     }
 
+    .number {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      color: var(--brand);
+      background: var(--bg);
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+
     /* =========================================================
-       BASIC TWO COLUMN
-       ========================================================= */
+       VISUAL SECTIONS
+    ========================================================== */
 
     .visual-grid {
       display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 48px;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: var(--space-5);
       align-items: center;
     }
 
     .visual-box {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
       overflow: hidden;
+      padding: var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
     }
 
     .visual-box img {
       width: 100%;
       height: auto;
+      border-radius: var(--control-radius);
     }
 
     .structure-parts {
       display: grid;
-      gap: 18px;
+      gap: var(--space-2);
     }
 
     .structure-part {
-      padding: 18px 20px;
+      padding: var(--space-3);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: var(--control-radius);
     }
 
     .structure-part h3 {
-      font-size: 16px;
-      margin-bottom: 4px;
+      margin-bottom: var(--space-1);
+      font-size: 18px;
     }
 
     .structure-part p {
-      font-size: 14px;
+      font-size: 15px;
     }
+
 
     /* =========================================================
-       DOT LIST
-       ========================================================= */
+       LIST
+    ========================================================== */
 
-    .dot-list {
+    .simple-list {
+      max-width: 760px;
+      margin-inline: auto;
       display: grid;
-      gap: 18px;
-      max-width: 680px;
-      margin: 0 auto;
+      gap: var(--space-3);
     }
 
-    .dot-item {
+    .simple-list-item {
       display: flex;
       align-items: flex-start;
-      gap: 11px;
+      gap: var(--space-2);
     }
 
-    .dot {
-      width: 8px;
-      height: 8px;
-      min-width: 8px;
+    .list-dot {
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
       margin-top: 9px;
       border-radius: 50%;
       background: var(--brand);
     }
 
-    .dot-item p {
-      font-size: 15px;
-    }
-
-    .dot-item strong {
+    .simple-list-item strong {
       color: var(--navy);
     }
 
-    /* =========================================================
-       VISUAL
-       ========================================================= */
-
-    .before-after {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .before-after img {
-      width: 100%;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      background: var(--white);
-    }
 
     /* =========================================================
-       TREATMENT OPTIONS
-       ========================================================= */
+       OPTIONS
+    ========================================================== */
 
     .options-visual {
-      max-width: 860px;
-      margin: 0 auto 38px;
+      max-width: 900px;
+      margin: 0 auto var(--space-5);
     }
 
     .options-visual img {
       width: 100%;
-      border-radius: 18px;
       border: 1px solid var(--border);
+      border-radius: var(--radius);
       background: var(--white);
     }
 
-    .option-descriptions {
+    .option-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-3);
     }
 
-    .option-description {
-      padding: 22px 18px;
+    .option-card {
+      padding: var(--space-4);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: var(--radius);
     }
 
-    .option-description h3 {
-      font-size: 17px;
-      margin-bottom: 7px;
+    .option-card h3 {
+      margin-bottom: var(--space-1);
     }
 
-    .option-description p {
-      font-size: 14px;
+    .option-card p {
+      font-size: 15px;
     }
-
-    /* =========================================================
-       IMPLANT OPTIONS
-       ========================================================= */
 
     .implant-option-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-3);
     }
 
     .implant-option {
+      overflow: hidden;
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
+      border-radius: var(--radius);
+      scroll-margin-top: 100px;
       transition:
-        border-color .2s ease,
-        box-shadow .2s ease,
-        transform .2s ease;
-      scroll-margin-top: 110px;
+        border-color 0.2s ease,
+        transform 0.2s ease;
     }
 
     .implant-option:hover {
@@ -507,12 +751,11 @@
 
     .implant-option.highlighted {
       border: 2px solid var(--brand);
-      box-shadow: 0 14px 35px rgba(15,118,110,.14);
-      background: var(--light-teal);
+      background: var(--white);
     }
 
     .implant-option-image {
-      background: var(--light-teal);
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
     }
 
@@ -523,494 +766,256 @@
     }
 
     .implant-option-content {
-      padding: 24px;
+      padding: var(--space-4);
     }
 
     .implant-option-content h3 {
-      font-size: 18px;
-      margin-bottom: 9px;
+      margin-bottom: var(--space-1);
     }
 
     .implant-option-content p {
-      font-size: 14.5px;
+      font-size: 15px;
     }
 
-    .highlight-label {
-      display: none;
-      margin-bottom: 10px;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--brand);
-    }
-
-    .implant-option.highlighted .highlight-label {
-      display: block;
-    }
 
     /* =========================================================
-       CHARACTERISTICS GRID
-       ========================================================= */
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-
-    .why-item {
-      text-align: center;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 20px;
-    }
-
-    .why-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
-      background: var(--light-teal);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px;
-    }
-
-    .why-icon img {
-      width: 30px;
-      height: 30px;
-      object-fit: contain;
-    }
-
-    .why-item h3 {
-      font-size: 15.5px;
-      margin-bottom: 5px;
-    }
-
-    .why-item p {
-      font-size: 13.5px;
-    }
-
-    /* =========================================================
-       FIXTURE
-       ========================================================= */
-
-    .fixture-layout {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .fixture-image {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-    }
-
-    .fixture-image img {
-      width: 100%;
-    }
-
-    .fixture-copy p {
-      font-size: 16px;
-      margin-bottom: 22px;
-    }
-
-    .fixture-labels {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-    }
-
-    .fixture-label {
-      padding: 8px 12px;
-      background: var(--light-teal);
-      color: var(--brand);
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    /* =========================================================
-       HEALING
-       ========================================================= */
-
-    .integration-wrap {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .integration-image img {
-      width: 100%;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-    }
-
-    .healing-note {
-      max-width: 760px;
-      margin: 28px auto 0;
-      padding: 22px 24px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      font-size: 14.5px;
-    }
-
-    .healing-note strong {
-      color: var(--navy);
-    }
-
-    /* =========================================================
-       PROCESS
-       ========================================================= */
+       PROCEDURE
+    ========================================================== */
 
     .process-image {
       max-width: 1000px;
-      margin: 0 auto 42px;
+      margin: 0 auto var(--space-5);
     }
 
     .process-image img {
       width: 100%;
-      border-radius: 18px;
       border: 1px solid var(--border);
+      border-radius: var(--radius);
       background: var(--white);
     }
 
-    .process-list {
+    .process-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-3);
     }
 
-    .process-item {
+    .process-card {
+      padding: var(--space-3);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px;
+      border-radius: var(--radius);
     }
 
-    .process-number {
+    .process-card .step {
+      margin-bottom: var(--space-1);
       color: var(--accent);
-      font-family: var(--font-display);
-      font-weight: 800;
+      font-family: var(--font-heading);
       font-size: 14px;
-      margin-bottom: 8px;
+      font-weight: 700;
     }
 
-    .process-item h3 {
-      font-size: 16px;
-      margin-bottom: 6px;
+    .process-card h3 {
+      margin-bottom: var(--space-1);
+      font-size: 18px;
     }
 
-    .process-item p {
-      font-size: 13.5px;
+    .process-card p {
+      font-size: 14px;
     }
+
 
     /* =========================================================
-       SURGERY
-       ========================================================= */
-
-    .surgery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    .surgery-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-    }
-
-    .surgery-card h3 {
-      font-size: 17px;
-      margin-bottom: 8px;
-    }
-
-    .surgery-card p {
-      font-size: 14px;
-    }
-
-    /* =========================================================
-       RECOVERY
-       ========================================================= */
-
-    .recovery-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .recovery-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-    }
-
-    .recovery-card h3 {
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    .recovery-card p {
-      font-size: 14px;
-    }
-
-    .notice-box {
-      max-width: 900px;
-      margin: 24px auto 0;
-      padding: 22px 24px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--light-teal);
-    }
-
-    .notice-box h3 {
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    .notice-box p {
-      font-size: 14px;
-    }
-
-    /* =========================================================
-       DENTIST CHECK
-       ========================================================= */
+       ICON GRID
+    ========================================================== */
 
     .check-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-3);
     }
 
     .check-item {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: var(--space-2);
+      padding: var(--space-3);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px;
+      border-radius: var(--radius);
     }
 
     .check-icon {
-      width: 52px;
-      height: 52px;
-      min-width: 52px;
-      border-radius: 14px;
-      background: var(--light-teal);
+      width: 56px;
+      height: 56px;
+      flex: 0 0 56px;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 50%;
+      background: var(--bg);
     }
 
     .check-icon img {
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
       object-fit: contain;
     }
 
     .check-item h3 {
-      font-size: 15px;
-      margin-bottom: 3px;
+      margin-bottom: var(--space-1);
+      font-size: 17px;
     }
 
     .check-item p {
-      font-size: 13.5px;
-    }
-
-    /* =========================================================
-       BONE GRAFTING
-       ========================================================= */
-
-    .bone-content {
-      max-width: 820px;
-      margin: 0 auto;
-    }
-
-    .bone-note {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 30px;
-    }
-
-    .bone-note p {
-      font-size: 15px;
-      margin-bottom: 14px;
-    }
-
-    .bone-note p:last-child {
-      margin-bottom: 0;
-    }
-
-    .bone-note strong {
-      color: var(--navy);
-    }
-
-    /* =========================================================
-       RISKS
-       ========================================================= */
-
-    .risk-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .risk-item {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-    }
-
-    .risk-item h3 {
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    .risk-item p {
       font-size: 14px;
     }
 
-    .risk-intro {
+
+    /* =========================================================
+       RECOVERY
+    ========================================================== */
+
+    .recovery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-3);
+    }
+
+    .recovery-card {
+      padding: var(--space-4);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .recovery-card h3 {
+      margin-bottom: var(--space-1);
+      font-size: 18px;
+    }
+
+    .recovery-card p {
+      font-size: 15px;
+    }
+
+    .notice {
       max-width: 760px;
-      margin: 0 auto 28px;
+      margin: var(--space-4) auto 0;
+      padding: var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: var(--control-radius);
+      background: var(--white);
+    }
+
+    .notice strong {
+      color: var(--navy);
+    }
+
+
+    /* =========================================================
+       RISKS
+    ========================================================== */
+
+    .risk-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    .risk-item {
+      padding: var(--space-3);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .risk-item h3 {
+      margin-bottom: var(--space-1);
+      font-size: 18px;
+    }
+
+    .risk-item p {
+      font-size: 15px;
+    }
+
+    .contact-note {
+      max-width: 760px;
+      margin: var(--space-4) auto 0;
       text-align: center;
       font-size: 15px;
     }
 
-    /* =========================================================
-       LONGEVITY
-       ========================================================= */
-
-    .longevity-box {
-      max-width: 820px;
-      margin: 0 auto;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 30px;
-    }
-
-    .longevity-box p {
-      font-size: 15px;
-      margin-bottom: 14px;
-    }
-
-    .longevity-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    .longevity-factors {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 24px;
-    }
-
-    .longevity-factor {
-      padding: 17px;
-      background: var(--light-teal);
-      border-radius: 12px;
-    }
-
-    .longevity-factor strong {
-      display: block;
-      color: var(--navy);
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .longevity-factor span {
-      font-size: 13px;
-    }
-
-    /* =========================================================
-       TEMPORARY TEETH
-       ========================================================= */
-
-    .temporary-box {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 26px 28px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-    }
-
-    .temporary-box p {
-      font-size: 15px;
-    }
-
-    .temporary-box strong {
+    .contact-note strong {
       color: var(--navy);
     }
 
-    /* =========================================================
-       COST
-       ========================================================= */
 
-    .cost-grid {
+    /* =========================================================
+       COST / LONGEVITY
+    ========================================================== */
+
+    .two-column-cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
       max-width: 900px;
-      margin: 0 auto;
+      margin-inline: auto;
     }
 
-    .cost-item {
+    .info-card {
+      padding: var(--space-4);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
+      border-radius: var(--radius);
     }
 
-    .cost-item h3 {
-      font-size: 16px;
-      margin-bottom: 7px;
+    .info-card h3 {
+      margin-bottom: var(--space-2);
     }
 
-    .cost-item p {
-      font-size: 14px;
+    .info-card ul {
+      display: grid;
+      gap: var(--space-2);
     }
+
+    .info-card li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+      font-size: 15px;
+    }
+
+    .info-card li::before {
+      content: "•";
+      color: var(--brand);
+      font-weight: 700;
+    }
+
 
     /* =========================================================
-       COMPARISON
-       ========================================================= */
+       COMPARISON TABLE
+    ========================================================== */
 
     .table-wrap {
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 960px;
+      margin-inline: auto;
       overflow-x: auto;
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: var(--radius);
     }
 
     .comparison-table {
       width: 100%;
+      min-width: 680px;
       border-collapse: collapse;
-      min-width: 760px;
     }
 
     .comparison-table th,
     .comparison-table td {
-      padding: 18px 20px;
+      padding: var(--space-3);
       text-align: left;
       border-bottom: 1px solid var(--border);
       font-size: 14px;
@@ -1018,123 +1023,66 @@
     }
 
     .comparison-table th {
-      font-family: var(--font-display);
       color: var(--navy);
-      font-size: 14px;
-      background: var(--light-teal);
-    }
-
-    .comparison-table tr:last-child td {
-      border-bottom: none;
+      background: var(--bg);
+      font-family: var(--font-heading);
+      font-weight: 700;
     }
 
     .comparison-table td:first-child {
+      color: var(--navy);
       font-weight: 600;
-      color: var(--navy);
     }
 
-    /* =========================================================
-       KEEP IN MIND
-       ========================================================= */
-
-    .keep-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
+    .comparison-table tr:last-child td {
+      border-bottom: 0;
     }
 
-    .keep-item {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-    }
-
-    .keep-item h3 {
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    .keep-item p {
-      font-size: 14px;
-    }
-
-    /* =========================================================
-       AFTERCARE
-       ========================================================= */
-
-    .aftercare-list {
-      max-width: 700px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px 40px;
-    }
-
-    .aftercare-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 11px;
-    }
-
-    .aftercare-item .dot {
-      margin-top: 8px;
-    }
-
-    .aftercare-item p {
-      font-size: 15px;
-    }
-
-    .aftercare-item strong {
-      color: var(--navy);
-    }
 
     /* =========================================================
        FAQ
-       ========================================================= */
+    ========================================================== */
 
     .faq {
-      max-width: 760px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin-inline: auto;
     }
 
     .faq-item {
+      overflow: hidden;
+      margin-bottom: var(--space-2);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      margin-bottom: 12px;
-      overflow: hidden;
+      border-radius: var(--control-radius);
     }
 
     .faq-question {
       width: 100%;
-      padding: 18px 20px;
-      border: none;
-      background: var(--white);
-      color: var(--navy);
-      text-align: left;
-      font-family: var(--font-body);
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
+      min-height: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-3);
+      border: 0;
+      background: var(--white);
+      color: var(--navy);
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
     }
 
     .faq-question span:last-child {
-      font-size: 20px;
       color: var(--brand);
-      transition: transform .2s ease;
+      font-size: 22px;
+      line-height: 1;
+      transition: transform 0.2s ease;
     }
 
     .faq-answer {
       display: none;
-      padding: 0 20px 18px;
-      font-size: 14px;
+      padding: 0 var(--space-3) var(--space-3);
+      font-size: 15px;
     }
 
     .faq-item.open .faq-answer {
@@ -1145,50 +1093,53 @@
       transform: rotate(45deg);
     }
 
+
     /* =========================================================
        FORM
-       ========================================================= */
+    ========================================================== */
 
     .form-section {
+      scroll-margin-top: 80px;
       background: var(--white);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      margin-top: 24px;
     }
 
     .form-wrap {
-      max-width: 560px;
-      margin: 0 auto;
+      max-width: 720px;
+      margin-inline: auto;
     }
 
     .form-note {
+      margin-bottom: var(--space-3);
       text-align: center;
-      font-size: 14.5px;
       color: var(--brand);
+      font-size: 16px;
       font-weight: 500;
-      margin-bottom: 28px;
     }
 
     .disclaimer-top {
-      font-size: 12.5px;
-      color: #64748B;
+      margin-bottom: var(--space-4);
+      padding: var(--space-2);
       text-align: center;
-      margin-bottom: 24px;
-      padding: 10px 16px;
+      color: var(--body);
       background: var(--bg);
-      border-radius: 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--control-radius);
+      font-size: 14px;
     }
 
     form {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3) var(--space-2);
     }
 
     .field {
+      min-width: 0;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: var(--space-1);
     }
 
     .field.full {
@@ -1196,153 +1147,173 @@
     }
 
     label {
-      font-size: 13.5px;
-      font-weight: 500;
       color: var(--navy);
+      font-size: 14px;
+      font-weight: 500;
     }
 
     input,
     select {
-      font-family: var(--font-body);
-      font-size: 15px;
-      padding: 12px 14px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      width: 100%;
+      min-height: 48px;
+      padding: 0 var(--space-2);
+      color: var(--body);
       background: var(--bg);
-      color: var(--navy);
+      border: 1px solid var(--border);
+      border-radius: var(--control-radius);
       outline: none;
-      transition: border-color .15s;
+      font-size: 16px;
     }
 
     input:focus,
     select:focus {
       border-color: var(--brand);
+      background: var(--white);
     }
 
     .radio-group {
       display: flex;
-      gap: 18px;
+      align-items: center;
       flex-wrap: wrap;
+      gap: var(--space-2) var(--space-3);
+      min-height: 48px;
     }
 
     .radio-option {
-      display: flex;
+      min-height: var(--tap);
+      display: inline-flex;
       align-items: center;
-      gap: 7px;
-      font-size: 14.5px;
+      gap: var(--space-1);
+      color: var(--body);
+      font-size: 16px;
       font-weight: 500;
-      color: var(--navy);
     }
 
     .radio-option input {
-      width: auto;
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
       padding: 0;
       accent-color: var(--brand);
     }
 
     .consent-row {
       display: flex;
+      flex-direction: row;
       align-items: flex-start;
-      gap: 10px;
-      font-size: 13.5px;
+      gap: var(--space-1);
       color: var(--body);
+      font-size: 14px;
+      line-height: 1.55;
     }
 
     .consent-row input {
-      width: auto;
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
+      flex: 0 0 18px;
       margin-top: 3px;
+      padding: 0;
       accent-color: var(--brand);
     }
 
-    .disclaimer-bottom {
-      font-size: 12px;
-      color: #94A3B8;
+    .privacy-note {
+      margin-top: var(--space-2);
       text-align: center;
-      margin-top: 14px;
+      font-size: 13px;
+    }
+
+    .privacy-note a {
+      color: var(--brand);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     .submit-btn {
       width: 100%;
-      justify-content: center;
-      margin-top: 6px;
+      min-height: 52px;
     }
+
+    .disclaimer-bottom {
+      margin-top: var(--space-2);
+      text-align: center;
+      color: var(--body);
+      font-size: 13px;
+    }
+
 
     /* =========================================================
        FINAL CTA
-       ========================================================= */
+       Homepage treatment: solid brand + white heading
+    ========================================================== */
 
-    .final-cta-wrap {
-      padding-top: 72px;
-      padding-bottom: 72px;
+    .final-cta-section {
+      padding: var(--space-6) 0;
     }
 
     .final-cta {
-      background: var(--light-teal);
+      width: 100%;
+      padding: var(--space-6) var(--space-4);
       text-align: center;
-      padding: 72px 24px;
-      border-radius: 28px;
-      max-width: 1160px;
-      margin: 0 auto;
-      border: 1px solid var(--border);
+      background: var(--brand);
+      border-radius: var(--radius);
     }
 
     .final-cta h2 {
-      color: var(--navy);
-      font-size: 30px;
+      max-width: 640px;
+      margin: 0 auto var(--space-4);
+      color: var(--white);
+      font-size: 28px;
       line-height: 1.2;
-      max-width: 600px;
-      margin: 0 auto 28px;
     }
 
-    .final-cta p {
-      max-width: 600px;
-      margin: 0 auto 24px;
-      font-size: 15px;
-    }
 
     /* =========================================================
        FOOTER
-       ========================================================= */
+    ========================================================== */
 
     footer {
+      padding: var(--space-6) 0 var(--space-4);
       background: var(--white);
       border-top: 1px solid var(--border);
-      padding: 56px 0 28px;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: var(--space-6);
+      padding-bottom: var(--space-5);
     }
 
     .footer-tagline {
+      max-width: 360px;
+      margin-top: var(--space-2);
+      color: var(--body);
       font-size: 14px;
-      margin-top: 12px;
-      max-width: 260px;
+      line-height: 1.65;
     }
 
     .footer-col h4 {
-      font-family: var(--font-body);
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .04em;
+      margin-bottom: var(--space-2);
       color: var(--navy);
-      margin-bottom: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     .footer-col ul {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      list-style: none;
+      gap: var(--space-1);
     }
 
     .footer-col a {
-      font-size: 14.5px;
+      min-height: var(--tap);
+      display: inline-flex;
+      align-items: center;
       color: var(--body);
+      font-size: 14px;
     }
 
     .footer-col a:hover {
@@ -1351,8 +1322,9 @@
 
     .socials {
       display: flex;
-      gap: 10px;
-      margin-top: 16px;
+      align-items: center;
+      gap: var(--space-1);
+      margin-top: var(--space-3);
     }
 
     .social-icon {
@@ -1360,285 +1332,344 @@
       height: 44px;
       min-width: 44px;
       min-height: 44px;
-      border-radius: 8px;
-      background: var(--bg);
-      border: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--brand);
-      transition: background .15s;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
     }
 
     .social-icon:hover {
-      background: var(--light-teal);
-    }
-
-    .social-icon svg {
-      width: 18px;
-      height: 18px;
+      background: var(--white);
+      border-color: var(--brand);
     }
 
     .footer-bottom {
-      border-top: 1px solid var(--border);
-      padding-top: 24px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      font-size: 13px;
-      color: #94A3B8;
-      flex-wrap: wrap;
-      gap: 12px;
+      justify-content: space-between;
+      gap: var(--space-3);
+      padding-top: var(--space-3);
+      border-top: 1px solid var(--border);
+      color: var(--body);
+      font-size: 14px;
     }
 
     .footer-bottom-links {
       display: flex;
-      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-3);
     }
 
     .footer-bottom-links a {
-      color: #64748B;
+      color: var(--body);
     }
 
     .footer-bottom-links a:hover {
       color: var(--brand);
     }
 
+
+    /* =========================================================
+       TABLET
+    ========================================================== */
+
+    @media (max-width: 1199px) {
+
+      .container {
+        width: min(calc(100% - 48px), var(--container));
+      }
+
+      .nav-links {
+        gap: var(--space-2);
+      }
+
+      .hero-grid {
+        gap: var(--space-5);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+    }
+
+
     /* =========================================================
        MOBILE
-       ========================================================= */
+    ========================================================== */
 
-    @media (max-width: 860px) {
+    @media (max-width: 767px) {
+
+      .container {
+        width: min(calc(100% - 32px), var(--container));
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .nav-wrap {
+        min-height: 64px;
+      }
 
       .nav-links {
         display: none;
+      }
+
+      .nav-cta {
+        margin-left: auto;
+      }
+
+      .nav-cta .btn {
+        min-height: 44px;
+        padding-inline: var(--space-2);
+        font-size: 13px;
       }
 
       .hamburger {
         display: flex;
       }
 
-      .nav-cta {
-        gap: 12px;
-      }
-
-      .nav-cta .btn-cta {
-        padding: 9px 14px;
-        font-size: 13.5px;
-      }
-
       .hero {
-        padding: 42px 0 52px;
+        padding: var(--space-6) 0;
       }
 
-      .hero-grid,
-      .visual-grid,
-      .fixture-layout {
+      .hero-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: var(--space-4);
       }
 
       .hero-content {
         text-align: center;
       }
 
-      .hero-content h1 {
-        font-size: 32px;
-      }
-
       .hero-content p {
         font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
       }
 
-      .hero-actions {
-        justify-content: center;
+      .hero-actions .btn {
+        width: 100%;
       }
 
-      .option-descriptions,
-      .implant-option-grid {
+      section {
+        padding: var(--space-6) 0;
+      }
+
+      .section-head {
+        margin-bottom: var(--space-4);
+      }
+
+      .visual-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-4);
       }
 
-      .why-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
+      .card-grid,
+      .option-grid,
+      .implant-option-grid,
+      .recovery-grid,
+      .two-column-cards {
+        grid-template-columns: 1fr;
       }
 
       .check-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-2);
       }
 
-      .process-list {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .surgery-grid,
-      .recovery-grid,
-      .risk-grid,
-      .cost-grid,
-      .keep-grid {
+      .process-grid {
         grid-template-columns: 1fr;
       }
 
-      .longevity-factors {
-        grid-template-columns: 1fr 1fr;
+      .risk-grid {
+        grid-template-columns: 1fr;
       }
 
-      .aftercare-list {
+      .simple-list {
+        gap: var(--space-2);
+      }
+
+      form {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: var(--space-2);
+      }
+
+      .field.full {
+        grid-column: auto;
+      }
+
+      .final-cta {
+        padding: var(--space-5) var(--space-3);
+      }
+
+      .final-cta h2 {
+        font-size: 24px;
+        margin-bottom: var(--space-3);
+      }
+
+      .final-cta .btn {
+        width: 100%;
       }
 
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: var(--space-4);
+        padding-bottom: var(--space-4);
       }
 
-      .final-cta {
-        border-radius: 0;
-        margin: 0 -24px;
-        padding: 56px 24px;
+      .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
       }
 
-      .final-cta-wrap {
-        padding-top: 52px;
-        padding-bottom: 52px;
+      .footer-bottom-links {
+        justify-content: center;
       }
 
-      section {
-        padding: 52px 0;
-      }
-
-      .section-head {
-        margin-bottom: 34px;
-      }
-
-      .section-head h2 {
-        font-size: 27px;
-      }
     }
 
-    @media (max-width: 560px) {
+
+    /* =========================================================
+       SMALL PHONES
+    ========================================================== */
+
+    @media (max-width: 380px) {
 
       .container {
-        padding: 0 18px;
-      }
-
-      .nav-wrap {
-        padding: 15px 18px;
+        width: calc(100% - 32px);
       }
 
       .logo {
         font-size: 20px;
       }
 
-      .nav-cta .btn-cta {
-        font-size: 12.5px;
-        padding: 8px 11px;
-      }
-
-      .mobile-menu {
-        padding-left: 18px;
-        padding-right: 18px;
-      }
-
-      .hero-content h1 {
-        font-size: 29px;
-      }
-
-      .breadcrumbs {
-        padding-top: 14px;
-      }
-
-      .breadcrumb-list {
+      .nav-cta .btn {
+        padding-inline: var(--space-1);
         font-size: 12px;
       }
 
-      .why-grid,
-      .check-grid,
-      .process-list,
-      .longevity-factors {
+      .hero {
+        padding: var(--space-5) 0;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .check-grid {
         grid-template-columns: 1fr;
       }
 
-      .why-item {
-        padding: 22px 18px;
-      }
-
-      .check-item {
-        padding: 17px;
-      }
-
-      .option-description {
-        text-align: left;
-      }
-
-      .bone-note,
-      .longevity-box,
-      .temporary-box {
-        padding: 24px 20px;
-      }
-
-      .final-cta {
-        margin: 0 -18px;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .footer-bottom-links {
-        flex-wrap: wrap;
-      }
-
-      form {
-        grid-template-columns: 1fr;
-      }
-
-      .field.full {
-        grid-column: auto;
-      }
     }
+
+
+    /* =========================================================
+       REDUCED MOTION
+    ========================================================== */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+
+    }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <!-- =======================================================
+
+  <!-- =========================================================
        HEADER
-       ======================================================= -->
+  ========================================================== -->
 
   <header>
 
-    <div class="nav-wrap">
+    <div class="container nav-wrap">
 
-      <a href="index.html" class="logo" aria-label="FindToCare Home">
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="FindToCare Home"
+      >
         <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
       </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="dental-implants.html" class="active">Dental Implants</a>
-        <a href="about.html">About</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="contact.html">Contact</a>
+
+      <nav
+        class="nav-links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a
+          href="dental-implants.html"
+          class="active"
+        >
+          Dental Implants
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="doctors.html">
+          Doctors
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
       </nav>
+
 
       <div class="nav-cta">
 
-        <a href="#form" class="btn btn-cta">
+        <a
+          href="#form"
+          class="btn"
+        >
           Get Treatment Help
         </a>
 
         <button
           class="hamburger"
           id="hamburgerBtn"
+          type="button"
           aria-label="Open menu"
           aria-expanded="false"
-          type="button"
+          aria-controls="mobileMenu"
         >
           <span></span>
           <span></span>
@@ -1649,17 +1680,45 @@
 
     </div>
 
-    <div class="mobile-menu" id="mobileMenu">
 
-      <a href="index.html">Home</a>
-      <a href="dental-implants.html" class="active">Dental Implants</a>
-      <a href="about.html">About</a>
-      <a href="doctors.html">Doctors</a>
-      <a href="contact.html">Contact</a>
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+    >
 
-      <a href="#form" class="btn btn-cta mobile-cta">
-        Get Treatment Help
-      </a>
+      <div class="mobile-menu-inner">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a
+          href="dental-implants.html"
+          class="active"
+        >
+          Dental Implants
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="doctors.html">
+          Doctors
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a
+          href="#form"
+          class="mobile-cta"
+        >
+          Get Treatment Help
+        </a>
+
+      </div>
 
     </div>
 
@@ -1668,17 +1727,22 @@
 
   <main>
 
-    <!-- =====================================================
+
+    <!-- =======================================================
          BREADCRUMBS
-         ===================================================== -->
+    ======================================================== -->
 
     <div class="container breadcrumbs">
 
       <div class="breadcrumb-list">
 
-        <a href="index.html">Home</a>
+        <a href="index.html">
+          Home
+        </a>
 
-        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-separator">
+          ›
+        </span>
 
         <span class="breadcrumb-current">
           Dental Implants
@@ -1689,9 +1753,9 @@
     </div>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          HERO
-         ===================================================== -->
+    ======================================================== -->
 
     <section class="hero">
 
@@ -1708,19 +1772,24 @@
           </h1>
 
           <p>
-            Learn what dental implants are, how they are placed, what recovery
-            can involve, and what a dentist may consider before treatment.
+            Learn what dental implants are, how the treatment works,
+            what recovery can be like, and what a dentist may consider
+            before recommending an implant.
           </p>
 
           <div class="hero-actions">
 
-            <a href="#form" class="btn btn-cta">
+            <a
+              href="#form"
+              class="btn"
+            >
               Check Treatment Options →
             </a>
 
           </div>
 
         </div>
+
 
         <div class="hero-image">
 
@@ -1736,11 +1805,11 @@
     </section>
 
 
-    <!-- =====================================================
-         WHAT IS A DENTAL IMPLANT
-         ===================================================== -->
+    <!-- =======================================================
+         WHAT IS AN IMPLANT
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
@@ -1755,11 +1824,13 @@
           </h2>
 
           <p>
-            A dental implant is a small post, often made from titanium,
-            that is placed in the jawbone to support a replacement tooth.
+            A dental implant is a small post, usually made from titanium,
+            that is placed in the jawbone to replace the root of a missing tooth.
+            It can support a crown, bridge or other replacement tooth.
           </p>
 
         </div>
+
 
         <div class="visual-grid">
 
@@ -1772,11 +1843,8 @@
 
           </div>
 
-          <div class="structure-parts">
 
-            <span class="eyebrow">
-              The Three Main Parts
-            </span>
+          <div class="structure-parts">
 
             <div class="structure-part">
 
@@ -1785,11 +1853,12 @@
               </h3>
 
               <p>
-                The part placed in the jawbone. It acts as the support
-                for the replacement tooth.
+                The part placed in the jawbone. It acts as an artificial
+                tooth root.
               </p>
 
             </div>
+
 
             <div class="structure-part">
 
@@ -1798,11 +1867,11 @@
               </h3>
 
               <p>
-                A connector that attaches to the implant and supports
-                the replacement tooth.
+                A connector that joins the implant fixture to the replacement tooth.
               </p>
 
             </div>
+
 
             <div class="structure-part">
 
@@ -1811,8 +1880,8 @@
               </h3>
 
               <p>
-                The visible replacement tooth. Other types of replacement
-                teeth may be used depending on the treatment.
+                The visible replacement tooth. Depending on the treatment,
+                an implant may instead support a bridge or denture.
               </p>
 
             </div>
@@ -1826,9 +1895,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          MISSING TOOTH
-         ===================================================== -->
+    ======================================================== -->
 
     <section>
 
@@ -1841,40 +1910,54 @@
           </span>
 
           <h2>
-            What Can Happen After a Tooth Is Lost?
+            Why Replace a Missing Tooth?
           </h2>
 
           <p>
-            The effects of a missing tooth can vary from person to person.
-            Tooth replacement is one option that may be discussed with a dentist.
+            The best choice depends on the person and the condition of the
+            mouth. Replacing a missing tooth may help with everyday function
+            and may also help maintain the position of nearby teeth.
           </p>
 
         </div>
 
-        <div class="dot-list">
 
-          <div class="dot-item">
-            <span class="dot"></span>
+        <div class="simple-list">
+
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
+
             <p>
-              <strong>Chewing</strong> — Losing a tooth can change how you
-              chew or distribute pressure when eating.
+              <strong>Chewing:</strong>
+              Replacing a missing tooth may make chewing easier.
             </p>
+
           </div>
 
-          <div class="dot-item">
-            <span class="dot"></span>
+
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
+
             <p>
-              <strong>Tooth Position</strong> — Nearby teeth may move or
-              tilt into the space over time.
+              <strong>Tooth position:</strong>
+              A gap can allow nearby teeth to move over time.
             </p>
+
           </div>
 
-          <div class="dot-item">
-            <span class="dot"></span>
+
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
+
             <p>
-              <strong>Appearance</strong> — A missing tooth can leave a
-              visible gap, depending on its location.
+              <strong>Appearance:</strong>
+              A replacement tooth can fill a visible gap when appearance is
+              an important part of treatment.
             </p>
+
           </div>
 
         </div>
@@ -1884,11 +1967,11 @@
     </section>
 
 
-    <!-- =====================================================
-         VISUAL
-         ===================================================== -->
+    <!-- =======================================================
+         BEFORE / AFTER VISUAL
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
@@ -1899,22 +1982,22 @@
           </span>
 
           <h2>
-            Missing Tooth → Replacement Tooth
+            From a Missing Tooth to a Replacement
           </h2>
 
           <p>
-            Tooth replacement can involve an implant, bridge, denture,
-            or another approach depending on the person's dental condition
-            and treatment needs.
+            An implant is one way to replace a missing tooth. Whether it is
+            appropriate depends on the individual assessment.
           </p>
 
         </div>
 
-        <div class="before-after">
+
+        <div class="options-visual">
 
           <img
             src="missing-tooth-before-after.png"
-            alt="Illustration comparing a missing tooth with a replacement tooth"
+            alt="Illustration showing a missing tooth and a replacement tooth"
           >
 
         </div>
@@ -1924,9 +2007,9 @@
     </section>
 
 
-    <!-- =====================================================
-         TREATMENT OPTIONS
-         ===================================================== -->
+    <!-- =======================================================
+         OPTIONS
+    ======================================================== -->
 
     <section>
 
@@ -1943,61 +2026,64 @@
           </h2>
 
           <p>
-            Dental implants are one way to replace missing teeth.
-            Depending on the situation, a dental bridge or removable denture
-            may also be considered.
+            Dental implants are one option for replacing missing teeth.
+            Depending on the situation, a dentist may also discuss a bridge
+            or removable denture.
           </p>
 
         </div>
+
 
         <div class="options-visual">
 
           <img
             src="dental-treatment-options.png"
-            alt="Illustration comparing a dental implant, dental bridge and removable denture"
+            alt="Illustration comparing dental implants, a dental bridge and a removable denture"
           >
 
         </div>
 
-        <div class="option-descriptions">
 
-          <div class="option-description">
+        <div class="option-grid">
+
+          <article class="option-card">
 
             <h3>
               Dental Implant
             </h3>
 
             <p>
-              Uses an implant placed in the jawbone to support a replacement
-              tooth or other dental restoration.
+              A replacement tooth supported by an implant placed in the jawbone.
             </p>
 
-          </div>
+          </article>
 
-          <div class="option-description">
+
+          <article class="option-card">
 
             <h3>
               Dental Bridge
             </h3>
 
             <p>
-              Uses neighbouring teeth or other dental support to hold
-              one or more replacement teeth in place.
+              A replacement tooth or teeth supported by neighbouring teeth
+              or other structures.
             </p>
 
-          </div>
+          </article>
 
-          <div class="option-description">
+
+          <article class="option-card">
 
             <h3>
               Removable Denture
             </h3>
 
             <p>
-              A removable appliance used to replace some or many missing teeth.
+              A removable appliance used to replace one or more missing teeth.
             </p>
 
-          </div>
+          </article>
 
         </div>
 
@@ -2006,62 +2092,58 @@
     </section>
 
 
-    <!-- =====================================================
-         IMPLANT OPTIONS
-         ===================================================== -->
+    <!-- =======================================================
+         IMPLANT TYPES
+    ======================================================== -->
 
-    <section id="implant-options">
+    <section class="white-section" id="implant-options">
 
       <div class="container">
 
         <div class="section-head">
 
           <span class="eyebrow">
-            Dental Implant Options
+            Implant Options
           </span>
 
           <h2>
-            Dental Implant Options
+            What Can Dental Implants Replace?
           </h2>
 
           <p>
-            The type of implant treatment depends on how many teeth are missing,
-            the condition of the mouth, and the treatment plan developed by a dentist.
+            Implant treatment can be planned for one missing tooth,
+            several missing teeth, or more extensive tooth loss.
           </p>
 
         </div>
 
+
         <div class="implant-option-grid">
+
 
           <article
             class="implant-option"
             id="single-tooth"
-            data-option="single-tooth"
           >
 
             <div class="implant-option-image">
 
               <img
                 src="single-tooth-implant.png"
-                alt="Illustration of a single tooth implant"
+                alt="Illustration of a single tooth dental implant"
               >
 
             </div>
 
             <div class="implant-option-content">
 
-              <span class="highlight-label">
-                Selected Treatment
-              </span>
-
               <h3>
                 Single Tooth Implant
               </h3>
 
               <p>
-                Used when one tooth is missing. An implant fixture can support
-                an individual replacement tooth after the necessary healing
-                and treatment steps.
+                One implant can support a replacement crown when one tooth
+                is missing and the surrounding conditions are suitable.
               </p>
 
             </div>
@@ -2072,7 +2154,6 @@
           <article
             class="implant-option"
             id="multiple-teeth"
-            data-option="multiple-teeth"
           >
 
             <div class="implant-option-image">
@@ -2086,17 +2167,13 @@
 
             <div class="implant-option-content">
 
-              <span class="highlight-label">
-                Selected Treatment
-              </span>
-
               <h3>
                 Multiple Teeth Implants
               </h3>
 
               <p>
-                May be considered when several teeth are missing. The number
-                and arrangement of implants depends on the individual treatment plan.
+                Several missing teeth may be replaced using one or more
+                implants, depending on the treatment plan.
               </p>
 
             </div>
@@ -2107,7 +2184,6 @@
           <article
             class="implant-option"
             id="full-mouth"
-            data-option="full-mouth"
           >
 
             <div class="implant-option-image">
@@ -2121,18 +2197,14 @@
 
             <div class="implant-option-content">
 
-              <span class="highlight-label">
-                Selected Treatment
-              </span>
-
               <h3>
-                Full Mouth Implants
+                More Extensive Tooth Loss
               </h3>
 
               <p>
-                May be considered when many or all teeth need replacement.
-                The approach varies depending on the condition of the teeth,
-                gums, jawbone and overall treatment needs.
+                When many or all teeth are missing, implants may sometimes
+                be used to support a bridge or removable denture. The exact
+                plan depends on the condition of the mouth.
               </p>
 
             </div>
@@ -2146,133 +2218,17 @@
     </section>
 
 
-    <!-- =====================================================
-         CHARACTERISTICS
-         ===================================================== -->
+    <!-- =======================================================
+         IMPLANT SCREW
+    ======================================================== -->
 
     <section>
 
       <div class="container">
 
-        <div class="section-head">
+        <div class="visual-grid">
 
-          <span class="eyebrow">
-            Understanding the Option
-          </span>
-
-          <h2>
-            What Makes Dental Implants Different?
-          </h2>
-
-          <p>
-            Dental implants differ from bridges and removable dentures mainly
-            in how the replacement is supported.
-          </p>
-
-        </div>
-
-        <div class="why-grid">
-
-          <div class="why-item">
-
-            <div class="why-icon">
-              <img
-                src="artificial-root-support.png"
-                alt=""
-                aria-hidden="true"
-              >
-            </div>
-
-            <h3>
-              Jawbone Support
-            </h3>
-
-            <p>
-              The implant fixture is placed in the jawbone.
-            </p>
-
-          </div>
-
-          <div class="why-item">
-
-            <div class="why-icon">
-              <img
-                src="fixed-replacement.png"
-                alt=""
-                aria-hidden="true"
-              >
-            </div>
-
-            <h3>
-              Fixed Replacement
-            </h3>
-
-            <p>
-              The replacement tooth is designed to stay in place rather
-              than being removed like a denture.
-            </p>
-
-          </div>
-
-          <div class="why-item">
-
-            <div class="why-icon">
-              <img
-                src="chewing-function.png"
-                alt=""
-                aria-hidden="true"
-              >
-            </div>
-
-            <h3>
-              Tooth Replacement
-            </h3>
-
-            <p>
-              The treatment is intended to replace a missing tooth or teeth.
-            </p>
-
-          </div>
-
-          <div class="why-item">
-
-            <div class="why-icon">
-              <img
-                src="natural-looking-crown.png"
-                alt=""
-                aria-hidden="true"
-              >
-            </div>
-
-            <h3>
-              Visible Replacement
-            </h3>
-
-            <p>
-              A crown or other restoration can replace the visible part
-              of the missing tooth.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         IMPLANT FIXTURE
-         ===================================================== -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="fixture-layout">
-
-          <div class="fixture-image">
+          <div class="visual-box">
 
             <img
               src="dental-implant-fixture.png"
@@ -2281,95 +2237,21 @@
 
           </div>
 
-          <div class="fixture-copy">
+
+          <div>
 
             <span class="eyebrow">
               Implant Component
             </span>
 
             <h2>
-              What Is the Implant Screw?
+              What Is the Implant Fixture?
             </h2>
 
             <p>
-              “Implant screw” is a common term patients use for the
-              <strong>implant fixture</strong>. It is the part placed inside
-              the jawbone and is designed to provide support for the replacement tooth.
-            </p>
-
-            <div class="fixture-labels">
-
-              <span class="fixture-label">
-                Connection
-              </span>
-
-              <span class="fixture-label">
-                Implant Body
-              </span>
-
-              <span class="fixture-label">
-                Threads
-              </span>
-
-              <span class="fixture-label">
-                Tip
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         BONE HEALING
-         ===================================================== -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <span class="eyebrow">
-            Healing & Integration
-          </span>
-
-          <h2>
-            How Does the Implant Heal With the Jawbone?
-          </h2>
-
-          <p>
-            After placement, the jawbone needs time to heal around the implant.
-            This process is called osseointegration — when bone grows around
-            and bonds with the implant surface.
-          </p>
-
-        </div>
-
-        <div class="integration-wrap">
-
-          <div class="integration-image">
-
-            <img
-              src="dental-implant-osseointegration.png"
-              alt="Illustration showing dental implant placement and healing with the jawbone"
-            >
-
-          </div>
-
-          <div class="healing-note">
-
-            <p>
-              <strong>Healing takes time.</strong>
-              The amount of time needed varies between patients and can depend
-              on the implant location, bone condition, healing response and
-              whether additional procedures are needed.
+              The implant fixture is the part placed inside the jawbone.
+              It acts as an artificial tooth root and provides support for
+              the replacement tooth or other implant-supported restoration.
             </p>
 
           </div>
@@ -2381,116 +2263,50 @@
     </section>
 
 
-    <!-- =====================================================
-         TREATMENT PROCESS
-         ===================================================== -->
+    <!-- =======================================================
+         BONE INTEGRATION
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
         <div class="section-head">
 
           <span class="eyebrow">
-            Treatment Journey
+            Healing
           </span>
 
           <h2>
-            Dental Implant Treatment Process
+            How Does the Implant Join the Bone?
           </h2>
 
           <p>
-            The exact sequence and timing can vary from patient to patient.
-            These are the main stages that may be involved.
+            During healing, the bone gradually grows around and bonds with
+            the implant surface. This process is often called
+            <strong>osseointegration</strong>.
           </p>
 
         </div>
 
-        <div class="process-image">
+
+        <div class="options-visual">
 
           <img
-            src="dental-implant-treatment-process.png"
-            alt="Dental implant treatment process from examination and planning through healing and maintenance"
+            src="dental-implant-osseointegration.png"
+            alt="Illustration showing an implant healing and bonding with the jawbone"
           >
 
         </div>
 
-        <div class="process-list">
-
-          <div class="process-item">
-            <div class="process-number">01</div>
-            <h3>Examination</h3>
-            <p>
-              The dentist examines your teeth, gums, bite and overall oral condition.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">02</div>
-            <h3>Imaging</h3>
-            <p>
-              Dental imaging may be used to assess the jawbone and nearby structures.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">03</div>
-            <h3>Planning</h3>
-            <p>
-              The treatment approach is planned according to your individual situation.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">04</div>
-            <h3>Implant Placement</h3>
-            <p>
-              The implant fixture is placed in the jawbone under appropriate anaesthesia.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">05</div>
-            <h3>Healing</h3>
-            <p>
-              Time is allowed for the implant and surrounding tissues to heal.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">06</div>
-            <h3>Abutment</h3>
-            <p>
-              An abutment may be connected when the treatment plan calls for it.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">07</div>
-            <h3>Replacement Tooth</h3>
-            <p>
-              The final crown or other replacement is fitted when appropriate.
-            </p>
-          </div>
-
-          <div class="process-item">
-            <div class="process-number">08</div>
-            <h3>Maintenance</h3>
-            <p>
-              Ongoing cleaning and dental check-ups help monitor the implant and surrounding tissues.
-            </p>
-          </div>
-
-        </div>
-
       </div>
 
     </section>
 
 
-    <!-- =====================================================
-         DURING SURGERY
-         ===================================================== -->
+    <!-- =======================================================
+         PROCEDURE
+    ======================================================== -->
 
     <section>
 
@@ -2499,7 +2315,7 @@
         <div class="section-head">
 
           <span class="eyebrow">
-            During Implant Placement
+            During Treatment
           </span>
 
           <h2>
@@ -2507,53 +2323,168 @@
           </h2>
 
           <p>
-            Implant placement is commonly carried out as an outpatient procedure,
-            although the setting and anaesthesia can vary depending on the patient
-            and the planned treatment.
+            The exact sequence can vary. For a straightforward implant,
+            the procedure is usually carried out with local anaesthesia,
+            so the area is numb while you remain awake. Implant placement
+            is commonly an outpatient procedure, meaning you can usually
+            go home afterwards.
           </p>
 
         </div>
 
-        <div class="surgery-grid">
 
-          <div class="surgery-card">
+        <div class="process-image">
+
+          <img
+            src="dental-implant-treatment-process.png"
+            alt="Dental implant treatment process from assessment and planning through healing and restoration"
+          >
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-card">
+
+            <div class="step">
+              01
+            </div>
+
+            <h3>
+              Assessment
+            </h3>
+
+            <p>
+              The dentist examines your mouth, gums, teeth, bite and
+              available jawbone.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="step">
+              02
+            </div>
+
+            <h3>
+              Imaging
+            </h3>
+
+            <p>
+              X-rays or other imaging may be used to understand the
+              bone and nearby structures.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="step">
+              03
+            </div>
+
+            <h3>
+              Planning
+            </h3>
+
+            <p>
+              The dentist plans the implant position and the type of
+              replacement tooth needed.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="step">
+              04
+            </div>
 
             <h3>
               Anaesthesia
             </h3>
 
             <p>
-              The treatment area is usually numbed with local anaesthesia.
-              Other forms of sedation or anaesthesia may be considered in some situations.
+              Local anaesthesia is normally used to numb the treatment area.
             </p>
 
-          </div>
+          </article>
 
-          <div class="surgery-card">
+
+          <article class="process-card">
+
+            <div class="step">
+              05
+            </div>
 
             <h3>
               Implant Placement
             </h3>
 
             <p>
-              The dentist prepares the planned area of the jawbone and places
-              the implant fixture in position.
+              The gum is opened, a space is prepared in the jawbone and
+              the implant fixture is placed.
             </p>
 
-          </div>
+          </article>
 
-          <div class="surgery-card">
+
+          <article class="process-card">
+
+            <div class="step">
+              06
+            </div>
 
             <h3>
-              After Placement
+              Healing
             </h3>
 
             <p>
-              The area is allowed to heal. The next steps depend on the treatment
-              plan and how healing progresses.
+              The implant is given time to heal and bond with the bone.
             </p>
 
-          </div>
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="step">
+              07
+            </div>
+
+            <h3>
+              Replacement Tooth
+            </h3>
+
+            <p>
+              Once healing is sufficient, the abutment and crown, bridge
+              or denture can be fitted as planned.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="step">
+              08
+            </div>
+
+            <h3>
+              Ongoing Care
+            </h3>
+
+            <p>
+              Regular cleaning and dental reviews help monitor the implant
+              and the replacement tooth.
+            </p>
+
+          </article>
 
         </div>
 
@@ -2562,11 +2493,11 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          RECOVERY
-         ===================================================== -->
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
@@ -2577,84 +2508,83 @@
           </span>
 
           <h2>
-            What Is Recovery Like After Implant Surgery?
+            What Can Recovery Be Like?
           </h2>
 
           <p>
-            Recovery differs between patients. Some soreness, swelling or
-            tenderness around the treated area can occur after surgery.
+            Recovery differs depending on the number of implants and whether
+            other procedures were performed at the same time.
           </p>
 
         </div>
 
+
         <div class="recovery-grid">
 
-          <div class="recovery-card">
+          <article class="recovery-card">
 
             <h3>
               First Few Days
             </h3>
 
             <p>
-              Mild to moderate discomfort, swelling or tenderness may occur.
-              Your dental professional may give specific instructions about
-              food, cleaning and medicines.
+              Soreness, swelling or bruising can occur. Swelling is often
+              greatest during the first couple of days.
             </p>
 
-          </div>
+          </article>
 
-          <div class="recovery-card">
+
+          <article class="recovery-card">
 
             <h3>
-              Eating & Cleaning
+              First 1–2 Weeks
             </h3>
 
             <p>
-              You may be advised to choose softer foods for a period and to
-              clean the area carefully according to the instructions you receive.
+              The gum usually continues to heal during this period.
+              Stitches may be removed or may dissolve, depending on the type used.
             </p>
 
-          </div>
+          </article>
 
-          <div class="recovery-card">
+
+          <article class="recovery-card">
 
             <h3>
-              Healing Period
+              Bone Healing
             </h3>
 
             <p>
-              The implant needs time to heal with the jawbone before later
-              treatment steps are completed. The timing varies.
+              Bone healing takes longer than gum healing. The implant may
+              need several months before it is ready to support the final
+              replacement tooth.
             </p>
 
-          </div>
-
-          <div class="recovery-card">
-
-            <h3>
-              Follow-up
-            </h3>
-
-            <p>
-              Follow-up appointments allow the dental professional to check
-              healing and decide when the next treatment stage is appropriate.
-            </p>
-
-          </div>
+          </article>
 
         </div>
 
-        <div class="notice-box">
 
-          <h3>
-            When should you contact a dental professional?
-          </h3>
+        <div class="notice">
 
           <p>
-            Contact your treating dental professional if pain or swelling is
-            getting worse rather than improving, bleeding is difficult to control,
-            you develop fever or discharge, or you have another symptom that
-            concerns you. Urgent symptoms should receive prompt professional attention.
+            <strong>Temporary teeth:</strong>
+            Depending on the treatment, a temporary tooth, temporary bridge
+            or denture may be used while the implant area heals. Whether this
+            is possible depends on the individual case.
+          </p>
+
+        </div>
+
+
+        <div class="notice">
+
+          <p>
+            <strong>When to contact a dental professional:</strong>
+            Contact the treating dental professional if pain, swelling or
+            bleeding is severe, gets worse instead of improving, or if you
+            develop signs of infection or another problem that concerns you.
           </p>
 
         </div>
@@ -2664,47 +2594,9 @@
     </section>
 
 
-    <!-- =====================================================
-         TEMPORARY TEETH
-         ===================================================== -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <span class="eyebrow">
-            During Healing
-          </span>
-
-          <h2>
-            Can You Have a Temporary Tooth?
-          </h2>
-
-        </div>
-
-        <div class="temporary-box">
-
-          <p>
-            <strong>Sometimes.</strong>
-            Depending on the location of the missing tooth and the treatment plan,
-            a dentist may provide a temporary tooth or temporary replacement while
-            the implant area heals. In other cases, the final replacement may need
-            to wait until healing has progressed. Your dentist can explain what is
-            appropriate for your situation.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         DENTIST CHECK
-         ===================================================== -->
+    <!-- =======================================================
+         WHAT DENTIST CHECKS
+    ======================================================== -->
 
     <section>
 
@@ -2721,101 +2613,287 @@
           </h2>
 
           <p>
-            Implant suitability is based on an examination rather than on
-            one factor alone.
+            An implant is not suitable simply because a tooth is missing.
+            A dentist will look at several parts of your mouth and overall
+            health before deciding whether it is appropriate.
           </p>
 
         </div>
 
+
         <div class="check-grid">
 
-          <div class="check-item">
+
+          <article class="check-item">
 
             <div class="check-icon">
-              <img src="bone-support.png" alt="">
+
+              <img
+                src="bone-support.png"
+                alt=""
+                aria-hidden="true"
+              >
+
             </div>
 
             <div>
-              <h3>Bone</h3>
+
+              <h3>
+                Jawbone
+              </h3>
+
               <p>
-                The amount and condition of bone available for support.
+                Amount and condition of available bone.
               </p>
+
             </div>
+
+          </article>
+
+
+          <article class="check-item">
+
+            <div class="check-icon">
+
+              <img
+                src="gum-health.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <div>
+
+              <h3>
+                Gum Health
+              </h3>
+
+              <p>
+                Signs of gum disease or inflammation.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="check-item">
+
+            <div class="check-icon">
+
+              <img
+                src="surrounding-teeth.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <div>
+
+              <h3>
+                Nearby Teeth
+              </h3>
+
+              <p>
+                Condition of teeth around the missing tooth.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="check-item">
+
+            <div class="check-icon">
+
+              <img
+                src="bite-assessment.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <div>
+
+              <h3>
+                Bite
+              </h3>
+
+              <p>
+                How your upper and lower teeth meet.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="check-item">
+
+            <div class="check-icon">
+
+              <img
+                src="oral-hygiene.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <div>
+
+              <h3>
+                Oral Hygiene
+              </h3>
+
+              <p>
+                How well the teeth and gums are being cleaned.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="check-item">
+
+            <div class="check-icon">
+
+              <img
+                src="medical-factors.png"
+                alt=""
+                aria-hidden="true"
+              >
+
+            </div>
+
+            <div>
+
+              <h3>
+                Medical Factors
+              </h3>
+
+              <p>
+                Relevant health conditions, medicines and healing factors.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         KEEP IN MIND
+    ======================================================== -->
+
+    <section class="white-section">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Before You Choose
+          </span>
+
+          <h2>
+            Things to Keep in Mind
+          </h2>
+
+          <p>
+            These are factors a dental professional may consider when
+            assessing whether implant treatment is appropriate.
+          </p>
+
+        </div>
+
+
+        <div class="simple-list">
+
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
+
+            <p>
+              <strong>Bone:</strong>
+              There needs to be enough suitable bone to place and support
+              the implant. If there is not, additional treatment may sometimes
+              be discussed.
+            </p>
 
           </div>
 
-          <div class="check-item">
 
-            <div class="check-icon">
-              <img src="gum-health.png" alt="">
-            </div>
+          <div class="simple-list-item">
 
-            <div>
-              <h3>Gums</h3>
-              <p>
-                Signs of gum disease or other gum problems.
-              </p>
-            </div>
+            <span class="list-dot"></span>
+
+            <p>
+              <strong>Gum disease:</strong>
+              Active gum disease may need to be treated before implant surgery.
+            </p>
 
           </div>
 
-          <div class="check-item">
 
-            <div class="check-icon">
-              <img src="surrounding-teeth.png" alt="">
-            </div>
+          <div class="simple-list-item">
 
-            <div>
-              <h3>Teeth</h3>
-              <p>
-                The condition of nearby and remaining teeth.
-              </p>
-            </div>
+            <span class="list-dot"></span>
+
+            <p>
+              <strong>Smoking:</strong>
+              Smoking can affect healing and is associated with a higher risk
+              of implant problems.
+            </p>
 
           </div>
 
-          <div class="check-item">
 
-            <div class="check-icon">
-              <img src="bite-assessment.png" alt="">
-            </div>
+          <div class="simple-list-item">
 
-            <div>
-              <h3>Bite</h3>
-              <p>
-                How your upper and lower teeth meet and share pressure.
-              </p>
-            </div>
+            <span class="list-dot"></span>
+
+            <p>
+              <strong>Healing conditions:</strong>
+              Some medical conditions, medicines or previous treatment can
+              affect healing and need to be discussed with the dental team.
+            </p>
 
           </div>
 
-          <div class="check-item">
 
-            <div class="check-icon">
-              <img src="oral-hygiene.png" alt="">
-            </div>
+          <div class="simple-list-item">
 
-            <div>
-              <h3>Oral Hygiene</h3>
-              <p>
-                Whether the area can be kept clean during and after treatment.
-              </p>
-            </div>
+            <span class="list-dot"></span>
+
+            <p>
+              <strong>Oral hygiene:</strong>
+              Good cleaning around the implant and regular dental care are
+              important after treatment.
+            </p>
 
           </div>
 
-          <div class="check-item">
 
-            <div class="check-icon">
-              <img src="medical-factors.png" alt="">
-            </div>
+          <div class="simple-list-item">
 
-            <div>
-              <h3>Medical Factors</h3>
-              <p>
-                Health conditions, medicines and other factors that may affect healing.
-              </p>
-            </div>
+            <span class="list-dot"></span>
+
+            <p>
+              <strong>Teeth grinding:</strong>
+              Strong clenching or grinding can place extra force on implants
+              and replacement teeth.
+            </p>
 
           </div>
 
@@ -2826,9 +2904,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          BONE GRAFTING
-         ===================================================== -->
+    ======================================================== -->
 
     <section>
 
@@ -2841,32 +2919,36 @@
           </span>
 
           <h2>
-            What If There Isn't Enough Bone?
+            What Is Bone Grafting?
           </h2>
 
           <p>
-            Some patients may have less bone available in the area where an
-            implant is being considered.
+            If there is not enough suitable bone at the implant site,
+            a dentist may sometimes recommend a bone graft.
           </p>
 
         </div>
 
-        <div class="bone-content">
 
-          <div class="bone-note">
+        <div class="notice">
 
-            <p>
-              <strong>Bone grafting</strong> is a procedure that adds bone material
-              to an area where more bone may be needed for the planned treatment.
-            </p>
+          <p>
+            A <strong>bone graft</strong> is a procedure used to add or
+            rebuild bone in an area of the jaw. The added material provides
+            a framework where new bone can develop. The graft may be done
+            before implant placement or, in some cases, at the same time.
+          </p>
 
-            <p>
-              It is not required for every implant patient. If bone grafting is
-              considered, the dentist can explain why it may be needed, what the
-              procedure involves and whether additional healing time is required.
-            </p>
+        </div>
 
-          </div>
+
+        <div class="notice">
+
+          <p>
+            Bone grafting can add extra treatment and healing time.
+            The type of graft and timing depend on how much bone is available,
+            where the implant is planned and the individual situation.
+          </p>
 
         </div>
 
@@ -2875,11 +2957,11 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          RISKS
-         ===================================================== -->
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
@@ -2893,78 +2975,117 @@
             What Are the Risks of Implant Surgery?
           </h2>
 
+          <p>
+            Dental implant surgery is a procedure, so it has possible risks.
+            Your dental professional should explain the risks that apply
+            specifically to you before treatment.
+          </p>
+
         </div>
 
-        <p class="risk-intro">
-          Dental implant surgery is a commonly performed procedure, but like
-          other surgery, it can have risks. The level of risk varies from person
-          to person and should be discussed with the treating dental professional.
-        </p>
 
         <div class="risk-grid">
 
-          <div class="risk-item">
+
+          <article class="risk-item">
 
             <h3>
-              Discomfort & Swelling
+              Soreness & Swelling
             </h3>
 
             <p>
-              Soreness, swelling or tenderness can occur after the procedure
-              and usually forms part of the early recovery period.
+              Temporary pain, swelling or bruising can occur after surgery.
             </p>
 
-          </div>
+          </article>
 
-          <div class="risk-item">
+
+          <article class="risk-item">
 
             <h3>
-              Bleeding or Infection
+              Infection
             </h3>
 
             <p>
-              Bleeding and infection are possible with surgery. Following
-              aftercare instructions can help support recovery.
+              Infection can occur around a surgical site or around an implant,
+              particularly if oral hygiene and gum health are poor.
             </p>
 
-          </div>
+          </article>
 
-          <div class="risk-item">
+
+          <article class="risk-item">
 
             <h3>
-              Healing Problems
+              Implant Problems
             </h3>
 
             <p>
-              In some cases, the implant may not heal or integrate as expected
-              and further treatment may be needed.
+              In some cases an implant may not bond properly with the bone
+              or may develop problems later.
             </p>
 
-          </div>
+          </article>
 
-          <div class="risk-item">
+
+          <article class="risk-item">
 
             <h3>
-              Nearby Structures
+              Gum or Bone Changes
             </h3>
 
             <p>
-              Depending on the implant location, nearby teeth, nerves or other
-              structures may need to be considered during planning.
+              Inflammation around an implant can affect the surrounding gum
+              and bone and may require further treatment.
             </p>
 
-          </div>
+          </article>
+
+
+          <article class="risk-item">
+
+            <h3>
+              Replacement Tooth Wear
+            </h3>
+
+            <p>
+              Crowns, bridges, dentures or their small connecting parts can
+              wear, chip or need repair or replacement over time.
+            </p>
+
+          </article>
+
+
+          <article class="risk-item">
+
+            <h3>
+              Nerve or Nearby Structure Injury
+            </h3>
+
+            <p>
+              This is uncommon, but surgery in certain areas of the jaw can
+              affect nearby nerves or other structures.
+            </p>
+
+          </article>
 
         </div>
+
+
+        <p class="contact-note">
+          If you develop <strong>severe or worsening pain, increasing swelling,
+          significant bleeding, fever, or another symptom that concerns you</strong>
+          after surgery, contact the treating dental professional promptly.
+        </p>
 
       </div>
 
     </section>
 
 
-    <!-- =====================================================
-         LONGEVITY
-         ===================================================== -->
+    <!-- =======================================================
+         LONGEVITY + COST
+    ======================================================== -->
 
     <section>
 
@@ -2973,7 +3094,7 @@
         <div class="section-head">
 
           <span class="eyebrow">
-            Long-Term Care
+            Long-Term Considerations
           </span>
 
           <h2>
@@ -2981,59 +3102,84 @@
           </h2>
 
           <p>
-            There is no guaranteed number of years that an implant will last.
-            Longevity varies between patients.
+            Implants can function for many years, but there is no guarantee
+            that an implant or its replacement tooth will last for life.
+            Long-term results vary between patients.
           </p>
 
         </div>
 
-        <div class="longevity-box">
 
-          <p>
-            An implant can remain in use for many years when it heals well and
-            is properly cared for, but problems can develop over time. The
-            implant, surrounding gums and bone, and the replacement tooth all
-            need ongoing care.
-          </p>
+        <div class="two-column-cards">
 
-          <p>
-            The crown or other replacement tooth may wear, become damaged or
-            need replacement before the implant itself.
-          </p>
+          <article class="info-card">
 
-          <div class="longevity-factors">
+            <h3>
+              Factors That Can Affect Longevity
+            </h3>
 
-            <div class="longevity-factor">
-              <strong>Gum Health</strong>
-              <span>Healthy tissues around the implant matter for long-term care.</span>
-            </div>
+            <ul>
 
-            <div class="longevity-factor">
-              <strong>Oral Hygiene</strong>
-              <span>Regular cleaning helps reduce problems around the implant.</span>
-            </div>
+              <li>
+                Gum and bone health
+              </li>
 
-            <div class="longevity-factor">
-              <strong>Tobacco Use</strong>
-              <span>Smoking and tobacco use can affect healing and oral health.</span>
-            </div>
+              <li>
+                Regular brushing and cleaning
+              </li>
 
-            <div class="longevity-factor">
-              <strong>Bite Forces</strong>
-              <span>Heavy or uneven forces can affect the implant and restoration.</span>
-            </div>
+              <li>
+                Smoking or tobacco use
+              </li>
 
-            <div class="longevity-factor">
-              <strong>Regular Check-ups</strong>
-              <span>Professional monitoring can help identify problems early.</span>
-            </div>
+              <li>
+                Bite forces and teeth grinding
+              </li>
 
-            <div class="longevity-factor">
-              <strong>Overall Factors</strong>
-              <span>Health, medicines and other individual factors may also matter.</span>
-            </div>
+              <li>
+                General health and healing
+              </li>
 
-          </div>
+              <li>
+                Regular dental reviews
+              </li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>
+              The Replacement Tooth May Need Care Too
+            </h3>
+
+            <ul>
+
+              <li>
+                Crowns can wear or chip
+              </li>
+
+              <li>
+                Bridges can require repair
+              </li>
+
+              <li>
+                Denture attachments can wear
+              </li>
+
+              <li>
+                Replacement parts may sometimes be needed
+              </li>
+
+              <li>
+                Regular maintenance remains important
+              </li>
+
+            </ul>
+
+          </article>
 
         </div>
 
@@ -3042,100 +3188,109 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          COST
-         ===================================================== -->
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
         <div class="section-head">
 
           <span class="eyebrow">
-            Cost Information
+            Cost Factors
           </span>
 
           <h2>
-            What Can Affect the Cost of Dental Implants?
+            What Can Affect the Cost?
           </h2>
 
           <p>
-            The cost of implant treatment can vary considerably because the
-            treatment plan is different for each patient.
+            There is no single price that applies to every dental implant case.
+            The total cost depends on what treatment is needed.
           </p>
 
         </div>
 
-        <div class="cost-grid">
 
-          <div class="cost-item">
+        <div class="simple-list">
 
-            <h3>
-              Number of Teeth
-            </h3>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              Replacing one tooth may involve different treatment steps from
-              replacing several or many teeth.
+              The number of missing teeth being replaced.
             </p>
 
           </div>
 
-          <div class="cost-item">
 
-            <h3>
-              Implant & Replacement Components
-            </h3>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              The implant system, abutment and type of replacement tooth can
-              affect the overall treatment cost.
+              The type of implant-supported replacement being planned.
             </p>
 
           </div>
 
-          <div class="cost-item">
 
-            <h3>
-              Additional Procedures
-            </h3>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              Some patients may need procedures such as tooth removal or
-              bone grafting before or during implant treatment.
+              Imaging, examination and treatment planning.
             </p>
 
           </div>
 
-          <div class="cost-item">
 
-            <h3>
-              Follow-up & Maintenance
-            </h3>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              Follow-up visits, future repairs or replacement of the crown
-              can also be part of the longer-term cost of care.
+              The condition of the teeth and gums.
+            </p>
+
+          </div>
+
+
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
+
+            <p>
+              Whether bone grafting or another additional procedure is required.
+            </p>
+
+          </div>
+
+
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
+
+            <p>
+              The materials and type of final replacement tooth.
             </p>
 
           </div>
 
         </div>
-
-        <p class="section-intro">
-          A dental professional can provide a more specific estimate after
-          examining your mouth and understanding the treatment required.
-        </p>
 
       </div>
 
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          COMPARISON
-         ===================================================== -->
+    ======================================================== -->
 
     <section>
 
@@ -3152,11 +3307,12 @@
           </h2>
 
           <p>
-            These options differ in how they are supported, cared for and used.
-            The most suitable choice depends on the individual situation.
+            These options work in different ways. The appropriate choice
+            depends on the individual situation.
           </p>
 
         </div>
+
 
         <div class="table-wrap">
 
@@ -3165,49 +3321,130 @@
             <thead>
 
               <tr>
-                <th>Factor</th>
-                <th>Dental Implant</th>
-                <th>Dental Bridge</th>
-                <th>Removable Denture</th>
+                <th>
+                  Feature
+                </th>
+
+                <th>
+                  Dental Implant
+                </th>
+
+                <th>
+                  Dental Bridge
+                </th>
+
+                <th>
+                  Removable Denture
+                </th>
               </tr>
 
             </thead>
 
+
             <tbody>
 
               <tr>
-                <td>Support</td>
-                <td>Implant placed in the jawbone</td>
-                <td>Usually supported by neighbouring teeth</td>
-                <td>Supported by oral tissues and/or remaining teeth</td>
+
+                <td>
+                  Main support
+                </td>
+
+                <td>
+                  Implant placed in jawbone
+                </td>
+
+                <td>
+                  Usually nearby teeth or other support
+                </td>
+
+                <td>
+                  Gums and other supporting structures
+                </td>
+
               </tr>
 
-              <tr>
-                <td>Removable</td>
-                <td>Generally not removed by the patient</td>
-                <td>Generally fixed</td>
-                <td>Yes</td>
-              </tr>
 
               <tr>
-                <td>Tooth Root Replacement</td>
-                <td>Uses an implant fixture as an artificial root support</td>
-                <td>No artificial root</td>
-                <td>No artificial root</td>
+
+                <td>
+                  Removable
+                </td>
+
+                <td>
+                  Usually fixed
+                </td>
+
+                <td>
+                  Usually fixed
+                </td>
+
+                <td>
+                  Yes
+                </td>
+
               </tr>
 
-              <tr>
-                <td>Nearby Teeth</td>
-                <td>Does not normally require a neighbouring tooth to support the implant</td>
-                <td>May use neighbouring teeth for support</td>
-                <td>Depends on the denture design</td>
-              </tr>
 
               <tr>
-                <td>Maintenance</td>
-                <td>Regular oral hygiene and professional monitoring</td>
-                <td>Cleaning around the bridge and regular dental care</td>
-                <td>Removal, cleaning and regular dental review</td>
+
+                <td>
+                  Surgery
+                </td>
+
+                <td>
+                  Yes
+                </td>
+
+                <td>
+                  Usually no implant surgery
+                </td>
+
+                <td>
+                  Usually no implant surgery
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  Treatment time
+                </td>
+
+                <td>
+                  Often longer because of healing
+                </td>
+
+                <td>
+                  Often shorter than implant treatment
+                </td>
+
+                <td>
+                  Varies with the type of denture
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td>
+                  Maintenance
+                </td>
+
+                <td>
+                  Regular cleaning and reviews
+                </td>
+
+                <td>
+                  Regular cleaning and reviews
+                </td>
+
+                <td>
+                  Removal and cleaning required
+                </td>
+
               </tr>
 
             </tbody>
@@ -3221,123 +3458,11 @@
     </section>
 
 
-    <!-- =====================================================
-         KEEP IN MIND
-         ===================================================== -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-head">
-
-          <span class="eyebrow">
-            Before You Choose
-          </span>
-
-          <h2>
-            Things to Keep in Mind
-          </h2>
-
-          <p>
-            A dentist considers several factors before deciding whether
-            implant treatment is appropriate.
-          </p>
-
-        </div>
-
-        <div class="keep-grid">
-
-          <div class="keep-item">
-
-            <h3>
-              Bone Support
-            </h3>
-
-            <p>
-              The dentist may assess whether there is enough suitable bone
-              to support the planned implant.
-            </p>
-
-          </div>
-
-          <div class="keep-item">
-
-            <h3>
-              Gum Health
-            </h3>
-
-            <p>
-              Active gum disease may need to be treated before implant treatment
-              is considered.
-            </p>
-
-          </div>
-
-          <div class="keep-item">
-
-            <h3>
-              Smoking & Tobacco
-            </h3>
-
-            <p>
-              Smoking and tobacco use can affect healing and the health of tissues
-              around an implant, so it is important to discuss tobacco use openly.
-            </p>
-
-          </div>
-
-          <div class="keep-item">
-
-            <h3>
-              Healing Conditions
-            </h3>
-
-            <p>
-              Some medical conditions or medicines may affect healing. The dentist
-              can consider your health history when planning treatment.
-            </p>
-
-          </div>
-
-          <div class="keep-item">
-
-            <h3>
-              Oral Hygiene
-            </h3>
-
-            <p>
-              Keeping the implant area and remaining teeth clean is an important
-              part of long-term care.
-            </p>
-
-          </div>
-
-          <div class="keep-item">
-
-            <h3>
-              Individual Treatment Plan
-            </h3>
-
-            <p>
-              The number of implants, timing and additional procedures depend
-              on the individual dental assessment.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
+    <!-- =======================================================
          AFTERCARE
-         ===================================================== -->
+    ======================================================== -->
 
-    <section>
+    <section class="white-section">
 
       <div class="container">
 
@@ -3351,50 +3476,61 @@
             Looking After an Implant
           </h2>
 
+          <p>
+            An implant still needs regular care after treatment is complete.
+          </p>
+
         </div>
 
-        <div class="aftercare-list">
 
-          <div class="aftercare-item">
+        <div class="simple-list">
 
-            <span class="dot"></span>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              <strong>Follow Instructions</strong> — Follow the cleaning,
-              eating and medicine instructions provided by your dental professional.
+              <strong>Clean regularly:</strong>
+              Brush and clean between your teeth as advised by your dental team.
             </p>
 
           </div>
 
-          <div class="aftercare-item">
 
-            <span class="dot"></span>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              <strong>Keep the Area Clean</strong> — Good oral hygiene helps
-              protect the implant and surrounding tissues.
+              <strong>Attend reviews:</strong>
+              Regular dental visits can help identify gum, bone or restoration
+              problems early.
             </p>
 
           </div>
 
-          <div class="aftercare-item">
 
-            <span class="dot"></span>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              <strong>Avoid Tobacco</strong> — Discuss smoking and tobacco use
-              with your dentist, particularly around the time of treatment.
+              <strong>Avoid tobacco:</strong>
+              Discuss smoking or tobacco use with your dental professional,
+              because it can affect healing and long-term implant health.
             </p>
 
           </div>
 
-          <div class="aftercare-item">
 
-            <span class="dot"></span>
+          <div class="simple-list-item">
+
+            <span class="list-dot"></span>
 
             <p>
-              <strong>Attend Check-ups</strong> — Regular professional checks
-              can monitor the implant, gums and replacement tooth.
+              <strong>Report changes:</strong>
+              Tell your dental professional if the implant or replacement tooth
+              feels loose, painful or different from before.
             </p>
 
           </div>
@@ -3406,9 +3542,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          FAQ
-         ===================================================== -->
+    ======================================================== -->
 
     <section>
 
@@ -3426,151 +3562,240 @@
 
         </div>
 
+
         <div class="faq">
 
-          <div class="faq-item">
+
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>Is dental implant surgery painful?</span>
-              <span>+</span>
+
+              <span>
+                Is dental implant surgery painful?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              Implant placement is usually performed with local anaesthesia,
-              so the treatment area is numbed during the procedure. Soreness,
-              swelling or tenderness can occur afterward and should be managed
-              according to the instructions given by the dental professional.
+
+              <p>
+                The area is usually numbed with local anaesthesia during
+                implant placement. Some soreness, swelling or bruising can
+                occur after surgery. Your dental professional can advise you
+                about pain relief and what to expect based on the procedure.
+              </p>
+
             </div>
 
-          </div>
+          </article>
 
 
-          <div class="faq-item">
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>How long does dental implant treatment take?</span>
-              <span>+</span>
+
+              <span>
+                How long does dental implant treatment take?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              The overall treatment can take several stages because the implant
-              may need time to heal with the jawbone before the final replacement
-              tooth is fitted. The timing varies depending on healing, bone
-              condition and the treatment plan.
+
+              <p>
+                The total treatment time varies from person to person.
+                The gum may heal within a few weeks, but the implant usually
+                needs a longer period to bond with the jawbone before the final
+                replacement tooth is fitted. Bone grafting or other additional
+                treatment can make the process longer.
+              </p>
+
             </div>
 
-          </div>
+          </article>
 
 
-          <div class="faq-item">
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>Is a dental implant suitable for everyone?</span>
-              <span>+</span>
+
+              <span>
+                Can everyone have dental implants?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              No. A dentist needs to assess factors such as bone support,
-              gum health, oral hygiene, tobacco use, bite and relevant medical
-              factors before deciding whether implant treatment is appropriate.
+
+              <p>
+                Not everyone is immediately suitable for an implant.
+                A dentist will usually assess the amount and condition of
+                the jawbone, gum health, nearby teeth, bite, oral hygiene,
+                smoking and relevant medical factors before deciding whether
+                implant treatment is appropriate.
+              </p>
+
             </div>
 
-          </div>
+          </article>
 
 
-          <div class="faq-item">
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>What are the alternatives to dental implants?</span>
-              <span>+</span>
+
+              <span>
+                What should I expect after dental implant surgery?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              Depending on the situation, alternatives may include a dental
-              bridge or a removable denture. A dentist can explain the differences
-              and discuss which options may be possible.
+
+              <p>
+                Mild to moderate soreness, swelling or bruising can occur
+                after surgery and swelling is often greatest during the first
+                couple of days. The gum commonly heals over the following
+                one to two weeks, while the bone takes longer to heal around
+                the implant. Some people may have a temporary tooth or other
+                temporary replacement while the implant heals.
+              </p>
+
             </div>
 
-          </div>
+          </article>
 
 
-          <div class="faq-item">
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>Will I have a temporary tooth while the implant heals?</span>
-              <span>+</span>
+
+              <span>
+                How long do dental implants last?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              Sometimes. A temporary tooth or other temporary replacement may
-              be possible depending on the location of the missing tooth and
-              the treatment plan. Some patients may need to wait before receiving
-              the final replacement.
+
+              <p>
+                Dental implants can remain functional for many years,
+                but they are not guaranteed to last forever. Their longevity
+                can be affected by oral hygiene, gum health, smoking, bite
+                forces, general health, regular dental care and the condition
+                of the crown or other replacement tooth attached to the implant.
+              </p>
+
             </div>
 
-          </div>
+          </article>
 
 
-          <div class="faq-item">
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>What if I don't have enough bone?</span>
-              <span>+</span>
+
+              <span>
+                How much do dental implants cost?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              If there is not enough suitable bone for the planned implant,
-              a dentist may discuss bone grafting. This adds bone material to
-              the area and may require additional healing time before or during
-              implant treatment.
+
+              <p>
+                There is no single cost that applies to every patient.
+                The total cost can depend on the number of teeth being replaced,
+                the type of implant restoration, imaging and planning, the
+                condition of the teeth and gums, whether bone grafting or other
+                procedures are needed, and the materials used.
+              </p>
+
             </div>
 
-          </div>
+          </article>
 
 
-          <div class="faq-item">
+          <article class="faq-item">
 
             <button
               class="faq-question"
               type="button"
               aria-expanded="false"
             >
-              <span>How long will a dental implant last?</span>
-              <span>+</span>
+
+              <span>
+                What are alternatives to dental implants?
+              </span>
+
+              <span>
+                +
+              </span>
+
             </button>
 
             <div class="faq-answer">
-              There is no guaranteed lifetime for an implant. Long-term results
-              can be affected by gum health, oral hygiene, tobacco use, bite
-              forces, general health and regular professional maintenance.
-              The replacement crown may also need repair or replacement over time.
+
+              <p>
+                Depending on the situation, alternatives may include a dental
+                bridge or a removable denture. A dentist can compare these
+                options with you based on the missing tooth or teeth, nearby
+                teeth, gum and bone condition, your preferences and the planned
+                treatment.
+              </p>
+
             </div>
 
-          </div>
+          </article>
+
 
         </div>
 
@@ -3579,11 +3804,14 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          FORM
-         ===================================================== -->
+    ======================================================== -->
 
-    <section class="form-section" id="form">
+    <section
+      class="form-section"
+      id="form"
+    >
 
       <div class="container">
 
@@ -3598,25 +3826,28 @@
           </h2>
 
           <p>
-            Share your enquiry to explore dental implant information
-            and available care options.
+            Share a few details if you would like to explore dental implant
+            treatment options in Berhampur.
           </p>
 
         </div>
 
+
         <div class="form-wrap">
 
           <p class="form-note">
-            FindToCare can help you explore information and connect with
-            relevant care options. A dental professional determines treatment
-            suitability after evaluation.
+            FindToCare helps you explore treatment information and relevant
+            care options. A dental professional determines whether treatment
+            is appropriate for you.
           </p>
 
+
           <p class="disclaimer-top">
-            Submitting this form does not confirm a specific appointment,
-            treatment plan, price, or outcome. These depend on professional
-            evaluation and individual circumstances.
+            Submitting this form does not confirm an appointment, treatment,
+            price or treatment outcome. These depend on a professional
+            assessment and the participating dental provider.
           </p>
+
 
           <form>
 
@@ -3712,7 +3943,7 @@
                 </option>
 
                 <option>
-                  Full mouth tooth replacement
+                  More extensive tooth replacement
                 </option>
 
                 <option>
@@ -3800,7 +4031,7 @@
                 </option>
 
                 <option>
-                  Within 1-3 months
+                  Within 1–3 months
                 </option>
 
                 <option>
@@ -3835,7 +4066,7 @@
 
               <button
                 type="submit"
-                class="btn btn-cta submit-btn"
+                class="btn submit-btn"
               >
                 Check Treatment Options →
               </button>
@@ -3843,6 +4074,19 @@
             </div>
 
           </form>
+
+
+          <p class="privacy-note">
+
+            Your information is used to respond to your enquiry.
+            See our
+            <a href="privacy-policy.html">
+              Privacy Policy
+            </a>
+            for more information.
+
+          </p>
+
 
           <p class="disclaimer-bottom">
             This does not guarantee an appointment, treatment, price,
@@ -3856,79 +4100,107 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =======================================================
          FINAL CTA
-         ===================================================== -->
+    ======================================================== -->
 
-    <section class="final-cta-wrap">
+    <section class="final-cta-section">
 
-      <div class="final-cta">
+      <div class="container">
 
-        <h2>
-          Want to Explore Dental Implant Options in Berhampur?
-        </h2>
+        <div class="final-cta">
 
-        <p>
-          Share your enquiry to learn more about available treatment
-          and care options. Treatment suitability is determined by
-          a dental professional after evaluation.
-        </p>
+          <h2>
+            Want to Explore Dental Implant Options in Berhampur?
+          </h2>
 
-        <a href="#form" class="btn btn-cta">
-          Check Treatment Options →
-        </a>
+          <a
+            href="#form"
+            class="btn"
+          >
+            Check Treatment Options →
+          </a>
+
+        </div>
 
       </div>
 
     </section>
+
 
   </main>
 
 
   <!-- =======================================================
        FOOTER
-       ======================================================= -->
+  ======================================================== -->
 
-  <footer id="contact">
+  <footer>
 
     <div class="container">
 
       <div class="footer-grid">
 
+
         <div>
 
-          <a href="index.html" class="logo" aria-label="FindToCare Home">
+          <a
+            href="index.html"
+            class="logo"
+            aria-label="FindToCare Home"
+          >
             <span class="find">Find</span><span class="to">To</span><span class="care">Care</span>
           </a>
 
+
           <p class="footer-tagline">
-            Connecting patients in Berhampur with dental implant treatment
+            Connecting patients in Berhampur with dental treatment
             information and relevant care options.
           </p>
 
+
           <div class="socials">
+
 
             <a
               class="social-icon"
               href="#"
               aria-label="Instagram"
             >
+
               <svg
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
                 aria-hidden="true"
               >
-                <rect x="3" y="3" width="18" height="18" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
+
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                />
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                />
+
                 <circle
                   cx="17.5"
                   cy="6.5"
                   r=".5"
                   fill="currentColor"
                 />
+
               </svg>
+
             </a>
 
 
@@ -3937,15 +4209,23 @@
               href="#"
               aria-label="WhatsApp"
             >
+
               <svg
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
                 aria-hidden="true"
               >
-                <path d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"/>
+
+                <path
+                  d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"
+                />
+
               </svg>
+
             </a>
 
 
@@ -3954,15 +4234,23 @@
               href="#"
               aria-label="Facebook"
             >
+
               <svg
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
                 aria-hidden="true"
               >
-                <path d="M14 9h3V6h-3a4 4 0 00-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z"/>
+
+                <path
+                  d="M14 9h3V6h-3a4 4 0 00-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z"
+                />
+
               </svg>
+
             </a>
 
 
@@ -3971,21 +4259,35 @@
               href="#"
               aria-label="YouTube"
             >
+
               <svg
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
                 aria-hidden="true"
               >
-                <rect x="2" y="6" width="20" height="12" rx="4"/>
+
+                <rect
+                  x="2"
+                  y="6"
+                  width="20"
+                  height="12"
+                  rx="4"
+                />
+
                 <path
                   d="M10 9.5l5 2.5-5 2.5z"
                   fill="currentColor"
                   stroke="none"
                 />
+
               </svg>
+
             </a>
+
 
           </div>
 
@@ -4071,6 +4373,7 @@
 
         </div>
 
+
       </div>
 
 
@@ -4080,6 +4383,7 @@
           © 2026 FindToCare. All rights reserved.
         </span>
 
+
         <div class="footer-bottom-links">
 
           <a href="privacy-policy.html">
@@ -4087,7 +4391,7 @@
           </a>
 
           <a href="terms.html">
-            Terms & Conditions
+            Terms of Service
           </a>
 
         </div>
@@ -4101,67 +4405,94 @@
 
   <!-- =======================================================
        JAVASCRIPT
-       ======================================================= -->
+  ======================================================== -->
 
   <script>
 
-    /* =======================================================
+    /* =========================================================
        MOBILE MENU
-       ======================================================= */
+    ========================================================== */
 
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-    hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.addEventListener("click", function () {
 
-      const isOpen = mobileMenu.classList.toggle('open');
+      const isOpen = mobileMenu.classList.toggle("open");
+
+      hamburgerBtn.classList.toggle("active", isOpen);
 
       hamburgerBtn.setAttribute(
-        'aria-expanded',
-        isOpen ? 'true' : 'false'
+        "aria-expanded",
+        isOpen ? "true" : "false"
       );
 
       hamburgerBtn.setAttribute(
-        'aria-label',
-        isOpen ? 'Close menu' : 'Open menu'
+        "aria-label",
+        isOpen ? "Close menu" : "Open menu"
       );
 
     });
 
 
-    document.querySelectorAll('.mobile-menu a').forEach(link => {
+    document
+      .querySelectorAll(".mobile-menu a")
+      .forEach(function (link) {
 
-      link.addEventListener('click', () => {
+        link.addEventListener("click", function () {
 
-        mobileMenu.classList.remove('open');
+          mobileMenu.classList.remove("open");
+          hamburgerBtn.classList.remove("active");
 
-        hamburgerBtn.setAttribute(
-          'aria-expanded',
-          'false'
-        );
+          hamburgerBtn.setAttribute(
+            "aria-expanded",
+            "false"
+          );
 
-        hamburgerBtn.setAttribute(
-          'aria-label',
-          'Open menu'
-        );
+          hamburgerBtn.setAttribute(
+            "aria-label",
+            "Open menu"
+          );
+
+        });
 
       });
 
+
+    window.addEventListener("resize", function () {
+
+      if (window.innerWidth >= 768) {
+
+        mobileMenu.classList.remove("open");
+        hamburgerBtn.classList.remove("active");
+
+        hamburgerBtn.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+        hamburgerBtn.setAttribute(
+          "aria-label",
+          "Open menu"
+        );
+
+      }
+
     });
 
 
-    /* =======================================================
-       HOMEPAGE TREATMENT HIGHLIGHT
-       ======================================================= */
+    /* =========================================================
+       IMPLANT OPTION HIGHLIGHT
+    ========================================================== */
 
     function highlightTreatmentOption() {
 
       const hash = window.location.hash;
 
       const validOptions = [
-        '#single-tooth',
-        '#multiple-teeth',
-        '#full-mouth'
+        "#single-tooth",
+        "#multiple-teeth",
+        "#full-mouth"
       ];
 
       if (!validOptions.includes(hash)) {
@@ -4174,77 +4505,85 @@
         return;
       }
 
-      document.querySelectorAll('.implant-option').forEach(card => {
-        card.classList.remove('highlighted');
-      });
+      document
+        .querySelectorAll(".implant-option")
+        .forEach(function (card) {
 
-      target.classList.add('highlighted');
+          card.classList.remove("highlighted");
 
-      setTimeout(() => {
-
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center'
         });
 
-      }, 250);
+      target.classList.add("highlighted");
+
+      setTimeout(function () {
+
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+
+      }, 200);
 
     }
 
-
     window.addEventListener(
-      'load',
+      "load",
       highlightTreatmentOption
     );
 
     window.addEventListener(
-      'hashchange',
+      "hashchange",
       highlightTreatmentOption
     );
 
 
-    /* =======================================================
+    /* =========================================================
        FAQ ACCORDION
-       ======================================================= */
+    ========================================================== */
 
-    document.querySelectorAll('.faq-question').forEach(button => {
+    document
+      .querySelectorAll(".faq-question")
+      .forEach(function (button) {
 
-      button.addEventListener('click', () => {
+        button.addEventListener("click", function () {
 
-        const item = button.closest('.faq-item');
+          const item = button.closest(".faq-item");
+          const isOpen = item.classList.contains("open");
 
-        const isOpen = item.classList.contains('open');
+          document
+            .querySelectorAll(".faq-item")
+            .forEach(function (faq) {
 
-        document.querySelectorAll('.faq-item').forEach(faq => {
+              faq.classList.remove("open");
 
-          faq.classList.remove('open');
+              const faqButton =
+                faq.querySelector(".faq-question");
 
-          const faqButton =
-            faq.querySelector('.faq-question');
+              faqButton.setAttribute(
+                "aria-expanded",
+                "false"
+              );
 
-          faqButton.setAttribute(
-            'aria-expanded',
-            'false'
-          );
+            });
+
+          if (!isOpen) {
+
+            item.classList.add("open");
+
+            button.setAttribute(
+              "aria-expanded",
+              "true"
+            );
+
+          }
 
         });
 
-        if (!isOpen) {
-
-          item.classList.add('open');
-
-          button.setAttribute(
-            'aria-expanded',
-            'true'
-          );
-
-        }
-
       });
-
-    });
 
   </script>
 
+
 </body>
+
 </html>
