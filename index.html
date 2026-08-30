@@ -25,6 +25,7 @@
     :root {
       --navy: #0F172A;
       --teal: #0F766E;
+      --brand: #0F766E;
       --cta: #FF6B35;
       --accent: #14B8A6;
       --bg: #F8FAFC;
@@ -224,7 +225,7 @@
       align-items: center;
       position: relative;
       padding: 0 var(--space-1);
-      color: var(--navy);
+      color: var(--brand);
       font-size: 14px;
       font-weight: 500;
     }
@@ -275,7 +276,7 @@
     .hamburger span {
       width: 20px;
       height: 2px;
-      background: var(--navy);
+      background: var(--brand);
       border-radius: 999px;
       transition: transform 0.2s ease, opacity 0.2s ease;
     }
@@ -309,7 +310,7 @@
       display: flex;
       align-items: center;
       padding: 0 var(--space-1);
-      color: var(--navy);
+      color: var(--brand);
       font-size: 16px;
       font-weight: 500;
     }
@@ -612,7 +613,7 @@
     }
 
     label {
-      color: var(--navy);
+      color: var(--body);
       font-size: 14px;
       font-weight: 500;
       line-height: 1.4;
@@ -726,7 +727,7 @@
 
     .trust-item p {
       margin-bottom: var(--space-1);
-      color: var(--navy);
+      color: var(--body);
       font-size: 16px;
       font-weight: 500;
       line-height: 1.4;
@@ -739,18 +740,20 @@
       line-height: 1.55;
     }
 
+    /* FINAL CTA — corrected */
     .final-cta {
       width: 100%;
       padding: var(--space-6) var(--space-4);
       text-align: center;
-      background: var(--navy);
+      background: var(--bg);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
     }
 
     .final-cta h2 {
       max-width: 600px;
       margin: 0 auto var(--space-4);
-      color: var(--white);
+      color: var(--navy);
       font-size: 28px;
       line-height: 1.2;
     }
